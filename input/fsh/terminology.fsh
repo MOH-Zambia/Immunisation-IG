@@ -214,7 +214,4 @@ Title: "COVAX Observations"
 Description: "A ValueSet containing COVID19 vaccination observation"
 * ^experimental = false
 * $SCT#77386006 "Pregnant"
-* $SCT#60001007 "Not pregnant"
 * $SCT#169907004 "Lactating"
-* $SCT#60001007 "Not lactating"
-

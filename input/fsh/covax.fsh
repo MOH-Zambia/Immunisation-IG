@@ -20,48 +20,6 @@ Description: "Patient profile for Covax use case"
 * identifier[passport].system = "http://fhir.moh.gov.zm/fhir/IdentifierSystem/passport"
 * identifier[passport].value 1..1
 
-* name 1..* // Require at least one value inside the `name` element
-* name and name.given and name.family
-
-* maritalStatus from http://hl7.org/fhir/ValueSet/marital-status (required)
-
-* birthDate MS "If exact date of birth is partially or completely unknown, Implementers SHALL populate this element with the date of birth information listed on the patient's government-issued identification."
-
-* managingOrganization 1..1
-* managingOrganization only Reference(ServiceProvider)
-
-
-
-Profile: RelatedPersonGuardianCovax
-Parent: RelatedPerson
-Id: related-person-guardian-covax
-Title: "Related Person Guardian Covax"
-Description: "Related Person profile for guardians in Covax use case"
-
-* name.family 0..1
-* name.given 0..1
-
-* relationship MS
-* relationship.coding MS
-* relationship.coding.system = "http://snomed.info/sct"
-* relationship.coding.code = "394619001" (exactly)
-
-
-Profile: UnderlyingCondition
-Parent: Condition
-Id: underlying-condition
-Title: "Underlying Condition"
-Description: "Condition profile for capturing specific underlying conditions"
-* code 1..1 MS
-* code from UnderlyingConditions (required)
-* clinicalStatus 1..1
-* category 0..*
-* severity 0..1
-* subject 1..1 MS 
-* subject only Reference(CovaxImmunizationPatient)
-* evidence 0..*
-* note 0..*
-
 Profile: CovaxObservation
 Parent: Observation
 Id: covax-observation
@@ -87,3 +45,19 @@ Description: "Condition profile for capturing specific underlying conditions"
 * subject only Reference(CovaxImmunizationPatient)
 * evidence 0..*
 * note 0..*
+
+Profile: COVID19VaccineMedication
+Parent: Medication
+Id: covid19-vaccine-medication
+Title: "COVID-19 Vaccine Medication"
+Description: "A profile for COVID-19 vaccine medications"
+* code 1..1 MS
+* code from VSVaccines (required)
+* status 1..1 MS
+* doseForm 0..1 // Form of the vaccine (e.g., powder, tablets, capsule )
+* marketingAuthorizationHolder 0..1
+* ingredient 0..*
+* ingredient.item 1..1
+* batch 0..1
+* batch.lotNumber 0..1
+* batch.expirationDate 0..1

@@ -138,7 +138,7 @@ Description: "A guardian to the patient."
 * relationship = $PARENT_RELATIONSHIP_CODES#GUARD
 * name.given 1..1
 * name.family 1..1
-* patient only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient)
+* patient only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient or CovaxImmunizationPatient)
 
 Profile: TargetFacilityEncounter
 Parent: Encounter
@@ -150,7 +150,7 @@ Description: "Represents the current facility at which the patient is receiving 
 * class.coding.code = #AMB
 * class.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ActCode"
 * subject 1..1
-* subject only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient)
+* subject only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient or CovaxImmunizationPatient)
 * actualPeriod 1..1
 * serviceProvider 0..1 MS
 * serviceProvider only Reference(ServiceProvider)
@@ -168,7 +168,7 @@ Description: "This profile acts as a base profile from which more observation pr
 * encounter 1..1
 * encounter only Reference(TargetFacilityEncounter)
 * subject 1..1
-* subject only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient)
+* subject only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient or CovaxImmunizationPatient)
 * performer 0..*
 * performer ^definition =
   "reason(s) why this should be supported."
@@ -182,7 +182,7 @@ Description: "Records the vaccine administered to the patient."
 * vaccineCode 1..1
 * vaccineCode from VSVaccines (extensible)
 * patient 1..1
-* patient only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient)
+* patient only Reference(SmartcareImmunizationPatient or HPVImmunizationPatient or CovaxImmunizationPatient)
 * occurrenceDateTime 1..1
 * occurrenceDateTime only dateTime
 * encounter 1..1
@@ -193,4 +193,4 @@ Description: "Records the vaccine administered to the patient."
 * protocolApplied.doseNumber 1..1
 * performer 1..*
 * performer.actor 1..1
-* performer.actor only Reference(SmartcareVaccinationSiteType or HPVVaccinationSiteType)
+* performer.actor only Reference(SmartcareVaccinationSiteType or HPVVaccinationSiteType or ServiceProvider)
