@@ -1,0 +1,1433 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations> a fhir:ImplementationGuide ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "openhie.fhir.zambia-immunizations"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openhie.fhir.zambia-immunizations</b></p><a name=\"openhie.fhir.zambia-immunizations\"> </a><a name=\"hcopenhie.fhir.zambia-immunizations\"> </a><a name=\"hcopenhie.fhir.zambia-immunizations-en-US\"> </a><h2>ZambiaImmunizationsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations</pre><div><p>Zambia Immunizations FHIR Implementation Guide.</p>\n</div></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "ZambiaImmunizationsIG"] ; # 
+  fhir:title [ fhir:v "Zambia Immunizations FHIR Implementation Guide"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-01-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Ministry of Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Ministry of Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.moh.gov.zm" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@moh.gov.zm" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Chisanga Louis Siwale" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chisanga.siwale@moh.gov.zm" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Zambia Immunizations FHIR Implementation Guide."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:packageId [ fhir:v "openhie.fhir.zambia-immunizations"] ; # 
+  fhir:license [ fhir:v "CC0-1.0"] ; # 
+  fhir:fhirVersion ( [ fhir:v "5.0.0"] ) ; # 
+  fhir:dependsOn ( [
+     fhir:id [ fhir:v "hl7tx" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on HL7 Terminology" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://terminology.hl7.org/ImplementationGuide/hl7.terminology"^^xsd:anyURI ;
+       fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.terminology.r5" ] ;
+     fhir:version [ fhir:v "6.0.2" ]
+  ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r5" ] ;
+     fhir:version [ fhir:v "5.1.0" ]
+  ] ) ; # 
+  fhir:definition [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+     ] ) ;
+     fhir:resource ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex> ;
+         fhir:reference [ fhir:v "StructureDefinition/administrative-sex" ]
+       ] ;
+       fhir:name [ fhir:v "Administrative Sex" ] ;
+       fhir:description [ fhir:v "This is an extension to capture that patient's administrative sex." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-administrative-sex> ;
+         fhir:reference [ fhir:v "ValueSet/vs-administrative-sex" ]
+       ] ;
+       fhir:name [ fhir:v "Administrative Sex" ] ;
+       fhir:description [ fhir:v "A List of Administrative Sex codes." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/chief-at-birth-relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Chief at Birth" ] ;
+       fhir:description [ fhir:v "Patient's chief at birth." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/ChiefAtBirthRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/ChiefAtBirthRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Chief at Birth" ] ;
+       fhir:description [ fhir:v "Patient's chief at birth." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/covax-immunization-patient" ]
+       ] ;
+       fhir:name [ fhir:v "COVAX Immunization Patient" ] ;
+       fhir:description [ fhir:v "Patient profile for Covax use case" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/covax-observation" ]
+       ] ;
+       fhir:name [ fhir:v "COVAX Observation" ] ;
+       fhir:description [ fhir:v "Profile for capturing observations during vaccination" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/covax-observations> ;
+         fhir:reference [ fhir:v "ValueSet/covax-observations" ]
+       ] ;
+       fhir:name [ fhir:v "COVAX Observations" ] ;
+       fhir:description [ fhir:v "A ValueSet containing COVID19 vaccination observation" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covid19-vaccine-medication> ;
+         fhir:reference [ fhir:v "StructureDefinition/covid19-vaccine-medication" ]
+       ] ;
+       fhir:name [ fhir:v "COVID-19 Vaccine Medication" ] ;
+       fhir:description [ fhir:v "A profile for COVID-19 vaccine medications" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/father-relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Father Relation to Patient" ] ;
+       fhir:description [ fhir:v "The patient's father." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/PatientFatherRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/PatientFatherRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Father Relation to Patient" ] ;
+       fhir:description [ fhir:v "The patient's father." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+         fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "Generic Immunization Patient" ] ;
+       fhir:description [ fhir:v "Is used to document demographics and other administrative information about an individual receiving care or other health-related services." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/immunization-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/immunization-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/generic-social-history-observation-profile> ;
+         fhir:reference [ fhir:v "StructureDefinition/generic-social-history-observation-profile" ]
+       ] ;
+       fhir:name [ fhir:v "Generic Observation Profile" ] ;
+       fhir:description [ fhir:v "This profile acts as a base profile from which more observation profiles can be derived." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/immunization-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/immunization-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Generic Patient Profile for Immunizations" ] ;
+       fhir:description [ fhir:v "Is used to document demographics and other administrative information about an individual receiving care or other health-related services." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/RelationToPatientExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/RelationToPatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "Generic Relation to Patient" ] ;
+       fhir:description [ fhir:v "This profile acts as a base profile from which more specific RelatedPerson profiles can be derived." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/GenericObservationExample> ;
+         fhir:reference [ fhir:v "Observation/GenericObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Generic Social History Observation Profile" ] ;
+       fhir:description [ fhir:v "This profile acts as a base profile from which more specific social history observation profiles can be derived." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/generic-social-history-observation-profile"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/generic-social-history-observation-profile>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration> ;
+         fhir:reference [ fhir:v "StructureDefinition/vaccine-administration" ]
+       ] ;
+       fhir:name [ fhir:v "Generic Vaccine Administration Profile" ] ;
+       fhir:description [ fhir:v "Records the vaccine administered to the patient." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/guardian-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Guardian Occupation" ] ;
+       fhir:description [ fhir:v "Records the current occupation for the guardian" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/GuardianOccupationObservationExample> ;
+         fhir:reference [ fhir:v "Observation/GuardianOccupationObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Guardian Occupation" ] ;
+       fhir:description [ fhir:v "Records the current occupation for the guardian" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/HPVGuardianRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/HPVGuardianRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Guardian Relation to Patient in HPV" ] ;
+       fhir:description [ fhir:v "A guardian to the patient." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/SmartcareGuardianRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/SmartcareGuardianRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Guardian Relation to Patient in Smartcare" ] ;
+       fhir:description [ fhir:v "A guardian to the patient." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/guardian-relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Guardian Relation to Patient Profile" ] ;
+       fhir:description [ fhir:v "A guardian to the patient." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+         fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Healthcare Service Provider" ] ;
+       fhir:description [ fhir:v "An organization that provides healthcare services." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider> ;
+         fhir:reference [ fhir:v "StructureDefinition/healthcare-service-provider" ]
+       ] ;
+       fhir:name [ fhir:v "Healthcare Service Provider Profile" ] ;
+       fhir:description [ fhir:v "An organization that provides healthcare services." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-educational-level" ]
+       ] ;
+       fhir:name [ fhir:v "Highest education level attained" ] ;
+       fhir:description [ fhir:v "A patient's highest education level attained" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/PatientEducationalLevelObservationExample> ;
+         fhir:reference [ fhir:v "Observation/PatientEducationalLevelObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Highest education level attained" ] ;
+       fhir:description [ fhir:v "A patient's highest education level attained" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Bundle/HPVFullBundleExample> ;
+         fhir:reference [ fhir:v "Bundle/HPVFullBundleExample" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Bundle" ] ;
+       fhir:description [ fhir:v "A bundle containing all HPV FHIR resources." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-full-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Full Bundle" ] ;
+       fhir:description [ fhir:v "This bundle contains all of the HPV resources." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-immunization" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Immunization" ] ;
+       fhir:description [ fhir:v "Records the vaccine administered to the patient." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Immunization/HPVImmunizationExample> ;
+         fhir:reference [ fhir:v "Immunization/HPVImmunizationExample" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Immunization Example" ] ;
+       fhir:description [ fhir:v "Records the vaccine administered to the patient." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-immunocomprommised" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Immunocomprommised" ] ;
+       fhir:description [ fhir:v "This is to document whether the patient is immunocompromised." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/HPVImmunocomprommisedExample> ;
+         fhir:reference [ fhir:v "Observation/HPVImmunocomprommisedExample" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Immunocomprommised" ] ;
+       fhir:description [ fhir:v "This is to document whether the HPV patient has been observed to be immunocomprommised." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-vaccination-patient-registration-date" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Patient Registration Date" ] ;
+       fhir:description [ fhir:v "A date representing when the patient was registered for HPV vaccination." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-vaccine-details" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Vaccine Details" ] ;
+       fhir:description [ fhir:v "Records the batch number for the vaccine." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Medication" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Medication/HPVVaccineExample> ;
+         fhir:reference [ fhir:v "Medication/HPVVaccineExample" ]
+       ] ;
+       fhir:name [ fhir:v "HPV Vaccine Details" ] ;
+       fhir:description [ fhir:v "Records the batch number for the vaccine." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/HPVImmunizationPatientExample> ;
+         fhir:reference [ fhir:v "Patient/HPVImmunizationPatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "Immunization Patient in HPV" ] ;
+       fhir:description [ fhir:v "Is used to document demographics and other administrative information about an individual receiving care or other health-related services." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/SmartcareImmunizationPatientExample> ;
+         fhir:reference [ fhir:v "Patient/SmartcareImmunizationPatientExample" ]
+       ] ;
+       fhir:name [ fhir:v "Immunization Patient in Smartcare" ] ;
+       fhir:description [ fhir:v "Is used to document demographics and other administrative information about an individual receiving care or other health-related services." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance> ;
+         fhir:reference [ fhir:v "StructureDefinition/medical-insurance" ]
+       ] ;
+       fhir:name [ fhir:v "Insurance or Medical Plan" ] ;
+       fhir:description [ fhir:v "Insurance or medical plan details" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Coverage" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Coverage/MedicalInsuranceExample> ;
+         fhir:reference [ fhir:v "Coverage/MedicalInsuranceExample" ]
+       ] ;
+       fhir:name [ fhir:v "Insurance or Medical Plan" ] ;
+       fhir:description [ fhir:v "Insurance or medical plan details" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company> ;
+         fhir:reference [ fhir:v "StructureDefinition/medical-insurance-company" ]
+       ] ;
+       fhir:name [ fhir:v "Medical Insurance Company" ] ;
+       fhir:description [ fhir:v "A company that provides insurance to its subscribers that may include healthcare related policies." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/MedicalInsuranceCompanyExample> ;
+         fhir:reference [ fhir:v "Organization/MedicalInsuranceCompanyExample" ]
+       ] ;
+       fhir:name [ fhir:v "Medical Insurance Company" ] ;
+       fhir:description [ fhir:v "A company that provides insurance to its subscribers that may include healthcare related policies." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/mother-relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Mother Relation to Patient" ] ;
+       fhir:description [ fhir:v "The patient's mother." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/PatientMotherRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/PatientMotherRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Mother Relation to Patient" ] ;
+       fhir:description [ fhir:v "The patient's mother." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia> ;
+         fhir:reference [ fhir:v "StructureDefinition/born-in-zambia" ]
+       ] ;
+       fhir:name [ fhir:v "Patient born in Zambia?" ] ;
+       fhir:description [ fhir:v "This is an extension to capture whether the patient was born in Zambia." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-immunization-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Profile for HPV Immunizations" ] ;
+       fhir:description [ fhir:v "Is used to document demographics and other administrative information about an individual receiving care or other health-related services." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/smartcare-immunization-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Patient Profile for Smartcare Immunizations" ] ;
+       fhir:description [ fhir:v "Is used to document demographics and other administrative information about an individual receiving care or other health-related services." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth> ;
+         fhir:reference [ fhir:v "StructureDefinition/is-estimated-date-of-birth" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Date of Birth Is Estimated?" ] ;
+       fhir:description [ fhir:v "This is an extension to capture whether the patient's date of birth was estimated." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married> ;
+         fhir:reference [ fhir:v "StructureDefinition/date-patient-first-married" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Date of First Marriage" ] ;
+       fhir:description [ fhir:v "Records the date when the patient was first married" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/DatePatientFirstMarriedObservationExample> ;
+         fhir:reference [ fhir:v "Observation/DatePatientFirstMarriedObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Date of First Marriage" ] ;
+       fhir:description [ fhir:v "Records the date when the patient was first married" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-loinc-education-level-attained> ;
+         fhir:reference [ fhir:v "ValueSet/vs-loinc-education-level-attained" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's highest education level attained (LOINC)" ] ;
+       fhir:description [ fhir:v "A list of LOINC education levels." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained> ;
+         fhir:reference [ fhir:v "ValueSet/vs-proprietary-education-level-attained" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's highest education level attained (Proprietary)" ] ;
+       fhir:description [ fhir:v "A list of proprietary education levels." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-proprietary-education-level-attained" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's highest education level attained (Proprietary)" ] ;
+       fhir:description [ fhir:v "A list of proprietary education levels." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language> ;
+         fhir:reference [ fhir:v "StructureDefinition/patient-home-language" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Home Language" ] ;
+       fhir:description [ fhir:v "Records the home language for the patient" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-home-language> ;
+         fhir:reference [ fhir:v "ValueSet/vs-home-language" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Home Language" ] ;
+       fhir:description [ fhir:v "A list of languages." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-home-language" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Home Language" ] ;
+       fhir:description [ fhir:v "A list of languages." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/PatientHomeLanguageObservationExample> ;
+         fhir:reference [ fhir:v "Observation/PatientHomeLanguageObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Patient's Home Language" ] ;
+       fhir:description [ fhir:v "Records the home language for the patient" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ConceptMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel> ;
+         fhir:reference [ fhir:v "ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel" ]
+       ] ;
+       fhir:name [ fhir:v "Proprietary Education Level to LOINC Education Level" ] ;
+       fhir:description [ fhir:v "Mapping to and from Proprietary Education Level to LOINC Education Level." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Relation to Patient Profile" ] ;
+       fhir:description [ fhir:v "This profile acts as a base profile from which more specific RelatedPerson profiles can be derived." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/relative-relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Relative Relation to Patient" ] ;
+       fhir:description [ fhir:v "The patient's relative." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/RelativeRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/RelativeRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Relative Relation to Patient" ] ;
+       fhir:description [ fhir:v "The patient's relative." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Bundle" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Bundle/Smartcare> ;
+         fhir:reference [ fhir:v "Bundle/Smartcare" ]
+       ] ;
+       fhir:name [ fhir:v "Smartcare Bundle" ] ;
+       fhir:description [ fhir:v "A bundle containing all Smartcare FHIR resources." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle> ;
+         fhir:reference [ fhir:v "StructureDefinition/smartcare-full-bundle" ]
+       ] ;
+       fhir:name [ fhir:v "Smartcare Full Bundle" ] ;
+       fhir:description [ fhir:v "This bundle contains all of the Smartcare resources." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation> ;
+         fhir:reference [ fhir:v "StructureDefinition/spouse-occupation" ]
+       ] ;
+       fhir:name [ fhir:v "Spouse Occupation" ] ;
+       fhir:description [ fhir:v "Records the current occupation for the spouse" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Observation/SpouseOccupationObservationExample> ;
+         fhir:reference [ fhir:v "Observation/SpouseOccupationObservationExample" ]
+       ] ;
+       fhir:name [ fhir:v "Spouse Occupation" ] ;
+       fhir:description [ fhir:v "Records the current occupation for the spouse" ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "RelatedPerson" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/SpouseRelatedPersonExample> ;
+         fhir:reference [ fhir:v "RelatedPerson/SpouseRelatedPersonExample" ]
+       ] ;
+       fhir:name [ fhir:v "Spouse Related to Patient" ] ;
+       fhir:description [ fhir:v "The husband or wife, considered in relation to the patient." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient> ;
+         fhir:reference [ fhir:v "StructureDefinition/spouse-relation-to-patient" ]
+       ] ;
+       fhir:name [ fhir:v "Spouse Relation to Patient" ] ;
+       fhir:description [ fhir:v "The husband or wife, considered in relation to the patient." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter> ;
+         fhir:reference [ fhir:v "StructureDefinition/target-facility-encounter" ]
+       ] ;
+       fhir:name [ fhir:v "Target Facility Encounter" ] ;
+       fhir:description [ fhir:v "Represents the current facility at which the patient is receiving health services." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/HPVTargetFacilityEncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/HPVTargetFacilityEncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "Target Facility Encounter in HPV" ] ;
+       fhir:description [ fhir:v "Represents the current facility at which the patient is receiving health services." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "Target Facility Encounter in Smartcare" ] ;
+       fhir:description [ fhir:v "Represents the current facility at which the patient is receiving health services." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/underlying-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/underlying-condition" ]
+       ] ;
+       fhir:name [ fhir:v "Underlying Condition" ] ;
+       fhir:description [ fhir:v "Condition profile for capturing specific underlying conditions" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/underlying-conditions> ;
+         fhir:reference [ fhir:v "ValueSet/underlying-conditions" ]
+       ] ;
+       fhir:name [ fhir:v "Underlying Conditions" ] ;
+       fhir:description [ fhir:v "A ValueSet containing Underlying conditions" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/SmartcareVaccinationSiteTypeExample> ;
+         fhir:reference [ fhir:v "Organization/SmartcareVaccinationSiteTypeExample" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site type" ] ;
+       fhir:description [ fhir:v "Indicates whether the vaccination was administered at the facility or at an outreach post." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/hpv-vaccination-site-type" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site type in HPV" ] ;
+       fhir:description [ fhir:v "Indicates whether the vaccination was administered at the facility or at an outreach post." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Organization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/HPVVaccinationSiteTypeExample> ;
+         fhir:reference [ fhir:v "Organization/HPVVaccinationSiteTypeExample" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site type in HPV" ] ;
+       fhir:description [ fhir:v "Indicates whether the vaccination was administered at the facility or at an outreach post." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type> ;
+         fhir:reference [ fhir:v "StructureDefinition/smartcare-vaccination-site-type" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site type in Smartcare" ] ;
+       fhir:description [ fhir:v "Indicates whether the vaccination was administered at the facility or at an outreach post." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-hpv-vaccination-site> ;
+         fhir:reference [ fhir:v "ValueSet/vs-proprietary-hpv-vaccination-site" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site types in HPV (Proprietary)" ] ;
+       fhir:description [ fhir:v "A list of vaccination sites (posts) where the vaccination was administered." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-proprietary-hpv-vaccination-site" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site types in HPV (Proprietary)" ] ;
+       fhir:description [ fhir:v "A list of vaccination sites (posts) where the vaccination was administered." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-smartcare-vaccination-site> ;
+         fhir:reference [ fhir:v "ValueSet/vs-proprietary-smartcare-vaccination-site" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site types in Smartcare (Proprietary)" ] ;
+       fhir:description [ fhir:v "A list of vaccination sites (posts) where the vaccination was administered." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-proprietary-smartcare-vaccination-site" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccination site types in Smartcare (Proprietary)" ] ;
+       fhir:description [ fhir:v "A list of vaccination sites (posts) where the vaccination was administered." ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Immunization" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/Immunization/VaccinesExample> ;
+         fhir:reference [ fhir:v "Immunization/VaccinesExample" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccine Administration" ] ;
+       fhir:description [ fhir:v "Records the vaccine administered to the patient." ] ;
+       fhir:isExample [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:profile ( [
+         fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration"^^xsd:anyURI ;
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration>
+       ] )
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines> ;
+         fhir:reference [ fhir:v "ValueSet/vs-vaccines" ]
+       ] ;
+       fhir:name [ fhir:v "Vaccine Codes" ] ;
+       fhir:description [ fhir:v "A List of Vaccine Codes Use In Zambia" ] ;
+       fhir:isExample [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureMap" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel> ;
+         fhir:reference [ fhir:v "StructureMap/PropietaryEducationLevelToLOINCEducationLevel" ]
+       ] ;
+       fhir:name [ fhir:v "Propietary Educational Level To LOINC Educational Level" ] ;
+       fhir:description [ fhir:v "Maps the Propietary Educational Level codes To LOINC Educational Level codes." ]
+     ] ) ;
+     fhir:page [
+       fhir:source [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:name [ fhir:v "toc.html"^^xsd:anyURI ] ;
+       fhir:title [ fhir:v "Table of Contents" ] ;
+       fhir:generation [ fhir:v "html" ] ;
+       fhir:page ( [
+         fhir:source [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Home" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] [
+         fhir:source [ fhir:v "changes.html"^^xsd:anyURI ] ;
+         fhir:name [ fhir:v "changes.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Changes" ] ;
+         fhir:generation [ fhir:v "html" ]
+       ] )
+     ] ;
+     fhir:parameter ( [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "copyrightyear" ]
+       ] ;
+       fhir:value [ fhir:v "2021+" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "releaselabel" ]
+       ] ;
+       fhir:value [ fhir:v "STU1" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/maps" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "autoload-resources" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/capabilities" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/examples" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/extensions" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/models" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/operations" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/profiles" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/vocabulary" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/testing" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "input/history" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-resource" ]
+       ] ;
+       fhir:value [ fhir:v "fsh-generated/resources" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "template/config" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-pages" ]
+       ] ;
+       fhir:value [ fhir:v "input/images" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "template/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-liquid" ]
+       ] ;
+       fhir:value [ fhir:v "input/liquid" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-qa" ]
+       ] ;
+       fhir:value [ fhir:v "temp/qa" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-temp" ]
+       ] ;
+       fhir:value [ fhir:v "temp/pages" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-output" ]
+       ] ;
+       fhir:value [ fhir:v "output" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/guide-parameter-code"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-tx-cache" ]
+       ] ;
+       fhir:value [ fhir:v "input-cache/txcache" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-suppressed-warnings" ]
+       ] ;
+       fhir:value [ fhir:v "input/ignoreWarnings.txt" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "path-history" ]
+       ] ;
+       fhir:value [ fhir:v "http://openhie.org/fhir/zambia-immunizations/history.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-html" ]
+       ] ;
+       fhir:value [ fhir:v "template-page.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "template-md" ]
+       ] ;
+       fhir:value [ fhir:v "template-page-md.html" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-contact" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-context" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-copyright" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-jurisdiction" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-license" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-publisher" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-version" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "apply-wg" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "active-tables" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "fmm-definition" ]
+       ] ;
+       fhir:value [ fhir:v "http://hl7.org/fhir/versions.html#maturity" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "propagate-status" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "excludelogbinaryformat" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] [
+       fhir:code [
+         fhir:system [ fhir:v "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "tabbed-snapshots" ]
+       ] ;
+       fhir:value [ fhir:v "true" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

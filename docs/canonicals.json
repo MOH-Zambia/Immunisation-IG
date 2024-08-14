@@ -1,0 +1,366 @@
+[
+  {
+    "id" : "cs-home-language",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language",
+    "version" : "1.0.0",
+    "name" : "CSHomeLanguage"
+  },
+  {
+    "id" : "cs-proprietary-education-level-attained",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+    "version" : "1.0.0",
+    "name" : "CSProprietaryEducationLevelAttained"
+  },
+  {
+    "id" : "cs-proprietary-hpv-vaccination-site",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site",
+    "version" : "1.0.0",
+    "name" : "CSProprietaryHPVVaccinationSite"
+  },
+  {
+    "id" : "cs-proprietary-smartcare-vaccination-site",
+    "type" : "CodeSystem",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site",
+    "version" : "1.0.0",
+    "name" : "CSProprietarySmartcareVaccinationSite"
+  },
+  {
+    "id" : "ProprietaryEducationLevelToLOINCEducationLevel",
+    "type" : "ConceptMap",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel",
+    "version" : "1.0.0",
+    "name" : "ProprietaryEducationLevelToLOINCEducationLevel"
+  },
+  {
+    "id" : "openhie.fhir.zambia-immunizations",
+    "type" : "ImplementationGuide",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations",
+    "version" : "1.0.0",
+    "name" : "ZambiaImmunizationsIG"
+  },
+  {
+    "id" : "administrative-sex",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex",
+    "version" : "1.0.0",
+    "name" : "AdministrativeSex"
+  },
+  {
+    "id" : "born-in-zambia",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia",
+    "version" : "1.0.0",
+    "name" : "BornInZambia"
+  },
+  {
+    "id" : "chief-at-birth-relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "ChiefAtBirthRelatedPerson"
+  },
+  {
+    "id" : "covax-immunization-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient",
+    "version" : "1.0.0",
+    "name" : "CovaxImmunizationPatient"
+  },
+  {
+    "id" : "covax-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-observation",
+    "version" : "1.0.0",
+    "name" : "CovaxObservation"
+  },
+  {
+    "id" : "covid19-vaccine-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covid19-vaccine-medication",
+    "version" : "1.0.0",
+    "name" : "COVID19VaccineMedication"
+  },
+  {
+    "id" : "date-patient-first-married",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married",
+    "version" : "1.0.0",
+    "name" : "DatePatientFirstMarriedObservation"
+  },
+  {
+    "id" : "father-relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "PatientFatherRelatedPerson"
+  },
+  {
+    "id" : "generic-social-history-observation-profile",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/generic-social-history-observation-profile",
+    "version" : "1.0.0",
+    "name" : "GenericObservation"
+  },
+  {
+    "id" : "guardian-occupation",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation",
+    "version" : "1.0.0",
+    "name" : "GuardianOccupationObservation"
+  },
+  {
+    "id" : "guardian-relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "GuardianRelatedPerson"
+  },
+  {
+    "id" : "healthcare-service-provider",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider",
+    "version" : "1.0.0",
+    "name" : "ServiceProvider"
+  },
+  {
+    "id" : "hpv-full-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle",
+    "version" : "1.0.0",
+    "name" : "HPVFullBundle"
+  },
+  {
+    "id" : "hpv-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization",
+    "version" : "1.0.0",
+    "name" : "HPVImmunization"
+  },
+  {
+    "id" : "hpv-immunization-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient",
+    "version" : "1.0.0",
+    "name" : "HPVImmunizationPatient"
+  },
+  {
+    "id" : "hpv-immunocomprommised",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised",
+    "version" : "1.0.0",
+    "name" : "HPVImmunocomprommised"
+  },
+  {
+    "id" : "hpv-vaccination-patient-registration-date",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date",
+    "version" : "1.0.0",
+    "name" : "HPVPatientVaccinationRegistrationDate"
+  },
+  {
+    "id" : "hpv-vaccination-site-type",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type",
+    "version" : "1.0.0",
+    "name" : "HPVVaccinationSiteType"
+  },
+  {
+    "id" : "hpv-vaccine-details",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details",
+    "version" : "1.0.0",
+    "name" : "HPVVaccine"
+  },
+  {
+    "id" : "immunization-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/immunization-patient",
+    "version" : "1.0.0",
+    "name" : "ImmunizationPatient"
+  },
+  {
+    "id" : "is-estimated-date-of-birth",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth",
+    "version" : "1.0.0",
+    "name" : "IsEstimatedDateOfBirth"
+  },
+  {
+    "id" : "medical-insurance",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance",
+    "version" : "1.0.0",
+    "name" : "MedicalInsurance"
+  },
+  {
+    "id" : "medical-insurance-company",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company",
+    "version" : "1.0.0",
+    "name" : "MedicalInsuranceCompany"
+  },
+  {
+    "id" : "mother-relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "PatientMotherRelatedPerson"
+  },
+  {
+    "id" : "patient-educational-level",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level",
+    "version" : "1.0.0",
+    "name" : "PatientEducationalLevelObservation"
+  },
+  {
+    "id" : "patient-home-language",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language",
+    "version" : "1.0.0",
+    "name" : "PatientHomeLanguageObservation"
+  },
+  {
+    "id" : "relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "RelationToPatient"
+  },
+  {
+    "id" : "relative-relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "RelativeRelatedPerson"
+  },
+  {
+    "id" : "smartcare-full-bundle",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle",
+    "version" : "1.0.0",
+    "name" : "SmartcareFullBundle"
+  },
+  {
+    "id" : "smartcare-immunization-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient",
+    "version" : "1.0.0",
+    "name" : "SmartcareImmunizationPatient"
+  },
+  {
+    "id" : "smartcare-vaccination-site-type",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type",
+    "version" : "1.0.0",
+    "name" : "SmartcareVaccinationSiteType"
+  },
+  {
+    "id" : "spouse-occupation",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation",
+    "version" : "1.0.0",
+    "name" : "SpouseOccupationObservation"
+  },
+  {
+    "id" : "spouse-relation-to-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient",
+    "version" : "1.0.0",
+    "name" : "SpouseRelatedPerson"
+  },
+  {
+    "id" : "target-facility-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter",
+    "version" : "1.0.0",
+    "name" : "TargetFacilityEncounter"
+  },
+  {
+    "id" : "underlying-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/underlying-condition",
+    "version" : "1.0.0",
+    "name" : "UnderlyingCondition"
+  },
+  {
+    "id" : "vaccine-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration",
+    "version" : "1.0.0",
+    "name" : "Vaccines"
+  },
+  {
+    "id" : "PropietaryEducationLevelToLOINCEducationLevel",
+    "type" : "StructureMap",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel",
+    "version" : "1.0.0",
+    "name" : "PropietaryEducationLevelToLOINCEducationLevel"
+  },
+  {
+    "id" : "covax-observations",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/covax-observations",
+    "version" : "1.0.0",
+    "name" : "CovaxObservations"
+  },
+  {
+    "id" : "underlying-conditions",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/underlying-conditions",
+    "version" : "1.0.0",
+    "name" : "UnderlyingConditions"
+  },
+  {
+    "id" : "vs-administrative-sex",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-administrative-sex",
+    "version" : "1.0.0",
+    "name" : "AdministrativeSex"
+  },
+  {
+    "id" : "vs-home-language",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-home-language",
+    "version" : "1.0.0",
+    "name" : "VSHomeLanguage"
+  },
+  {
+    "id" : "vs-loinc-education-level-attained",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-loinc-education-level-attained",
+    "version" : "1.0.0",
+    "name" : "VSLOINCEducationLevelAttained"
+  },
+  {
+    "id" : "vs-proprietary-education-level-attained",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained",
+    "version" : "1.0.0",
+    "name" : "VSProprietaryEducationLevelAttained"
+  },
+  {
+    "id" : "vs-proprietary-hpv-vaccination-site",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-hpv-vaccination-site",
+    "version" : "1.0.0",
+    "name" : "VSProprietaryHPVVaccinationSite"
+  },
+  {
+    "id" : "vs-proprietary-smartcare-vaccination-site",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-smartcare-vaccination-site",
+    "version" : "1.0.0",
+    "name" : "VSProprietarySmartcareVaccinationSite"
+  },
+  {
+    "id" : "vs-vaccines",
+    "type" : "ValueSet",
+    "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines",
+    "version" : "1.0.0",
+    "name" : "VSVaccines"
+  }
+]

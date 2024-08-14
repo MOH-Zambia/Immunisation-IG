@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="SmartcareVaccinationSiteTypeExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization SmartcareVaccinationSiteTypeExample</b></p><a name="SmartcareVaccinationSiteTypeExample"> </a><a name="hcSmartcareVaccinationSiteTypeExample"> </a><a name="hcSmartcareVaccinationSiteTypeExample-en-US"> </a><p><b>type</b>: <span title="Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site Outreach}">Outreach</span></p><p><b>name</b>: facility name</p></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site"/>
+      <code value="Outreach"/>
+    </coding>
+  </type>
+  <name value="facility name"/>
+</Organization>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ProprietaryEducationLevelToLOINCEducationLevel"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ConceptMap ProprietaryEducationLevelToLOINCEducationLevel</b></p><a name="ProprietaryEducationLevelToLOINCEducationLevel"> </a><a name="hcProprietaryEducationLevelToLOINCEducationLevel"> </a><a name="hcProprietaryEducationLevelToLOINCEducationLevel-en-US"> </a><p>Mapping from (not specified) to (not specified)</p><p>ACTIVE. Published on 2024-01-31 by Ministry of Health  (Ministry of Health: <a href="https://www.moh.gov.zm">https://www.moh.gov.zm</a>, <a href="mailto:info@moh.gov.zm">info@moh.gov.zm</a>, Chisanga Louis Siwale: <a href="mailto:chisanga.siwale@moh.gov.zm">chisanga.siwale@moh.gov.zm</a>). </p><div><p>Mapping to and from Proprietary Education Level to LOINC Education Level.</p>
+</div><br/><p><b>Group 1 </b>Mapping from <a href="CodeSystem-cs-proprietary-education-level-attained.html">Patient's highest education level attained (Proprietary)</a> to <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>CertificateGraduate</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA30193-9 (More than high school)</td></tr><tr><td>DegreeGraduate</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA32469-1 (University undergraduate degree)</td></tr><tr><td>DiplomaGraduate</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA12459-6 (Associate degree (e.g., AA, AS))</td></tr><tr><td>JuniorSecondary</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA36-9 (8th grade/less)</td></tr><tr><td>MastersGraduate</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA12461-2 (Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA))</td></tr><tr><td>NoFormalEducation</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA35-1 (No schooling)</td></tr><tr><td>PhDGraduate</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA30185-5 (Doctoral degree (e.g., PhD, EdD))</td></tr><tr><td>Primary</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA32466-7 (Primary school education)</td></tr><tr><td>SeniorSecondary</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>LA37-7 (9-11 grades)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html">Logical Observation Identifiers, Names and Codes (LOINC)</a> to <a href="CodeSystem-cs-proprietary-education-level-attained.html">Patient's highest education level attained (Proprietary)</a></p><table class="grid"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>LA30193-9 (More than high school)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>CertificateGraduate</td></tr><tr><td>LA32469-1 (University undergraduate degree)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DegreeGraduate</td></tr><tr><td>LA12459-6 (Associate degree (e.g., AA, AS))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>DiplomaGraduate</td></tr><tr><td>LA36-9 (8th grade/less)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>JuniorSecondary</td></tr><tr><td>LA12461-2 (Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>MastersGraduate</td></tr><tr><td>LA35-1 (No schooling)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>NoFormalEducation</td></tr><tr><td>LA30185-5 (Doctoral degree (e.g., PhD, EdD))</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>PhDGraduate</td></tr><tr><td>LA32466-7 (Primary school education)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>Primary</td></tr><tr><td>LA37-7 (9-11 grades)</td><td><a href="http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent" title="equivalent">is equivalent to</a></td><td>SeniorSecondary</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel"/>
+  <version value="1.0.0"/>
+  <name value="ProprietaryEducationLevelToLOINCEducationLevel"/>
+  <title value="ConceptMap to and From proprietary education level to LOINC education Level"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-01-31"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Mapping to and from Proprietary Education Level to LOINC Education Level."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <group>
+    <source value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"/>
+    <target value="http://loinc.org"/>
+    <element>
+      <code value="CertificateGraduate"/>
+      <target>
+        <code value="LA30193-9"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DegreeGraduate"/>
+      <target>
+        <code value="LA32469-1"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="DiplomaGraduate"/>
+      <target>
+        <code value="LA12459-6"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="JuniorSecondary"/>
+      <target>
+        <code value="LA36-9"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="MastersGraduate"/>
+      <target>
+        <code value="LA12461-2"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="NoFormalEducation"/>
+      <target>
+        <code value="LA35-1"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="PhDGraduate"/>
+      <target>
+        <code value="LA30185-5"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="Primary"/>
+      <target>
+        <code value="LA32466-7"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="SeniorSecondary"/>
+      <target>
+        <code value="LA37-7"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://loinc.org"/>
+    <target value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"/>
+    <element>
+      <code value="LA30193-9"/>
+      <target>
+        <code value="CertificateGraduate"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA32469-1"/>
+      <target>
+        <code value="DegreeGraduate"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA12459-6"/>
+      <target>
+        <code value="DiplomaGraduate"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA36-9"/>
+      <target>
+        <code value="JuniorSecondary"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA12461-2"/>
+      <target>
+        <code value="MastersGraduate"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA35-1"/>
+      <target>
+        <code value="NoFormalEducation"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA30185-5"/>
+      <target>
+        <code value="PhDGraduate"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA32466-7"/>
+      <target>
+        <code value="Primary"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="LA37-7"/>
+      <target>
+        <code value="SeniorSecondary"/>
+        <relationship value="equivalent"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

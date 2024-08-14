@@ -1,0 +1,75 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-vs-loinc-education-level-attained.html" : "Patient's highest education level attained (LOINC)",
+      "ValueSet-vs-vaccines.html" : "Vaccine Codes",
+      "ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.html" : "ConceptMap to and From proprietary education level to LOINC education Level"
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSHomeLanguage",
+      "title" : "Patient's Home Language",
+      "description" : "A list of languages.",
+      "uses" : {
+      },
+      "ValueSet-vs-home-language.html" : "Patient's Home Language"
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSProprietaryEducationLevelAttained",
+      "title" : "Patient's highest education level attained (Proprietary)",
+      "description" : "A list of proprietary education levels.",
+      "uses" : {
+      },
+      "ValueSet-vs-proprietary-education-level-attained.html" : "Patient's highest education level attained (Proprietary)",
+      "ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.html" : "ConceptMap to and From proprietary education level to LOINC education Level"
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSProprietaryHPVVaccinationSite",
+      "title" : "Vaccination site types in HPV (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+      "uses" : {
+      },
+      "ValueSet-vs-proprietary-hpv-vaccination-site.html" : "Vaccination site types in HPV (Proprietary)"
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSProprietarySmartcareVaccinationSite",
+      "title" : "Vaccination site types in Smartcare (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+      "uses" : {
+      },
+      "ValueSet-vs-proprietary-smartcare-vaccination-site.html" : "Vaccination site types in Smartcare (Proprietary)"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0001",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "AdministrativeSex",
+      "title" : "administrativeSex",
+      "description" : "Code system of concepts specifying a patient's sex for administrative purposes.  Used in HL7 Version 2.x messages in the PID segment.",
+      "oids" : ["2.16.840.1.113883.18.2"],
+      "uses" : {
+      },
+      "ValueSet-vs-administrative-sex.html" : "Administrative Sex"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "HPVImmunizationExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization HPVImmunizationExample</b></p><a name=\"HPVImmunizationExample\"> </a><a name=\"hcHPVImmunizationExample\"> </a><a name=\"hcHPVImmunizationExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://id.who.int/icd11/mms J07BM01}\">J07BM01</span></p><h3>AdministeredProducts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-HPVVaccineExample.html\">Medication J07BM01</a></td></tr></table><p><b>patient</b>: <a href=\"Patient-HPVImmunizationPatientExample.html\">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>encounter</b>: <a href=\"Encounter-HPVTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2024-01-31</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>DN0000000</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date",
+    "valueDateTime" : "2024-01-31"
+  }],
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "http://id.who.int/icd11/mms",
+      "code" : "J07BM01"
+    }]
+  },
+  "administeredProduct" : {
+    "reference" : {
+      "reference" : "Medication/HPVVaccineExample"
+    }
+  },
+  "patient" : {
+    "reference" : "Patient/HPVImmunizationPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/HPVTargetFacilityEncounterExample"
+  },
+  "occurrenceDateTime" : "2024-01-31",
+  "performer" : [{
+    "actor" : {
+      "reference" : "Organization/OrganizationExample"
+    }
+  }],
+  "protocolApplied" : [{
+    "doseNumber" : "DN0000000"
+  }]
+}

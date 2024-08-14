@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Smartcare Bundle - Zambia Immunizations FHIR Implementation Guide v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.74"}
+    h3,h4,h5,h6{--heading-prefix:"3.74"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://ohie.org/">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Zambia Immunizations FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts Summary</b></a></li><li><b>Smartcare Bundle</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Zambia Immunizations FHIR Implementation Guide - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://openhie.org/fhir/zambia-immunizations/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-Smartcare.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-Smartcare.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-Smartcare.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+  <a name="root"> </a>
+
+
+  <h2 id="root">Example Bundle: Smartcare Bundle</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div><p class="res-header-id"><b>Generated Narrative: Bundle Smartcare</b></p><a name="Smartcare"> </a><a name="hcSmartcare"> </a><a name="hcSmartcare-und"> </a><p>Bundle Smartcare of type transaction</p><a name="http-//hapi-fhir-8080/Patient/SmartcareImmunizationPatientExample"> </a><a name="Patient_SmartcareImmunizationPatientExample"> </a><a name="hcPatient_SmartcareImmunizationPatientExample"> </a><hr/><p>Entry 1 - fullUrl = http://hapi-fhir:8080/Patient/SmartcareImmunizationPatientExample</p><p>Resource Patient:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Patient SmartcareImmunizationPatientExample</b></p><a name="Smartcare/SmartcareImmunizationPatientExample"> </a><a name="hcSmartcare/SmartcareImmunizationPatientExample"> </a><a name="hcSmartcare/SmartcareImmunizationPatientExample-und"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin#1001-XXGB0-12345-5)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Known Marital status of Patient">Marital Status:</td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}">Married</span></td></tr><tr><td style="background-color: #f3f5da" title="Other Id (see the one above)">Other Id:</td><td colspan="3"><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc</code>/999999/99/9</td></tr><tr><td style="background-color: #f3f5da" title="Alternate names (see the one above)">Alt. Name:</td><td colspan="3">Smitty(Nickname)</td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-OrganizationExample.html">Organization Facility one</a></li><li>Also see: <a href="RelatedPerson-SpouseRelatedPersonExample.html">RelatedPerson Mike Jones (official)</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="This is an extension to capture that patient's administrative sex."><a href="StructureDefinition-administrative-sex.html">Administrative Sex</a></td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0001 F}">Female</span></td></tr><tr><td style="background-color: #f3f5da" title="This is an extension to capture whether the patient was born in Zambia."><a href="StructureDefinition-born-in-zambia.html">Patient born in Zambia?</a></td><td colspan="3">true</td></tr><tr><td style="background-color: #f3f5da" title="The patient's professed religious affiliations."><a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-religion.html">Patient Religion</a></td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1013}">Christian (non-Catholic, non-specific)</span></td></tr></table></p></blockquote><p>Request:</p><pre>PUT Patient/SmartcareImmunizationPatientExample
+</pre><a name="http-//hapi-fhir-8080/Encounter/SmartcareTargetFacilityEncounterExample"> </a><a name="Encounter_SmartcareTargetFacilityEncounterExample"> </a><a name="hcEncounter_SmartcareTargetFacilityEncounterExample"> </a><hr/><p>Entry 2 - fullUrl = http://hapi-fhir:8080/Encounter/SmartcareTargetFacilityEncounterExample</p><p>Resource Encounter:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Encounter SmartcareTargetFacilityEncounterExample</b></p><a name="Smartcare/SmartcareTargetFacilityEncounterExample"> </a><a name="hcSmartcare/SmartcareTargetFacilityEncounterExample"> </a><a name="hcSmartcare/SmartcareTargetFacilityEncounterExample-und"> </a>Not done yet</p></blockquote><p>Request:</p><pre>PUT Encounter/SmartcareTargetFacilityEncounterExample
+</pre><a name="http-//hapi-fhir-8080/Immunization/VaccinesExample"> </a><a name="Immunization_VaccinesExample"> </a><a name="hcImmunization_VaccinesExample"> </a><hr/><p>Entry 3 - fullUrl = http://hapi-fhir:8080/Immunization/VaccinesExample</p><p>Resource Immunization:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Immunization VaccinesExample</b></p><a name="Smartcare/VaccinesExample"> </a><a name="hcSmartcare/VaccinesExample"> </a><a name="hcSmartcare/VaccinesExample-und"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://snomed.info/sct 82622003}">Vitamin A</span></p><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2022-11-30</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-SmartcareVaccinationSiteTypeExample.html">Organization facility name</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DoseNumber</b></td></tr><tr><td style="display: none">*</td><td>0</td></tr></table></p></blockquote><p>Request:</p><pre>PUT Immunization/VaccinesExample
+</pre><a name="http-//hapi-fhir-8080/RelatedPerson/SpouseRelatedPersonExample"> </a><a name="RelatedPerson_SpouseRelatedPersonExample"> </a><a name="hcRelatedPerson_SpouseRelatedPersonExample"> </a><hr/><p>Entry 4 - fullUrl = http://hapi-fhir:8080/RelatedPerson/SpouseRelatedPersonExample</p><p>Resource RelatedPerson:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: RelatedPerson SpouseRelatedPersonExample</b></p><a name="Smartcare/SpouseRelatedPersonExample"> </a><a name="hcSmartcare/SpouseRelatedPersonExample"> </a><a name="hcSmartcare/SpouseRelatedPersonExample-und"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SPS}">spouse</span></p><p><b>name</b>: Mike Jones (Official)</p><p><b>telecom</b>: <a href="tel:+26095705784">+26095705784</a></p></p></blockquote><p>Request:</p><pre>PUT RelatedPerson/SpouseRelatedPersonExample
+</pre><a name="http-//hapi-fhir-8080/RelatedPerson/ChiefAtBirthRelatedPersonExample"> </a><a name="RelatedPerson_ChiefAtBirthRelatedPersonExample"> </a><a name="hcRelatedPerson_ChiefAtBirthRelatedPersonExample"> </a><hr/><p>Entry 5 - fullUrl = http://hapi-fhir:8080/RelatedPerson/ChiefAtBirthRelatedPersonExample</p><p>Resource RelatedPerson:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: RelatedPerson ChiefAtBirthRelatedPersonExample</b></p><a name="Smartcare/ChiefAtBirthRelatedPersonExample"> </a><a name="hcSmartcare/ChiefAtBirthRelatedPersonExample"> </a><a name="hcSmartcare/ChiefAtBirthRelatedPersonExample-und"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://snomed.info/sct 303119007}">Person in the community environment (person)</span></p><p><b>name</b>: Jones (Official)</p></p></blockquote><p>Request:</p><pre>PUT RelatedPerson/ChiefAtBirthRelatedPersonExample
+</pre><a name="http-//hapi-fhir-8080/RelatedPerson/SmartcareGuardianRelatedPersonExample"> </a><a name="RelatedPerson_SmartcareGuardianRelatedPersonExample"> </a><a name="hcRelatedPerson_SmartcareGuardianRelatedPersonExample"> </a><hr/><p>Entry 6 - fullUrl = http://hapi-fhir:8080/RelatedPerson/SmartcareGuardianRelatedPersonExample</p><p>Resource RelatedPerson:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: RelatedPerson SmartcareGuardianRelatedPersonExample</b></p><a name="Smartcare/SmartcareGuardianRelatedPersonExample"> </a><a name="hcSmartcare/SmartcareGuardianRelatedPersonExample"> </a><a name="hcSmartcare/SmartcareGuardianRelatedPersonExample-und"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode GUARD}">guardian</span></p><p><b>name</b>: Mike Smith (Official)</p></p></blockquote><p>Request:</p><pre>PUT RelatedPerson/SmartcareGuardianRelatedPersonExample
+</pre><a name="http-//hapi-fhir-8080/RelatedPerson/PatientMotherRelatedPersonExample"> </a><a name="RelatedPerson_PatientMotherRelatedPersonExample"> </a><a name="hcRelatedPerson_PatientMotherRelatedPersonExample"> </a><hr/><p>Entry 7 - fullUrl = http://hapi-fhir:8080/RelatedPerson/PatientMotherRelatedPersonExample</p><p>Resource RelatedPerson:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: RelatedPerson PatientMotherRelatedPersonExample</b></p><a name="Smartcare/PatientMotherRelatedPersonExample"> </a><a name="hcSmartcare/PatientMotherRelatedPersonExample"> </a><a name="hcSmartcare/PatientMotherRelatedPersonExample-und"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}">mother</span></p><p><b>name</b>: Olivia Smith (Official)</p></p></blockquote><p>Request:</p><pre>PUT RelatedPerson/PatientMotherRelatedPersonExample
+</pre><a name="http-//hapi-fhir-8080/RelatedPerson/RelativeRelatedPersonExample"> </a><a name="RelatedPerson_RelativeRelatedPersonExample"> </a><a name="hcRelatedPerson_RelativeRelatedPersonExample"> </a><hr/><p>Entry 8 - fullUrl = http://hapi-fhir:8080/RelatedPerson/RelativeRelatedPersonExample</p><p>Resource RelatedPerson:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: RelatedPerson RelativeRelatedPersonExample</b></p><a name="Smartcare/RelativeRelatedPersonExample"> </a><a name="hcSmartcare/RelativeRelatedPersonExample"> </a><a name="hcSmartcare/RelativeRelatedPersonExample-und"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}">family member</span></p><p><b>name</b>: Olivia Smith (Official)</p></p></blockquote><p>Request:</p><pre>PUT RelatedPerson/RelativeRelatedPersonExample
+</pre><a name="http-//hapi-fhir-8080/RelatedPerson/PatientFatherRelatedPersonExample"> </a><a name="RelatedPerson_PatientFatherRelatedPersonExample"> </a><a name="hcRelatedPerson_PatientFatherRelatedPersonExample"> </a><hr/><p>Entry 9 - fullUrl = http://hapi-fhir:8080/RelatedPerson/PatientFatherRelatedPersonExample</p><p>Resource RelatedPerson:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: RelatedPerson PatientFatherRelatedPersonExample</b></p><a name="Smartcare/PatientFatherRelatedPersonExample"> </a><a name="hcSmartcare/PatientFatherRelatedPersonExample"> </a><a name="hcSmartcare/PatientFatherRelatedPersonExample-und"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}">father</span></p><p><b>name</b>: Mike (Official)</p></p></blockquote><p>Request:</p><pre>PUT RelatedPerson/PatientFatherRelatedPersonExample
+</pre><a name="http-//hapi-fhir-8080/Observation/PatientEducationalLevelObservationExample"> </a><a name="Observation_PatientEducationalLevelObservationExample"> </a><a name="hcObservation_PatientEducationalLevelObservationExample"> </a><hr/><p>Entry 10 - fullUrl = http://hapi-fhir:8080/Observation/PatientEducationalLevelObservationExample</p><p>Resource Observation:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Observation PatientEducationalLevelObservationExample</b></p><a name="Smartcare/PatientEducationalLevelObservationExample"> </a><a name="hcSmartcare/PatientEducationalLevelObservationExample"> </a><a name="hcSmartcare/PatientEducationalLevelObservationExample-und"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org LL5338-0}">Highest Education Level</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: <span title="Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained DegreeGraduate}">University undergraduate degree</span></p></p></blockquote><p>Request:</p><pre>PUT Observation/PatientEducationalLevelObservationExample
+</pre><a name="http-//hapi-fhir-8080/Observation/DatePatientFirstMarriedObservationExample"> </a><a name="Observation_DatePatientFirstMarriedObservationExample"> </a><a name="hcObservation_DatePatientFirstMarriedObservationExample"> </a><hr/><p>Entry 11 - fullUrl = http://hapi-fhir:8080/Observation/DatePatientFirstMarriedObservationExample</p><p>Resource Observation:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Observation DatePatientFirstMarriedObservationExample</b></p><a name="Smartcare/DatePatientFirstMarriedObservationExample"> </a><a name="hcSmartcare/DatePatientFirstMarriedObservationExample"> </a><a name="hcSmartcare/DatePatientFirstMarriedObservationExample-und"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 365581002}">Finding of marital or partnership status (finding)</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: 1983-05-22 16:40:17+0200</p></p></blockquote><p>Request:</p><pre>PUT Observation/DatePatientFirstMarriedObservationExample
+</pre><a name="http-//hapi-fhir-8080/Observation/GuardianOccupationObservationExample"> </a><a name="Observation_GuardianOccupationObservationExample"> </a><a name="hcObservation_GuardianOccupationObservationExample"> </a><hr/><p>Entry 12 - fullUrl = http://hapi-fhir:8080/Observation/GuardianOccupationObservationExample</p><p>Resource Observation:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Observation GuardianOccupationObservationExample</b></p><a name="Smartcare/GuardianOccupationObservationExample"> </a><a name="hcSmartcare/GuardianOccupationObservationExample"> </a><a name="hcSmartcare/GuardianOccupationObservationExample-und"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://loinc.org 11341-5}">History of Occupation</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2017-03-01 --&gt; (ongoing)</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: Accounts Manager</p></p></blockquote><p>Request:</p><pre>PUT Observation/GuardianOccupationObservationExample
+</pre><a name="http-//hapi-fhir-8080/Observation/SpouseOccupationObservationExample"> </a><a name="Observation_SpouseOccupationObservationExample"> </a><a name="hcObservation_SpouseOccupationObservationExample"> </a><hr/><p>Entry 13 - fullUrl = http://hapi-fhir:8080/Observation/SpouseOccupationObservationExample</p><p>Resource Observation:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Observation SpouseOccupationObservationExample</b></p><a name="Smartcare/SpouseOccupationObservationExample"> </a><a name="hcSmartcare/SpouseOccupationObservationExample"> </a><a name="hcSmartcare/SpouseOccupationObservationExample-und"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 447057006}">Occupation of spouse (observable entity)</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2017-03-01 --&gt; (ongoing)</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: .NET Programmer</p></p></blockquote><p>Request:</p><pre>PUT Observation/SpouseOccupationObservationExample
+</pre><a name="http-//hapi-fhir-8080/Observation/PatientHomeLanguageObservationExample"> </a><a name="Observation_PatientHomeLanguageObservationExample"> </a><a name="hcObservation_PatientHomeLanguageObservationExample"> </a><hr/><p>Entry 14 - fullUrl = http://hapi-fhir:8080/Observation/PatientHomeLanguageObservationExample</p><p>Resource Observation:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Observation PatientHomeLanguageObservationExample</b></p><a name="Smartcare/PatientHomeLanguageObservationExample"> </a><a name="hcSmartcare/PatientHomeLanguageObservationExample"> </a><a name="hcSmartcare/PatientHomeLanguageObservationExample-und"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 224076006}">First language</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: <span title="Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language Chokwe}">Chokwe</span></p></p></blockquote><p>Request:</p><pre>PUT Observation/PatientHomeLanguageObservationExample
+</pre><a name="http-//hapi-fhir-8080/Organization/MedicalInsuranceCompanyExample"> </a><a name="Organization_MedicalInsuranceCompanyExample"> </a><a name="hcOrganization_MedicalInsuranceCompanyExample"> </a><hr/><p>Entry 15 - fullUrl = http://hapi-fhir:8080/Organization/MedicalInsuranceCompanyExample</p><p>Resource Organization:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Organization MedicalInsuranceCompanyExample</b></p><a name="Smartcare/MedicalInsuranceCompanyExample"> </a><a name="hcSmartcare/MedicalInsuranceCompanyExample"> </a><a name="hcSmartcare/MedicalInsuranceCompanyExample-und"> </a><p><b>identifier</b>: Medical insurance company identifier/medical-insurance-company-1</p><p><b>type</b>: <span title="Codes:{http://loinc.org 64290-0}">Health insurance card</span></p><p><b>name</b>: Medical Insurance Company 1</p></p></blockquote><p>Request:</p><pre>PUT Organization/MedicalInsuranceCompanyExample
+</pre><a name="http-//hapi-fhir-8080/Coverage/MedicalInsuranceExample"> </a><a name="Coverage_MedicalInsuranceExample"> </a><a name="hcCoverage_MedicalInsuranceExample"> </a><hr/><p>Entry 16 - fullUrl = http://hapi-fhir:8080/Coverage/MedicalInsuranceExample</p><p>Resource Coverage:</p><blockquote><p><p class="res-header-id"><b>Generated Narrative: Coverage MedicalInsuranceExample</b></p><a name="Smartcare/MedicalInsuranceExample"> </a><a name="hcSmartcare/MedicalInsuranceExample"> </a><a name="hcSmartcare/MedicalInsuranceExample-und"> </a><p><b>status</b>: Active</p><p><b>kind</b>: Insurance</p><p><b>policyHolder</b>: <a href="Organization-MedicalInsuranceCompanyExample.html">Organization Medical Insurance Company 1</a></p><p><b>subscriberId</b>: <code>http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id</code>/504342245</p><p><b>beneficiary</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p></p></blockquote><p>Request:</p><pre>PUT Coverage/MedicalInsuranceExample
+</pre></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.moh.gov.zm">Ministry of Health</a>.  Package openhie.fhir.zambia-immunizations#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Aug 14, 2024 13:41+0200">2024-08-14</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/zambia-immunizations/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <!-- <script>anchors.options.visible = 'hover' -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

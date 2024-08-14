@@ -1,0 +1,120 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel> a fhir:StructureMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PropietaryEducationLevelToLOINCEducationLevel"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PropietaryEducationLevelToLOINCEducationLevel</b></p><a name=\"PropietaryEducationLevelToLOINCEducationLevel\"> </a><a name=\"hcPropietaryEducationLevelToLOINCEducationLevel\"> </a><a name=\"hcPropietaryEducationLevelToLOINCEducationLevel-en-US\"> </a><pre class=\"fml\">\r\n<span style=\"color: #cc00cc\">/// <b>url</b> = </span><span style=\"color: blue\">'http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel'</span>\r\n<span style=\"color: #cc00cc\">/// <b>name</b> = </span><span style=\"color: blue\">'PropietaryEducationLevelToLOINCEducationLevel'</span>\r\n<span style=\"color: #cc00cc\">/// <b>title</b> = </span><span style=\"color: blue\">'Propietary Educational Level To LOINC Educational Level'</span>\r\n<span style=\"color: #cc00cc\">/// <b>status</b> = </span><span style=\"color: blue\">'active'</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R5/observation.html\" title=\"Observation\">http://hl7.org/fhir/StructureDefinition/Observation</a><span style=\"color: navy\">&quot; </span><b>alias </b>srcObservation <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R5/observation.html\" title=\"Observation\">http://hl7.org/fhir/StructureDefinition/Observation</a><span style=\"color: navy\">&quot; </span><b>alias </b>tgtObservation <b>as </b><b>target</b>\r\n\r\n<b>group </b>SetPatientEducationalLevel<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">obs</span><span style=\"color: navy\"> : </span>srcObservation, <b>target</b> <span style=\"color: maroon\">observation</span><span style=\"color: navy\"> : </span>tgtObservation<span style=\"color: navy\">)</span><b> &lt;&lt;type+&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  obs.value<span style=\"color: navy\"> : </span>CodeableConcept<b> as </b><span style=\"color: maroon\">vs</span><span style=\"color: navy\"><b> -&gt; </b></span>observation.value = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">vt</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    vs.coding<b> as </b><span style=\"color: maroon\">coding</span><b> then</b><span style=\"color: navy\"> {\r\n</span>      coding<span style=\"color: navy\"><b> -&gt; </b></span>vt = <b>translate</b><span style=\"color: navy\">(</span><span style=\"color: maroon\">coding</span><span style=\"color: navy\">, </span><span style=\"color: blue\">'http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel'</span><span style=\"color: navy\">, </span><span style=\"color: blue\">'code'</span><span style=\"color: navy\">)</span> <i>&quot;SetPatientEducationCode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;SetPatientEducationCoding&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;SetEducationLevel&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "PropietaryEducationLevelToLOINCEducationLevel"] ; # 
+  fhir:title [ fhir:v "Propietary Educational Level To LOINC Educational Level"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-08-14T13:41:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Ministry of Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Ministry of Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.moh.gov.zm" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@moh.gov.zm" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Chisanga Louis Siwale" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chisanga.siwale@moh.gov.zm" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps the Propietary Educational Level codes To LOINC Educational Level codes."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:structure ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+     ] ;
+     fhir:mode [ fhir:v "source" ] ;
+     fhir:alias [ fhir:v "srcObservation" ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/Observation"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/StructureDefinition/Observation>
+     ] ;
+     fhir:mode [ fhir:v "target" ] ;
+     fhir:alias [ fhir:v "tgtObservation" ]
+  ] ) ; # 
+  fhir:group ( [
+     fhir:name [ fhir:v "SetPatientEducationalLevel" ] ;
+     fhir:typeMode [ fhir:v "type-and-types" ] ;
+     fhir:input ( [
+       fhir:name [ fhir:v "obs" ] ;
+       fhir:type [ fhir:v "srcObservation" ] ;
+       fhir:mode [ fhir:v "source" ]
+     ] [
+       fhir:name [ fhir:v "observation" ] ;
+       fhir:type [ fhir:v "tgtObservation" ] ;
+       fhir:mode [ fhir:v "target" ]
+     ] ) ;
+     fhir:rule ( [
+       fhir:name [ fhir:v "SetEducationLevel" ] ;
+       fhir:source ( [
+         fhir:context [ fhir:v "obs" ] ;
+         fhir:type [ fhir:v "CodeableConcept" ] ;
+         fhir:element [ fhir:v "value" ] ;
+         fhir:variable [ fhir:v "vs" ]
+       ] ) ;
+       fhir:target ( [
+         fhir:context [ fhir:v "observation" ] ;
+         fhir:element [ fhir:v "value" ] ;
+         fhir:variable [ fhir:v "vt" ] ;
+         fhir:transform [ fhir:v "create" ] ;
+         fhir:parameter ( [
+           fhir:value [ fhir:v "CodeableConcept" ]
+         ] )
+       ] ) ;
+       fhir:rule ( [
+         fhir:name [ fhir:v "SetPatientEducationCoding" ] ;
+         fhir:source ( [
+           fhir:context [ fhir:v "vs" ] ;
+           fhir:element [ fhir:v "coding" ] ;
+           fhir:variable [ fhir:v "coding" ]
+         ] ) ;
+         fhir:rule ( [
+           fhir:name [ fhir:v "SetPatientEducationCode" ] ;
+           fhir:source ( [
+             fhir:context [ fhir:v "coding" ]
+           ] ) ;
+           fhir:target ( [
+             fhir:context [ fhir:v "vt" ] ;
+             fhir:transform [ fhir:v "translate" ] ;
+             fhir:parameter ( [
+               fhir:value [ fhir:v "coding" ]
+             ] [
+               fhir:value [ fhir:v "http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel" ]
+             ] [
+               fhir:value [ fhir:v "code" ]
+             ] )
+           ] )
+         ] )
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

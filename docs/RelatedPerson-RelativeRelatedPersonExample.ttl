@@ -1,0 +1,38 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/RelatedPerson/RelativeRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "RelativeRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelativeRelatedPersonExample</b></p><a name=\"RelativeRelatedPersonExample\"> </a><a name=\"hcRelativeRelatedPersonExample\"> </a><a name=\"hcRelativeRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}\">family member</span></p><p><b>name</b>: Olivia Smith (Official)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FAMMEMB" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Olivia" ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

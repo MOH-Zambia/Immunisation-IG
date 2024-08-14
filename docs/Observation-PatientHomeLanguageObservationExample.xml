@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="PatientHomeLanguageObservationExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation PatientHomeLanguageObservationExample</b></p><a name="PatientHomeLanguageObservationExample"> </a><a name="hcPatientHomeLanguageObservationExample"> </a><a name="hcPatientHomeLanguageObservationExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}">Social History</span></p><p><b>code</b>: <span title="Codes:{http://snomed.info/sct 224076006}">First language</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href="Encounter-SmartcareTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: <span title="Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language Chokwe}">Chokwe</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="social-history"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="224076006"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ImmunizationPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/SmartcareTargetFacilityEncounterExample"/>
+  </encounter>
+  <effectiveDateTime value="2022-11-30"/>
+  <performer>
+    <reference value="Organization/OrganizationExample"/>
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language"/>
+      <code value="Chokwe"/>
+    </coding>
+    <text value="Chokwe"/>
+  </valueCodeableConcept>
+</Observation>

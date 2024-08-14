@@ -1,0 +1,134 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-home-language",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-home-language</b></p><a name=\"cs-home-language\"> </a><a name=\"hccs-home-language\"> </a><a name=\"hccs-home-language-en-US\"> </a><p>This case-sensitive code system <code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Ambo<a name=\"cs-home-language-Ambo\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Aushi<a name=\"cs-home-language-Aushi\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bemba<a name=\"cs-home-language-Bemba\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Bisa<a name=\"cs-home-language-Bisa\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chewa<a name=\"cs-home-language-Chewa\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chikunda<a name=\"cs-home-language-Chikunda\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Chokwe<a name=\"cs-home-language-Chokwe\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Cishinga<a name=\"cs-home-language-Cishinga\"> </a></td></tr><tr><td style=\"white-space:nowrap\">English<a name=\"cs-home-language-English\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Gova<a name=\"cs-home-language-Gova\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ila<a name=\"cs-home-language-Ila\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Iwa<a name=\"cs-home-language-Iwa\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Kabende<a name=\"cs-home-language-Kabende\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Kaonde<a name=\"cs-home-language-Kaonde\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lamba<a name=\"cs-home-language-Lamba\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lenje<a name=\"cs-home-language-Lenje\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Lozi<a name=\"cs-home-language-Lozi\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Luvale<a name=\"cs-home-language-Luvale\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Namwanga<a name=\"cs-home-language-Namwanga\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Ngoni<a name=\"cs-home-language-Ngoni\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Soli<a name=\"cs-home-language-Soli\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Tonga<a name=\"cs-home-language-Tonga\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language",
+  "version" : "1.0.0",
+  "name" : "CSHomeLanguage",
+  "title" : "Patient's Home Language",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of languages.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 22,
+  "concept" : [{
+    "code" : "Ambo",
+    "display" : "Ambo"
+  },
+  {
+    "code" : "Aushi",
+    "display" : "Aushi"
+  },
+  {
+    "code" : "Bemba",
+    "display" : "Bemba"
+  },
+  {
+    "code" : "Bisa",
+    "display" : "Bisa"
+  },
+  {
+    "code" : "Chewa",
+    "display" : "Chewa"
+  },
+  {
+    "code" : "Chikunda",
+    "display" : "Chikunda"
+  },
+  {
+    "code" : "Chokwe",
+    "display" : "Chokwe"
+  },
+  {
+    "code" : "Cishinga",
+    "display" : "Cishinga"
+  },
+  {
+    "code" : "English",
+    "display" : "English"
+  },
+  {
+    "code" : "Gova",
+    "display" : "Gova"
+  },
+  {
+    "code" : "Ila",
+    "display" : "Ila"
+  },
+  {
+    "code" : "Iwa",
+    "display" : "Iwa"
+  },
+  {
+    "code" : "Kabende",
+    "display" : "Kabende"
+  },
+  {
+    "code" : "Kaonde",
+    "display" : "Kaonde"
+  },
+  {
+    "code" : "Lamba",
+    "display" : "Lamba"
+  },
+  {
+    "code" : "Lenje",
+    "display" : "Lenje"
+  },
+  {
+    "code" : "Lozi",
+    "display" : "Lozi"
+  },
+  {
+    "code" : "Luvale",
+    "display" : "Luvale"
+  },
+  {
+    "code" : "Namwanga",
+    "display" : "Namwanga"
+  },
+  {
+    "code" : "Ngoni",
+    "display" : "Ngoni"
+  },
+  {
+    "code" : "Soli",
+    "display" : "Soli"
+  },
+  {
+    "code" : "Tonga",
+    "display" : "Tonga"
+  }]
+}

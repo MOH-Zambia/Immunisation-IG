@@ -1,0 +1,58 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Immunization/HPVImmunizationExample> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HPVImmunizationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization HPVImmunizationExample</b></p><a name=\"HPVImmunizationExample\"> </a><a name=\"hcHPVImmunizationExample\"> </a><a name=\"hcHPVImmunizationExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://id.who.int/icd11/mms J07BM01}\">J07BM01</span></p><h3>AdministeredProducts</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Reference</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Medication-HPVVaccineExample.html\">Medication J07BM01</a></td></tr></table><p><b>patient</b>: <a href=\"Patient-HPVImmunizationPatientExample.html\">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>encounter</b>: <a href=\"Encounter-HPVTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2024-01-31</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>DN0000000</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2024-01-31"^^xsd:date ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd11/mms"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J07BM01" ]
+     ] )
+  ] ; # 
+  fhir:administeredProduct [
+     fhir:reference [
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/Medication/HPVVaccineExample> ;
+       fhir:reference [ fhir:v "Medication/HPVVaccineExample" ]
+     ]
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/HPVImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/HPVImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/HPVTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/HPVTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2024-01-31"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+       fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:doseNumber [ fhir:v "DN0000000" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

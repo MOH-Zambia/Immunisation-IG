@@ -1,0 +1,95 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/ValueSet/underlying-conditions> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "underlying-conditions"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet underlying-conditions</b></p><a name=\"underlying-conditions\"> </a><a name=\"hcunderlying-conditions\"> </a><a name=\"hcunderlying-conditions-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/840539006\">840539006</a></td><td>Human immunodeficiency virus infection</td></tr><tr><td><a href=\"http://snomed.info/id/56265001\">56265001</a></td><td>Heart disease</td></tr><tr><td><a href=\"http://snomed.info/id/13645005\">13645005</a></td><td>Chronic lung disease</td></tr><tr><td><a href=\"http://snomed.info/id/73211009\">73211009</a></td><td>Diabetes Mellitus</td></tr><tr><td><a href=\"http://snomed.info/id/38341003\">38341003</a></td><td>Hypertension</td></tr><tr><td><a href=\"http://snomed.info/id/363346000\">363346000</a></td><td>Cancer</td></tr><tr><td><a href=\"http://snomed.info/id/74400008\">74400008</a></td><td>Gastrointestinal disease</td></tr><tr><td><a href=\"http://snomed.info/id/87628006\">87628006</a></td><td>Immunology condition</td></tr><tr><td><a href=\"http://snomed.info/id/55342001\">55342001</a></td><td>Endocrine disorder</td></tr><tr><td><a href=\"http://snomed.info/id/128599005\">128599005</a></td><td>Musculoskeletal disorder</td></tr><tr><td><a href=\"http://snomed.info/id/281867008\">281867008</a></td><td>Neuromuscular disorder</td></tr><tr><td><a href=\"http://snomed.info/id/9532001\">9532001</a></td><td>Skin disease</td></tr><tr><td><a href=\"http://snomed.info/id/79654002\">79654002</a></td><td>Vascular disorder</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/ValueSet/underlying-conditions"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "UnderlyingConditions"] ; # 
+  fhir:title [ fhir:v "Underlying Conditions"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-14T13:41:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Ministry of Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Ministry of Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.moh.gov.zm" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@moh.gov.zm" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Chisanga Louis Siwale" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chisanga.siwale@moh.gov.zm" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A ValueSet containing Underlying conditions"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "840539006" ] ;
+         fhir:display [ fhir:v "Human immunodeficiency virus infection" ]
+       ] [
+         fhir:code [ fhir:v "56265001" ] ;
+         fhir:display [ fhir:v "Heart disease" ]
+       ] [
+         fhir:code [ fhir:v "13645005" ] ;
+         fhir:display [ fhir:v "Chronic lung disease" ]
+       ] [
+         fhir:code [ fhir:v "73211009" ] ;
+         fhir:display [ fhir:v "Diabetes Mellitus" ]
+       ] [
+         fhir:code [ fhir:v "38341003" ] ;
+         fhir:display [ fhir:v "Hypertension" ]
+       ] [
+         fhir:code [ fhir:v "363346000" ] ;
+         fhir:display [ fhir:v "Cancer" ]
+       ] [
+         fhir:code [ fhir:v "74400008" ] ;
+         fhir:display [ fhir:v "Gastrointestinal disease" ]
+       ] [
+         fhir:code [ fhir:v "87628006" ] ;
+         fhir:display [ fhir:v "Immunology condition" ]
+       ] [
+         fhir:code [ fhir:v "55342001" ] ;
+         fhir:display [ fhir:v "Endocrine disorder" ]
+       ] [
+         fhir:code [ fhir:v "128599005" ] ;
+         fhir:display [ fhir:v "Musculoskeletal disorder" ]
+       ] [
+         fhir:code [ fhir:v "281867008" ] ;
+         fhir:display [ fhir:v "Neuromuscular disorder" ]
+       ] [
+         fhir:code [ fhir:v "9532001" ] ;
+         fhir:display [ fhir:v "Skin disease" ]
+       ] [
+         fhir:code [ fhir:v "79654002" ] ;
+         fhir:display [ fhir:v "Vascular disorder" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

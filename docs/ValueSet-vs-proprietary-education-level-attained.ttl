@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-proprietary-education-level-attained"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-proprietary-education-level-attained</b></p><a name=\"vs-proprietary-education-level-attained\"> </a><a name=\"hcvs-proprietary-education-level-attained\"> </a><a name=\"hcvs-proprietary-education-level-attained-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-proprietary-education-level-attained.html\"><code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "VSProprietaryEducationLevelAttained"] ; # 
+  fhir:title [ fhir:v "Patient's highest education level attained (Proprietary)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-14T13:41:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Ministry of Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Ministry of Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.moh.gov.zm" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@moh.gov.zm" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Chisanga Louis Siwale" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chisanga.siwale@moh.gov.zm" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of proprietary education levels."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,177 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "ProprietaryEducationLevelToLOINCEducationLevel",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap ProprietaryEducationLevelToLOINCEducationLevel</b></p><a name=\"ProprietaryEducationLevelToLOINCEducationLevel\"> </a><a name=\"hcProprietaryEducationLevelToLOINCEducationLevel\"> </a><a name=\"hcProprietaryEducationLevelToLOINCEducationLevel-en-US\"> </a><p>Mapping from (not specified) to (not specified)</p><p>ACTIVE. Published on 2024-01-31 by Ministry of Health  (Ministry of Health: <a href=\"https://www.moh.gov.zm\">https://www.moh.gov.zm</a>, <a href=\"mailto:info@moh.gov.zm\">info@moh.gov.zm</a>, Chisanga Louis Siwale: <a href=\"mailto:chisanga.siwale@moh.gov.zm\">chisanga.siwale@moh.gov.zm</a>). </p><div><p>Mapping to and from Proprietary Education Level to LOINC Education Level.</p>\n</div><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-cs-proprietary-education-level-attained.html\">Patient's highest education level attained (Proprietary)</a> to <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>CertificateGraduate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA30193-9 (More than high school)</td></tr><tr><td>DegreeGraduate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA32469-1 (University undergraduate degree)</td></tr><tr><td>DiplomaGraduate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA12459-6 (Associate degree (e.g., AA, AS))</td></tr><tr><td>JuniorSecondary</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA36-9 (8th grade/less)</td></tr><tr><td>MastersGraduate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA12461-2 (Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA))</td></tr><tr><td>NoFormalEducation</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA35-1 (No schooling)</td></tr><tr><td>PhDGraduate</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA30185-5 (Doctoral degree (e.g., PhD, EdD))</td></tr><tr><td>Primary</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA32466-7 (Primary school education)</td></tr><tr><td>SeniorSecondary</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>LA37-7 (9-11 grades)</td></tr></table><hr/><p><b>Group 2 </b>Mapping from <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v3-loinc.html\">Logical Observation Identifiers, Names and Codes (LOINC)</a> to <a href=\"CodeSystem-cs-proprietary-education-level-attained.html\">Patient's highest education level attained (Proprietary)</a></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>LA30193-9 (More than high school)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>CertificateGraduate</td></tr><tr><td>LA32469-1 (University undergraduate degree)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DegreeGraduate</td></tr><tr><td>LA12459-6 (Associate degree (e.g., AA, AS))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>DiplomaGraduate</td></tr><tr><td>LA36-9 (8th grade/less)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>JuniorSecondary</td></tr><tr><td>LA12461-2 (Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>MastersGraduate</td></tr><tr><td>LA35-1 (No schooling)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>NoFormalEducation</td></tr><tr><td>LA30185-5 (Doctoral degree (e.g., PhD, EdD))</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>PhDGraduate</td></tr><tr><td>LA32466-7 (Primary school education)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>Primary</td></tr><tr><td>LA37-7 (9-11 grades)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>SeniorSecondary</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel",
+  "version" : "1.0.0",
+  "name" : "ProprietaryEducationLevelToLOINCEducationLevel",
+  "title" : "ConceptMap to and From proprietary education level to LOINC education Level",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-01-31",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Mapping to and from Proprietary Education Level to LOINC Education Level.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "group" : [{
+    "source" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+    "target" : "http://loinc.org",
+    "element" : [{
+      "code" : "CertificateGraduate",
+      "target" : [{
+        "code" : "LA30193-9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DegreeGraduate",
+      "target" : [{
+        "code" : "LA32469-1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "DiplomaGraduate",
+      "target" : [{
+        "code" : "LA12459-6",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "JuniorSecondary",
+      "target" : [{
+        "code" : "LA36-9",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "MastersGraduate",
+      "target" : [{
+        "code" : "LA12461-2",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "NoFormalEducation",
+      "target" : [{
+        "code" : "LA35-1",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "PhDGraduate",
+      "target" : [{
+        "code" : "LA30185-5",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "Primary",
+      "target" : [{
+        "code" : "LA32466-7",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "SeniorSecondary",
+      "target" : [{
+        "code" : "LA37-7",
+        "relationship" : "equivalent"
+      }]
+    }]
+  },
+  {
+    "source" : "http://loinc.org",
+    "target" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+    "element" : [{
+      "code" : "LA30193-9",
+      "target" : [{
+        "code" : "CertificateGraduate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA32469-1",
+      "target" : [{
+        "code" : "DegreeGraduate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA12459-6",
+      "target" : [{
+        "code" : "DiplomaGraduate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA36-9",
+      "target" : [{
+        "code" : "JuniorSecondary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA12461-2",
+      "target" : [{
+        "code" : "MastersGraduate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA35-1",
+      "target" : [{
+        "code" : "NoFormalEducation",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA30185-5",
+      "target" : [{
+        "code" : "PhDGraduate",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA32466-7",
+      "target" : [{
+        "code" : "Primary",
+        "relationship" : "equivalent"
+      }]
+    },
+    {
+      "code" : "LA37-7",
+      "target" : [{
+        "code" : "SeniorSecondary",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

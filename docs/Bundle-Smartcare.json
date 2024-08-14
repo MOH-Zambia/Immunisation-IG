@@ -1,0 +1,652 @@
+{
+  "resourceType" : "Bundle",
+  "id" : "Smartcare",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle"]
+  },
+  "type" : "transaction",
+  "timestamp" : "2024-02-18T09:30:00+02:00",
+  "entry" : [{
+    "fullUrl" : "http://hapi-fhir:8080/Patient/SmartcareImmunizationPatientExample",
+    "resource" : {
+      "resourceType" : "Patient",
+      "id" : "SmartcareImmunizationPatientExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_SmartcareImmunizationPatientExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient SmartcareImmunizationPatientExample</b></p><a name=\"SmartcareImmunizationPatientExample\"> </a><a name=\"hcSmartcareImmunizationPatientExample\"> </a><a name=\"hcSmartcareImmunizationPatientExample-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin#1001-XXGB0-12345-5)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc</code>/999999/99/9</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Smitty(Nickname)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></li><li>Also see: <a href=\"RelatedPerson-SpouseRelatedPersonExample.html\">RelatedPerson Mike Jones (official)</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture that patient's administrative sex.\"><a href=\"StructureDefinition-administrative-sex.html\">Administrative Sex</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture whether the patient was born in Zambia.\"><a href=\"StructureDefinition-born-in-zambia.html\">Patient born in Zambia?</a></td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's professed religious affiliations.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-religion.html\">Patient Religion</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1013}\">Christian (non-Catholic, non-specific)</span></td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0001",
+            "code" : "F"
+          }]
+        }
+      },
+      {
+        "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia",
+        "valueBoolean" : true
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/patient-religion",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+            "code" : "1013"
+          }],
+          "text" : "Christian (non-Catholic, non-specific)"
+        }
+      }],
+      "identifier" : [{
+        "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin",
+        "value" : "1001-XXGB0-12345-5"
+      },
+      {
+        "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc",
+        "value" : "999999/99/9"
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Smith",
+        "given" : ["Jane",
+        "Maria"]
+      },
+      {
+        "use" : "nickname",
+        "text" : "Smitty"
+      }],
+      "birthDate" : "1990-12-12",
+      "_birthDate" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+          "valueDateTime" : "1983-05-22T16:40:17+02:00"
+        },
+        {
+          "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth",
+          "valueBoolean" : false
+        }]
+      },
+      "maritalStatus" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+          "code" : "M"
+        }]
+      },
+      "managingOrganization" : {
+        "reference" : "Organization/OrganizationExample"
+      },
+      "link" : [{
+        "other" : {
+          "reference" : "RelatedPerson/SpouseRelatedPersonExample"
+        },
+        "type" : "seealso"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Patient/SmartcareImmunizationPatientExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Encounter/SmartcareTargetFacilityEncounterExample",
+    "resource" : {
+      "resourceType" : "Encounter",
+      "id" : "SmartcareTargetFacilityEncounterExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_SmartcareTargetFacilityEncounterExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter SmartcareTargetFacilityEncounterExample</b></p><a name=\"SmartcareTargetFacilityEncounterExample\"> </a><a name=\"hcSmartcareTargetFacilityEncounterExample\"> </a><a name=\"hcSmartcareTargetFacilityEncounterExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>class</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>actualPeriod</b>: 2022-12-01 --&gt; 2023-01-20</p></div>"
+      },
+      "status" : "completed",
+      "class" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code" : "AMB"
+        }]
+      }],
+      "subject" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "actualPeriod" : {
+        "start" : "2022-12-01",
+        "end" : "2023-01-20"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Encounter/SmartcareTargetFacilityEncounterExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Immunization/VaccinesExample",
+    "resource" : {
+      "resourceType" : "Immunization",
+      "id" : "VaccinesExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_VaccinesExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization VaccinesExample</b></p><a name=\"VaccinesExample\"> </a><a name=\"hcVaccinesExample\"> </a><a name=\"hcVaccinesExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 82622003}\">Vitamin A</span></p><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2022-11-30</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-SmartcareVaccinationSiteTypeExample.html\">Organization facility name</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>0</td></tr></table></div>"
+      },
+      "status" : "completed",
+      "vaccineCode" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "82622003"
+        }]
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "occurrenceDateTime" : "2022-11-30",
+      "performer" : [{
+        "actor" : {
+          "reference" : "Organization/SmartcareVaccinationSiteTypeExample"
+        }
+      }],
+      "protocolApplied" : [{
+        "doseNumber" : "0"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Immunization/VaccinesExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/RelatedPerson/SpouseRelatedPersonExample",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "SpouseRelatedPersonExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_SpouseRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson SpouseRelatedPersonExample</b></p><a name=\"SpouseRelatedPersonExample\"> </a><a name=\"hcSpouseRelatedPersonExample\"> </a><a name=\"hcSpouseRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SPS}\">spouse</span></p><p><b>name</b>: Mike Jones (Official)</p><p><b>telecom</b>: <a href=\"tel:+26095705784\">+26095705784</a></p></div>"
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "SPS"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Jones",
+        "given" : ["Mike"]
+      }],
+      "telecom" : [{
+        "system" : "phone",
+        "value" : "+26095705784"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RelatedPerson/SpouseRelatedPersonExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/RelatedPerson/ChiefAtBirthRelatedPersonExample",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "ChiefAtBirthRelatedPersonExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_ChiefAtBirthRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson ChiefAtBirthRelatedPersonExample</b></p><a name=\"ChiefAtBirthRelatedPersonExample\"> </a><a name=\"hcChiefAtBirthRelatedPersonExample\"> </a><a name=\"hcChiefAtBirthRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 303119007}\">Person in the community environment (person)</span></p><p><b>name</b>: Jones (Official)</p></div>"
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "303119007"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Jones"
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RelatedPerson/ChiefAtBirthRelatedPersonExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/RelatedPerson/SmartcareGuardianRelatedPersonExample",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "SmartcareGuardianRelatedPersonExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_SmartcareGuardianRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson SmartcareGuardianRelatedPersonExample</b></p><a name=\"SmartcareGuardianRelatedPersonExample\"> </a><a name=\"hcSmartcareGuardianRelatedPersonExample\"> </a><a name=\"hcSmartcareGuardianRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode GUARD}\">guardian</span></p><p><b>name</b>: Mike Smith (Official)</p></div>"
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "GUARD"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Smith",
+        "given" : ["Mike"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RelatedPerson/SmartcareGuardianRelatedPersonExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/RelatedPerson/PatientMotherRelatedPersonExample",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "PatientMotherRelatedPersonExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_PatientMotherRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson PatientMotherRelatedPersonExample</b></p><a name=\"PatientMotherRelatedPersonExample\"> </a><a name=\"hcPatientMotherRelatedPersonExample\"> </a><a name=\"hcPatientMotherRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">mother</span></p><p><b>name</b>: Olivia Smith (Official)</p></div>"
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "MTH"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Smith",
+        "given" : ["Olivia"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RelatedPerson/PatientMotherRelatedPersonExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/RelatedPerson/RelativeRelatedPersonExample",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "RelativeRelatedPersonExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_RelativeRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelativeRelatedPersonExample</b></p><a name=\"RelativeRelatedPersonExample\"> </a><a name=\"hcRelativeRelatedPersonExample\"> </a><a name=\"hcRelativeRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}\">family member</span></p><p><b>name</b>: Olivia Smith (Official)</p></div>"
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "FAMMEMB"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "family" : "Smith",
+        "given" : ["Olivia"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RelatedPerson/RelativeRelatedPersonExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/RelatedPerson/PatientFatherRelatedPersonExample",
+    "resource" : {
+      "resourceType" : "RelatedPerson",
+      "id" : "PatientFatherRelatedPersonExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_PatientFatherRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson PatientFatherRelatedPersonExample</b></p><a name=\"PatientFatherRelatedPersonExample\"> </a><a name=\"hcPatientFatherRelatedPersonExample\"> </a><a name=\"hcPatientFatherRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}\">father</span></p><p><b>name</b>: Mike (Official)</p></div>"
+      },
+      "patient" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "relationship" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+          "code" : "FTH"
+        }]
+      }],
+      "name" : [{
+        "use" : "official",
+        "given" : ["Mike"]
+      }]
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "RelatedPerson/PatientFatherRelatedPersonExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Observation/PatientEducationalLevelObservationExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "PatientEducationalLevelObservationExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PatientEducationalLevelObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PatientEducationalLevelObservationExample</b></p><a name=\"PatientEducationalLevelObservationExample\"> </a><a name=\"hcPatientEducationalLevelObservationExample\"> </a><a name=\"hcPatientEducationalLevelObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LL5338-0}\">Highest Education Level</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: <span title=\"Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained DegreeGraduate}\">University undergraduate degree</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LL5338-0"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "performer" : [{
+        "reference" : "Organization/OrganizationExample"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+          "code" : "DegreeGraduate"
+        }],
+        "text" : "University undergraduate degree"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/PatientEducationalLevelObservationExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Observation/DatePatientFirstMarriedObservationExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "DatePatientFirstMarriedObservationExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_DatePatientFirstMarriedObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation DatePatientFirstMarriedObservationExample</b></p><a name=\"DatePatientFirstMarriedObservationExample\"> </a><a name=\"hcDatePatientFirstMarriedObservationExample\"> </a><a name=\"hcDatePatientFirstMarriedObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 365581002}\">Finding of marital or partnership status (finding)</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: 1983-05-22 16:40:17+0200</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "365581002"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "performer" : [{
+        "reference" : "Organization/OrganizationExample"
+      }],
+      "valueDateTime" : "1983-05-22T16:40:17+02:00"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/DatePatientFirstMarriedObservationExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Observation/GuardianOccupationObservationExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "GuardianOccupationObservationExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_GuardianOccupationObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation GuardianOccupationObservationExample</b></p><a name=\"GuardianOccupationObservationExample\"> </a><a name=\"hcGuardianOccupationObservationExample\"> </a><a name=\"hcGuardianOccupationObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11341-5}\">History of Occupation</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2017-03-01 --&gt; (ongoing)</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: Accounts Manager</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "11341-5"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "effectivePeriod" : {
+        "start" : "2017-03-01"
+      },
+      "performer" : [{
+        "reference" : "Organization/OrganizationExample"
+      }],
+      "valueString" : "Accounts Manager"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/GuardianOccupationObservationExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Observation/SpouseOccupationObservationExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "SpouseOccupationObservationExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_SpouseOccupationObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation SpouseOccupationObservationExample</b></p><a name=\"SpouseOccupationObservationExample\"> </a><a name=\"hcSpouseOccupationObservationExample\"> </a><a name=\"hcSpouseOccupationObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 447057006}\">Occupation of spouse (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2017-03-01 --&gt; (ongoing)</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: .NET Programmer</p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "447057006"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "effectivePeriod" : {
+        "start" : "2017-03-01"
+      },
+      "performer" : [{
+        "reference" : "Organization/OrganizationExample"
+      }],
+      "valueString" : ".NET Programmer"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/SpouseOccupationObservationExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Observation/PatientHomeLanguageObservationExample",
+    "resource" : {
+      "resourceType" : "Observation",
+      "id" : "PatientHomeLanguageObservationExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PatientHomeLanguageObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PatientHomeLanguageObservationExample</b></p><a name=\"PatientHomeLanguageObservationExample\"> </a><a name=\"hcPatientHomeLanguageObservationExample\"> </a><a name=\"hcPatientHomeLanguageObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 224076006}\">First language</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: <span title=\"Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language Chokwe}\">Chokwe</span></p></div>"
+      },
+      "status" : "final",
+      "category" : [{
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code" : "social-history"
+        }]
+      }],
+      "code" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "224076006"
+        }]
+      },
+      "subject" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "encounter" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "effectiveDateTime" : "2022-11-30",
+      "performer" : [{
+        "reference" : "Organization/OrganizationExample"
+      }],
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language",
+          "code" : "Chokwe"
+        }],
+        "text" : "Chokwe"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Observation/PatientHomeLanguageObservationExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Organization/MedicalInsuranceCompanyExample",
+    "resource" : {
+      "resourceType" : "Organization",
+      "id" : "MedicalInsuranceCompanyExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_MedicalInsuranceCompanyExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization MedicalInsuranceCompanyExample</b></p><a name=\"MedicalInsuranceCompanyExample\"> </a><a name=\"hcMedicalInsuranceCompanyExample\"> </a><a name=\"hcMedicalInsuranceCompanyExample-en-US\"> </a><p><b>identifier</b>: Medical insurance company identifier/medical-insurance-company-1</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 64290-0}\">Health insurance card</span></p><p><b>name</b>: Medical Insurance Company 1</p></div>"
+      },
+      "identifier" : [{
+        "type" : {
+          "coding" : [{
+            "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "code" : "XX"
+          }],
+          "text" : "Medical insurance company identifier"
+        },
+        "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/medical-insurance-company",
+        "value" : "medical-insurance-company-1"
+      }],
+      "type" : [{
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "64290-0"
+        }]
+      }],
+      "name" : "Medical Insurance Company 1"
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Organization/MedicalInsuranceCompanyExample"
+    }
+  },
+  {
+    "fullUrl" : "http://hapi-fhir:8080/Coverage/MedicalInsuranceExample",
+    "resource" : {
+      "resourceType" : "Coverage",
+      "id" : "MedicalInsuranceExample",
+      "meta" : {
+        "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance"]
+      },
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_MedicalInsuranceExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage MedicalInsuranceExample</b></p><a name=\"MedicalInsuranceExample\"> </a><a name=\"hcMedicalInsuranceExample\"> </a><a name=\"hcMedicalInsuranceExample-en-US\"> </a><p><b>status</b>: Active</p><p><b>kind</b>: Insurance</p><p><b>policyHolder</b>: <a href=\"Organization-MedicalInsuranceCompanyExample.html\">Organization Medical Insurance Company 1</a></p><p><b>subscriberId</b>: <code>http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id</code>/504342245</p><p><b>beneficiary</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p></div>"
+      },
+      "status" : "active",
+      "kind" : "insurance",
+      "policyHolder" : {
+        "reference" : "Organization/MedicalInsuranceCompanyExample"
+      },
+      "subscriberId" : [{
+        "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id",
+        "value" : "504342245"
+      }],
+      "beneficiary" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      }
+    },
+    "request" : {
+      "method" : "PUT",
+      "url" : "Coverage/MedicalInsuranceExample"
+    }
+  }]
+}

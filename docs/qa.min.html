@@ -1,0 +1,644 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!-- broken links = 0, errors = 0, warn = 18, info = 71-->
+<head>
+  <title>ZambiaImmunizationsIG : Validation Results</title>
+  <link href="fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+    span.toggle  { background-color: #e6f2ff; color: black; border: solid 1px #0056b3; padding: 2px; font-size: 10px }
+    span.toggle  { font-size: 10px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+    function toggle(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Validation Information') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Validation Information';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Validation Information';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results for ZambiaImmunizationsIG</h1>
+ <p>Generated Wed Aug 14 13:50:13 CAT 2024, FHIR version 5.0.0 for openhie.fhir.zambia-immunizations#1.0.0 (canonical = <a href="http://openhie.org/fhir/zambia-immunizations">http://openhie.org/fhir/zambia-immunizations</a> (<a href="http://openhie.org/fhir/zambia-immunizations/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+<table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
+ <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.6.15, which is out of date. The current version is v1.6.20 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
+ <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = openhie.fhir.zambia-immunizations, Canonical = http://openhie.org/fhir/zambia-immunizations</td></tr>
+ <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
+ <tr><td>Publication Request:</td><td><ul><li>Error fetching package-list from http://openhie.org/fhir/zambia-immunizations: Unexpected end of file from server <img src="icon-error.gif" height="16px" width="16px"/></li>
+<li>This IG has never been published, so the version should start with '0.' or include a patch version e.g. '-ballot' <img src="icon-warning.png" height="16px" width="16px"/></li>
+<li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
+</ul>
+</td></tr>
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">2 Suppressed Issues</a>
+</td></tr>
+ <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\chisanga\GitHub\Immunisation-IG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> openhie.fhir.zambia-immunizations</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.0.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://openhie.org/fhir/zambia-immunizations</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\chisanga\GitHub\Immunisation-IG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.terminology.r5</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">6.0.2 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://terminology.hl7.org/6.0.2</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\chisanga\GitHub\Immunisation-IG\outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> hl7.fhir.uv.extensions.r5</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">5.1.0 <span style="padding-left: 3px; padding-right: 3px; color: white; background-color: green" title="Latest Milestone Release">M</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5">R5</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://hl7.org/fhir/extensions/5.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
+</table><para>Templates: openhie.fhir.template#current -&gt; fhir.base.template#current. Tools: 0.1.0</para></div></td></tr>
+ <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
+ <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="http://tx.fhir.org/r4">http://tx.fhir.org/r4</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
+ <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Draft Dependencies:</td><td><ul>
+  <li>
+hl7.fhir.r5.core#5.0.0:     <a href="http://hl7.org/fhir/R5/codesystem-guide-parameter-code.html">GuideParameterCode</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/organization.html">Organization</a>
+ (72 uses),     <a href="http://hl7.org/fhir/R5/valueset-relatedperson-relationshiptype.html">PatientRelationshipType</a>
+ (7 uses),     <a href="http://hl7.org/fhir/R5/practitioner.html">Practitioner</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/practitionerrole.html">PractitionerRole</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a>
+ (17 uses),     <a href="http://hl7.org/fhir/R5/observationdefinition.html">ObservationDefinition</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/careplan.html">CarePlan</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R5/devicerequest.html">DeviceRequest</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R5/immunizationrecommendation.html">ImmunizationRecommendation</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R5/medicationrequest.html">MedicationRequest</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R5/nutritionorder.html">NutritionOrder</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/servicerequest.html">ServiceRequest</a>
+ (11 uses),     <a href="http://hl7.org/fhir/R5/medicationadministration.html">MedicationAdministration</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/medicationdispense.html">MedicationDispense</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/medicationstatement.html">MedicationStatement</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/procedure.html">Procedure</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R5/immunization.html">Immunization</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R5/imagingstudy.html">ImagingStudy</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/genomicstudy.html">GenomicStudy</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-category.html">ObservationCategoryCodes</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/encounter.html">Encounter</a>
+ (6 uses),     <a href="http://hl7.org/fhir/R5/careteam.html">CareTeam</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R5/molecularsequence.html">MolecularSequence</a>
+ (26 uses),     <a href="http://hl7.org/fhir/R5/valueset-body-site.html">SNOMEDCTBodyStructures</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R5/bodystructure.html">BodyStructure</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-methods.html">ObservationMethods</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/specimen.html">Specimen</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/group.html">Group</a>
+ (9 uses),     <a href="http://hl7.org/fhir/R5/device.html">Device</a>
+ (10 uses),     <a href="http://hl7.org/fhir/R5/devicemetric.html">DeviceMetric</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-referencerange-normalvalue.html">ObservationReferenceRangeNormalValueCodes</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/valueset-referencerange-meaning.html">ObservationReferenceRangeMeaningCodes</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/valueset-referencerange-appliesto.html">ObservationReferenceRangeAppliesToCodes</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/questionnaireresponse.html">QuestionnaireResponse</a>
+ (16 uses),     <a href="http://hl7.org/fhir/R5/documentreference.html">DocumentReference</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/imagingselection.html">ImagingSelection</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/valueset-observation-codes.html">LOINCCodes</a>
+ (15 uses),     <a href="http://hl7.org/fhir/R5/medication.html">Medication</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-status.html">MedicationStatusCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-form-codes.html">SNOMEDCTFormCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/substance.html">Substance</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-codes.html">SNOMEDCTMedicationCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-medication-ingredientstrength.html">MedicationIngredientStrengthCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/medicationknowledge.html">MedicationKnowledge</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-organization-type.html">OrganizationType</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/endpoint.html">Endpoint</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-status.html">ImmunizationStatusCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-status-reason.html">ImmunizationStatusReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-origin.html">ImmunizationOriginCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/location.html">Location</a>
+ (5 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-site.html">CodesForImmunizationSiteOfAdministration</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-route.html">ImmunizationRouteCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-function.html">ImmunizationFunctionCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/condition.html">Condition</a>
+ (8 uses),     <a href="http://hl7.org/fhir/R5/diagnosticreport.html">DiagnosticReport</a>
+ (4 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-reason.html">ImmunizationReasonCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-subpotent-reason.html">ImmunizationSubpotentReason</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-vaccine-funding-program.html">CodesForVaccineFundingPrograms</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-program-eligibility.html">ImmunizationProgramEligibility</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-funding-source.html">ImmunizationFundingSource</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-immunization-target-disease.html">ImmunizationTargetDiseaseCodes</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/coverage.html">Coverage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-fm-status.html">FinancialResourceStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-coverage-kind.html">Kind</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-coverage-type.html">CoverageTypeAndSelfPayCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-subscriber-relationship.html">SubscriberRelationshipCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-coverage-class.html">CoverageClassCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-coverage-copay-type.html">CoverageCopayTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-ex-benefitcategory.html">BenefitCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-benefit-network.html">NetworkTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-benefit-unit.html">UnitTypeCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-benefit-term.html">BenefitTermCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-coverage-financial-exception.html">ExampleCoverageFinancialExceptionCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/contract.html">Contract</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/insuranceplan.html">InsurancePlan</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-status.html">EncounterStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-type.html">EncounterType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/healthcareservice.html">HealthcareService</a>
+ (2 uses),     <a href="http://hl7.org/fhir/R5/valueset-service-type.html">ServiceType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-subject-status.html">EncounterSubjectStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/episodeofcare.html">EpisodeOfCare</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-participant-type.html">ParticipantType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/appointment.html">Appointment</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-reason-use.html">EncounterReasonUse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-reason.html">EncounterReasonCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-code.html">ConditionProblemDiagnosisCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-diagnosis-use.html">EncounterDiagnosisUse</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/account.html">Account</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-diet.html">EncounterDiet</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-special-arrangements.html">SpecialArrangements</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-special-courtesy.html">SpecialCourtesy</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-admit-source.html">AdmitSource</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-discharge-disposition.html">DischargeDisposition</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-encounter-location-status.html">EncounterLocationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-location-form.html">LocationForm</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-clinical.html">ConditionClinicalStatusCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-ver-status.html">ConditionVerificationStatus</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-category.html">ConditionCategoryCodes</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-severity.html">ConditionDiagnosisSeverity</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-participation-role-type.html">ParticipationRoleType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-stage.html">ConditionStage</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/clinicalimpression.html">ClinicalImpression</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-condition-stage-type.html">ConditionStageType</a>
+ (1 uses),     <a href="http://hl7.org/fhir/R5/valueset-clinical-findings.html">SNOMEDCTClinicalFindings</a>
+ (1 uses)
+  </li>
+  <li>
+hl7.fhir.uv.extensions.r5#5.1.0:     <a href="http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-structuredefinition-type-characteristics.html">SDTypeCharacteristics</a>
+ (4 uses)
+  </li>
+  <li>
+hl7.fhir.uv.tools#0.2.0:     <a href="http://hl7.org/fhir/tools/0.2.0/StructureDefinition-resource-sort.html">ResourceSortExt</a>
+ (81 uses)
+  </li>
+</ul>
+</td></tr>
+ <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at http://openhie.org/fhir/zambia-immunizations (Problem #1 with package-list.json at http://openhie.org/fhir/zambia-immunizations: Connection reset by peer)</td></tr>
+ <tr><td>IPA Comparison:</td><td> n/a</td></tr>
+ <tr><td>IPS Comparison:</td><td> n/a</td></tr>
+ <tr><td>Summary:</td><td> errors = 0, warn = 18, info = 71, broken links = 0</td></tr>
+</table>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_Bundle-HPVFullBundleExample"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Bundle-HPVFullBundleExample</b></a></td><td><b>0</b></td><td><b>6</b></td><td><b>9</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_Immunization-HPVImmunizationExample"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Immunization-HPVImmunizationExample</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_Medication-HPVVaccineExample"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Medication-HPVVaccineExample</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-covax-immunization-patient"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-covax-immunization-patient</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-covax-observation"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-covax-observation</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-covid19-vaccine-medication"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-covid19-vaccine-medication</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-underlying-condition"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-underlying-condition</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_ValueSet-covax-observations"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-covax-observations</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_ValueSet-underlying-conditions"><b>C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-underlying-conditions</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="internal"> </a>
+<h2><a href="">n/a</a> <span id="sv" class="toggle" onclick="toggle('v')">Show Validation Information</span> <span class="vcount" onclick="toggle('v')"></span></h2>
+ <div style="border: 1px grey solid; display: none" id="v"></div>
+ <table class="grid">
+   <tr style="background-color: #ffebcc">
+     <td><b>output\index.html</b></td><td><b>warning</b></td><td title=""><b>The html source has duplicate anchor Ids: ip</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_Bundle-HPVFullBundleExample"> </a>
+<h2><a href="Bundle-HPVFullBundleExample.html">fsh-generated\resources\Bundle-HPVFullBundleExample.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(29)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Bundle: Validated against <i>this.</i><a href="StructureDefinition-hpv-full-bundle.html">HPV Full Bundle</a></li><li>Bundle.entry[0].resource: Validated against <i>this.</i><a href="StructureDefinition-hpv-immunization-patient.html">Patient Profile for HPV Immunizations</a>, <i>this.</i><a href="StructureDefinition-smartcare-immunization-patient.html">Patient Profile for Smartcare Immunizations</a>, <i>this.</i><a href="StructureDefinition-hpv-immunization-patient.html">Patient Profile for HPV Immunizations</a> (per meta), <i>this.</i><a href="StructureDefinition-covax-immunization-patient.html">COVAX Immunization Patient</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/patient.html">Patient</a></li><li>Bundle.entry[1].resource: Validated against <i>this.</i><a href="StructureDefinition-target-facility-encounter.html">Target Facility Encounter</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/encounter.html">Encounter</a> and <i>this.</i><a href="StructureDefinition-target-facility-encounter.html">Target Facility Encounter</a> (per meta)</li><li>Bundle.entry[2].resource: Validated against <i>this.</i><a href="StructureDefinition-hpv-immunization.html">HPV Immunization</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/immunization.html">Immunization</a> and <i>this.</i><a href="StructureDefinition-hpv-immunization.html">HPV Immunization</a> (per meta)</li><li>Bundle.entry[3].resource: Validated against <i>this.</i><a href="StructureDefinition-guardian-relation-to-patient.html">Guardian Relation to Patient Profile</a>, <i>this.</i><a href="StructureDefinition-spouse-relation-to-patient.html">Spouse Relation to Patient</a>, <i>this.</i><a href="StructureDefinition-guardian-relation-to-patient.html">Guardian Relation to Patient Profile</a> (per meta), <i>this.</i><a href="StructureDefinition-mother-relation-to-patient.html">Mother Relation to Patient</a>, <i>this.</i><a href="StructureDefinition-father-relation-to-patient.html">Father Relation to Patient</a>, <i>this.</i><a href="StructureDefinition-relative-relation-to-patient.html">Relative Relation to Patient</a>, <i>this.</i><a href="StructureDefinition-chief-at-birth-relation-to-patient.html">Chief at Birth</a> and <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/relatedperson.html">RelatedPerson</a></li><li>Bundle.entry[4].resource: Validated against <i>this.</i><a href="StructureDefinition-hpv-immunocomprommised.html">HPV Immunocomprommised</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/observation.html">Observation</a> and <i>this.</i><a href="StructureDefinition-hpv-immunocomprommised.html">HPV Immunocomprommised</a> (per meta)</li><li>Bundle.entry[5].resource: Validated against <i>this.</i><a href="StructureDefinition-hpv-vaccine-details.html">HPV Vaccine Details</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/medication.html">Medication</a> and <i>this.</i><a href="StructureDefinition-hpv-vaccine-details.html">HPV Vaccine Details</a> (per meta)</li><li>Bundle.entry[6].resource: Validated against <i>this.</i><a href="StructureDefinition-hpv-vaccination-site-type.html">Vaccination site type in HPV</a>, <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/organization.html">Organization</a> and <i>this.</i><a href="StructureDefinition-hpv-vaccination-site-type.html">Vaccination site type in HPV</a> (per meta)</li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.status (l156&#8203;/c30)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.vaccineCode&#8203;.coding[0] (l158&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.vaccineCode (l158&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>Unable to check whether the code is in the value set 'http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines|1.0.0' because the code system http://id.who.int/icd11/mms was not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;.patient (l166&#8203;/c10)</b></td><td><b>warning</b></td><td title="Reference_REF_MultipleMatches"><b>Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[2]&#8203;.resource&#8203;.patient (l166&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Patient/HPVImmunizationPatientExample matching against profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0</b> <span id="sl5" class="flip" onclick="flip('l5')">Show Reasoning</span><div id="l5" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: This element does not match any known slice Defined in the profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc').exists()</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin').exists()</li></ul></li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: This element does not match any known slice Defined in the profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc').exists()</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin').exists()</li></ul></li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Patient.extension: minimum required = 2, but only found 1 (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0)</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Slice 'Patient.extension:bornInZambia': a matching slice is required, but not found (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0). Note that other slices are allowed in addition to this required slice</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Slice 'Patient.identifier:NUPIN': a matching slice is required, but not found (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0). Note that other slices are allowed in addition to this required slice</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Immunization&#8203;/HPVImmunizationExample*&#8203;/&#8203;.status (l156&#8203;/c30)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[2]&#8203;.resource&#8203;/*Immunization&#8203;/HPVImmunizationExample*&#8203;/&#8203;.vaccineCode&#8203;.coding[0] (l158&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*RelatedPerson&#8203;/HPVGuardianRelatedPersonExample*&#8203;/&#8203;.patient (l215&#8203;/c10)</b></td><td><b>warning</b></td><td title="Reference_REF_MultipleMatches"><b>Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[3]&#8203;.resource&#8203;/*RelatedPerson&#8203;/HPVGuardianRelatedPersonExample*&#8203;/&#8203;.patient (l215&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Patient/HPVImmunizationPatientExample matching against profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0</b> <span id="sl9" class="flip" onclick="flip('l9')">Show Reasoning</span><div id="l9" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: This element does not match any known slice Defined in the profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc').exists()</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin').exists()</li></ul></li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: This element does not match any known slice Defined in the profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc').exists()</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin').exists()</li></ul></li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Patient.extension: minimum required = 2, but only found 1 (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0)</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Slice 'Patient.extension:bornInZambia': a matching slice is required, but not found (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0). Note that other slices are allowed in addition to this required slice</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Slice 'Patient.identifier:NUPIN': a matching slice is required, but not found (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0). Note that other slices are allowed in addition to this required slice</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;.code&#8203;.coding[0] (l244&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;.subject (l263&#8203;/c10)</b></td><td><b>warning</b></td><td title="Reference_REF_MultipleMatches"><b>Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">Bundle&#8203;.entry[4]&#8203;.resource&#8203;.subject (l263&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>Details for Patient/HPVImmunizationPatientExample matching against profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0</b> <span id="sl12" class="flip" onclick="flip('l12')">Show Reasoning</span><div id="l12" style="display: none"><p>&nbsp;</p><ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: This element does not match any known slice Defined in the profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc').exists()</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[0]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin').exists()</li></ul></li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: This element does not match any known slice Defined in the profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc').exists()</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/.identifier[1]: discriminator = true and system.where(value = 'http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin').exists()</li></ul></li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Patient.extension: minimum required = 2, but only found 1 (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0)</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Slice 'Patient.extension:bornInZambia': a matching slice is required, but not found (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0). Note that other slices are allowed in addition to this required slice</li>, <li>Bundle.entry[0].resource/*Patient/HPVImmunizationPatientExample*/: Slice 'Patient.identifier:NUPIN': a matching slice is required, but not found (from http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0). Note that other slices are allowed in addition to this required slice</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[4]&#8203;.resource&#8203;/*Observation&#8203;/HPVImmunocomprommisedExample*&#8203;/&#8203;.code&#8203;.coding[0] (l244&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;.code&#8203;.coding[0] (l292&#8203;/c10)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Bundle&#8203;.entry[5]&#8203;.resource&#8203;/*Medication&#8203;/HPVVaccineExample*&#8203;/&#8203;.code&#8203;.coding[0] (l292&#8203;/c10)</b></td><td><b>information</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_Immunization-HPVImmunizationExample"> </a>
+<h2><a href="Immunization-HPVImmunizationExample.html">fsh-generated\resources\Immunization-HPVImmunizationExample.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Immunization: Validated against <i>this.</i><a href="StructureDefinition-hpv-immunization.html">HPV Immunization</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Immunization.status (l15/c24)</b></td><td><b>information</b></td><td title="MSG_EXPERIMENTAL"><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization&#8203;.vaccineCode&#8203;.coding[0] (l17&#8203;/c4)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Immunization.vaccineCode (l17/c4)</b></td><td><b>warning</b></td><td title=""><b>Unable to check whether the code is in the value set 'http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines|1.0.0' because the code system http://id.who.int/icd11/mms was not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_Medication-HPVVaccineExample"> </a>
+<h2><a href="Medication-HPVVaccineExample.html">fsh-generated\resources\Medication-HPVVaccineExample.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Medication: Validated against <i>this.</i><a href="StructureDefinition-hpv-vaccine-details.html">HPV Vaccine Details</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code.coding[0] (l9/c4)</b></td><td><b>warning</b></td><td title=""><b>A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-covax-immunization-patient"> </a>
+<h2><a href="StructureDefinition-covax-immunization-patient.html">fsh-generated\resources\StructureDefinition-covax-immunization-patient.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c27337)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33] (l1&#8203;/c71245)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4] (l1&#8203;/c144422)</b></td><td><b>warning</b></td><td title=""><b>Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[33]&#8203;.fixed&#8203;.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/openhie&#8203;.org&#8203;/fhir&#8203;/zambia-immunizations&#8203;/StructureDefinition&#8203;/covax-immunization-patient')</b></td><td><b>information</b></td><td title=""><b>The Implementation Guide contains no explicitly linked examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-covax-observation"> </a>
+<h2><a href="StructureDefinition-covax-observation.html">fsh-generated\resources\StructureDefinition-covax-observation.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c10812)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/openhie&#8203;.org&#8203;/fhir&#8203;/zambia-immunizations&#8203;/StructureDefinition&#8203;/covax-observation')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-covid19-vaccine-medication"> </a>
+<h2><a href="StructureDefinition-covid19-vaccine-medication.html">fsh-generated\resources\StructureDefinition-covid19-vaccine-medication.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c10689)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/openhie&#8203;.org&#8203;/fhir&#8203;/zambia-immunizations&#8203;/StructureDefinition&#8203;/covid19-vaccine-medication')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_StructureDefinition-underlying-condition"> </a>
+<h2><a href="StructureDefinition-underlying-condition.html">fsh-generated\resources\StructureDefinition-underlying-condition.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>StructureDefinition&#8203;.jurisdiction[0] (l1&#8203;/c10873)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>StructureDefinition&#8203;.where(url = 'http:&#8203;/&#8203;/openhie&#8203;.org&#8203;/fhir&#8203;/zambia-immunizations&#8203;/StructureDefinition&#8203;/underlying-condition')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_ValueSet-covax-observations"> </a>
+<h2><a href="ValueSet-covax-observations.html">fsh-generated\resources\ValueSet-covax-observations.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.jurisdiction[0] (l1/c1481)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[1]</b></td><td><b>warning</b></td><td title=""><b>The code '169907004' is not valid in the system http://snomed.info/sct (Unknown code '169907004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201')</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="C__Users_chisanga_GitHub_Immunisation-IG_fsh-generated_resources_ValueSet-underlying-conditions"> </a>
+<h2><a href="ValueSet-underlying-conditions.html">fsh-generated\resources\ValueSet-underlying-conditions.json</a> <span id="svi9" class="toggle" onclick="toggle('vi9')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi9')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi9"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R5/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ValueSet.jurisdiction[0] (l1/c2627)</b></td><td><b>information</b></td><td title="MSG_DEPRECATED"><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.compose.include[0].concept[11]</b></td><td><b>warning</b></td><td title=""><b>The code '9532001' is not valid in the system http://snomed.info/sct (Unknown code '9532001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201')</b></td>
+   </tr>
+</table>
+<a name="suppressed"> </a>
+<p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>This is a known issue that is being addressed: https://chat.fhir.org/#narrow/stream/179166-implementers/topic/IG</b></p><ul>
+ <li>Error from http://tx.fhir.org/r4: Unable to provide support for code system http://id.who.int/icd11/mms <span style="color: navy">(1 uses)<span></li>
+ <li>Unknown System 'http://id.who.int/icd11/mms' specified, so Concepts and Filters can't be checked (Details: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated) <span style="color: navy">(1 uses)<span></li>
+</ul>
+<a name="sorted"> </a>
+<p><b>Errors sorted by type</b></p>
+<hr/>
+<a name="CONCEPTMAP_GROUP_SOURCE_SERVER_SIDE"> </a>
+<h2>CONCEPTMAP_GROUP_SOURCE_SERVER_SIDE</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.html">fsh-generated\resources\ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.json</a></td><td><b>Source Code System http://loinc.org is only supported on the terminology server, so the source codes are not validated for performance reasons</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="CONCEPTMAP_GROUP_TARGET_SERVER_SIDE"> </a>
+<h2>CONCEPTMAP_GROUP_TARGET_SERVER_SIDE</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.html">fsh-generated\resources\ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.json</a></td><td><b>Target Code System http://loinc.org is only supported on the terminology server, so the target codes are not validated for performance reasons</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_DEPRECATED"> </a>
+<h2>MSG_DEPRECATED</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-cs-home-language.html">fsh-generated\resources\CodeSystem-cs-home-language.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-cs-proprietary-education-level-attained.html">fsh-generated\resources\CodeSystem-cs-proprietary-education-level-attained.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-cs-proprietary-hpv-vaccination-site.html">fsh-generated\resources\CodeSystem-cs-proprietary-hpv-vaccination-site.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="CodeSystem-cs-proprietary-smartcare-vaccination-site.html">fsh-generated\resources\CodeSystem-cs-proprietary-smartcare-vaccination-site.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.html">fsh-generated\resources\ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="index.html">fsh-generated\resources\ImplementationGuide-openhie.fhir.zambia-immunizations.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-administrative-sex.html">fsh-generated\resources\StructureDefinition-administrative-sex.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-born-in-zambia.html">fsh-generated\resources\StructureDefinition-born-in-zambia.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-chief-at-birth-relation-to-patient.html">fsh-generated\resources\StructureDefinition-chief-at-birth-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-covax-immunization-patient.html">fsh-generated\resources\StructureDefinition-covax-immunization-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-covax-observation.html">fsh-generated\resources\StructureDefinition-covax-observation.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-covid19-vaccine-medication.html">fsh-generated\resources\StructureDefinition-covid19-vaccine-medication.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-date-patient-first-married.html">fsh-generated\resources\StructureDefinition-date-patient-first-married.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-father-relation-to-patient.html">fsh-generated\resources\StructureDefinition-father-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-generic-social-history-observation-profile.html">fsh-generated\resources\StructureDefinition-generic-social-history-observation-profile.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-guardian-occupation.html">fsh-generated\resources\StructureDefinition-guardian-occupation.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-guardian-relation-to-patient.html">fsh-generated\resources\StructureDefinition-guardian-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-healthcare-service-provider.html">fsh-generated\resources\StructureDefinition-healthcare-service-provider.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-full-bundle.html">fsh-generated\resources\StructureDefinition-hpv-full-bundle.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-immunization.html">fsh-generated\resources\StructureDefinition-hpv-immunization.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-immunization-patient.html">fsh-generated\resources\StructureDefinition-hpv-immunization-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-immunocomprommised.html">fsh-generated\resources\StructureDefinition-hpv-immunocomprommised.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-vaccination-patient-registration-date.html">fsh-generated\resources\StructureDefinition-hpv-vaccination-patient-registration-date.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-vaccination-site-type.html">fsh-generated\resources\StructureDefinition-hpv-vaccination-site-type.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-hpv-vaccine-details.html">fsh-generated\resources\StructureDefinition-hpv-vaccine-details.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-immunization-patient.html">fsh-generated\resources\StructureDefinition-immunization-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-is-estimated-date-of-birth.html">fsh-generated\resources\StructureDefinition-is-estimated-date-of-birth.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-medical-insurance.html">fsh-generated\resources\StructureDefinition-medical-insurance.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-medical-insurance-company.html">fsh-generated\resources\StructureDefinition-medical-insurance-company.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-mother-relation-to-patient.html">fsh-generated\resources\StructureDefinition-mother-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-patient-educational-level.html">fsh-generated\resources\StructureDefinition-patient-educational-level.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-patient-home-language.html">fsh-generated\resources\StructureDefinition-patient-home-language.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-relation-to-patient.html">fsh-generated\resources\StructureDefinition-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-relative-relation-to-patient.html">fsh-generated\resources\StructureDefinition-relative-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-smartcare-full-bundle.html">fsh-generated\resources\StructureDefinition-smartcare-full-bundle.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-smartcare-immunization-patient.html">fsh-generated\resources\StructureDefinition-smartcare-immunization-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-smartcare-vaccination-site-type.html">fsh-generated\resources\StructureDefinition-smartcare-vaccination-site-type.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-spouse-occupation.html">fsh-generated\resources\StructureDefinition-spouse-occupation.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-spouse-relation-to-patient.html">fsh-generated\resources\StructureDefinition-spouse-relation-to-patient.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-target-facility-encounter.html">fsh-generated\resources\StructureDefinition-target-facility-encounter.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-underlying-condition.html">fsh-generated\resources\StructureDefinition-underlying-condition.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureDefinition-vaccine-administration.html">fsh-generated\resources\StructureDefinition-vaccine-administration.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-covax-observations.html">fsh-generated\resources\ValueSet-covax-observations.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-underlying-conditions.html">fsh-generated\resources\ValueSet-underlying-conditions.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-administrative-sex.html">fsh-generated\resources\ValueSet-vs-administrative-sex.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-home-language.html">fsh-generated\resources\ValueSet-vs-home-language.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-loinc-education-level-attained.html">fsh-generated\resources\ValueSet-vs-loinc-education-level-attained.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-proprietary-education-level-attained.html">fsh-generated\resources\ValueSet-vs-proprietary-education-level-attained.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-proprietary-hpv-vaccination-site.html">fsh-generated\resources\ValueSet-vs-proprietary-hpv-vaccination-site.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-proprietary-smartcare-vaccination-site.html">fsh-generated\resources\ValueSet-vs-proprietary-smartcare-vaccination-site.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="ValueSet-vs-vaccines.html">fsh-generated\resources\ValueSet-vs-vaccines.json</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="StructureMap-PropietaryEducationLevelToLOINCEducationLevel.html">input\maps\PropietaryEducationLevelToLOINCEducationLevel.fml</a></td><td><b>Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="MSG_EXPERIMENTAL"> </a>
+<h2>MSG_EXPERIMENTAL</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-HPVFullBundleExample.html">fsh-generated\resources\Bundle-HPVFullBundleExample.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-HPVFullBundleExample.html">fsh-generated\resources\Bundle-HPVFullBundleExample.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-Smartcare.html">fsh-generated\resources\Bundle-Smartcare.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Bundle-Smartcare.html">fsh-generated\resources\Bundle-Smartcare.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Immunization-HPVImmunizationExample.html">fsh-generated\resources\Immunization-HPVImmunizationExample.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Immunization-VaccinesExample.html">fsh-generated\resources\Immunization-VaccinesExample.json</a></td><td><b>Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Reference_REF_MultipleMatches"> </a>
+<h2>Reference_REF_MultipleMatches</h2>
+ <table class="grid">
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-HPVFullBundleExample.html">fsh-generated\resources\Bundle-HPVFullBundleExample.json</a></td><td><b>Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-HPVFullBundleExample.html">fsh-generated\resources\Bundle-HPVFullBundleExample.json</a></td><td><b>Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient</b></td>
+   </tr>
+   <tr style="background-color: #fff4ee">
+     <td><a href="Bundle-HPVFullBundleExample.html">fsh-generated\resources\Bundle-HPVFullBundleExample.json</a></td><td><b>Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient</b></td>
+   </tr>
+</table>
+</body>
+</html>

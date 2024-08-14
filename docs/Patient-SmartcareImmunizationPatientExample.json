@@ -1,0 +1,78 @@
+{
+  "resourceType" : "Patient",
+  "id" : "SmartcareImmunizationPatientExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient SmartcareImmunizationPatientExample</b></p><a name=\"SmartcareImmunizationPatientExample\"> </a><a name=\"hcSmartcareImmunizationPatientExample\"> </a><a name=\"hcSmartcareImmunizationPatientExample-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin#1001-XXGB0-12345-5)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc</code>/999999/99/9</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Smitty(Nickname)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></li><li>Also see: <a href=\"RelatedPerson-SpouseRelatedPersonExample.html\">RelatedPerson Mike Jones (official)</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture that patient's administrative sex.\"><a href=\"StructureDefinition-administrative-sex.html\">Administrative Sex</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture whether the patient was born in Zambia.\"><a href=\"StructureDefinition-born-in-zambia.html\">Patient born in Zambia?</a></td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's professed religious affiliations.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-religion.html\">Patient Religion</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1013}\">Christian (non-Catholic, non-specific)</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0001",
+        "code" : "F"
+      }]
+    }
+  },
+  {
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia",
+    "valueBoolean" : true
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/patient-religion",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+        "code" : "1013"
+      }],
+      "text" : "Christian (non-Catholic, non-specific)"
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin",
+    "value" : "1001-XXGB0-12345-5"
+  },
+  {
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc",
+    "value" : "999999/99/9"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Smith",
+    "given" : ["Jane",
+    "Maria"]
+  },
+  {
+    "use" : "nickname",
+    "text" : "Smitty"
+  }],
+  "birthDate" : "1990-12-12",
+  "_birthDate" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/patient-birthTime",
+      "valueDateTime" : "1983-05-22T16:40:17+02:00"
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth",
+      "valueBoolean" : false
+    }]
+  },
+  "maritalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+      "code" : "M"
+    }]
+  },
+  "managingOrganization" : {
+    "reference" : "Organization/OrganizationExample"
+  },
+  "link" : [{
+    "other" : {
+      "reference" : "RelatedPerson/SpouseRelatedPersonExample"
+    },
+    "type" : "seealso"
+  }]
+}

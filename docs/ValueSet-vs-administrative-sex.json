@@ -1,0 +1,56 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-administrative-sex",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-administrative-sex</b></p><a name=\"vs-administrative-sex\"> </a><a name=\"hcvs-administrative-sex\"> </a><a name=\"hcvs-administrative-sex-en-US\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0001.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0001</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0001.html#v2-0001-M\">M</a></td><td>Male</td><td>Male</td></tr><tr><td><a href=\"http://terminology.hl7.org/6.0.2/CodeSystem-v2-0001.html#v2-0001-F\">F</a></td><td>Female</td><td>Female</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-administrative-sex",
+  "version" : "1.0.0",
+  "name" : "AdministrativeSex",
+  "title" : "Administrative Sex",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A List of Administrative Sex codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0001",
+      "concept" : [{
+        "code" : "M",
+        "display" : "Male"
+      },
+      {
+        "code" : "F",
+        "display" : "Female"
+      }]
+    }]
+  }
+}

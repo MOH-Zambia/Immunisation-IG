@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Organization/MedicalInsuranceCompanyExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicalInsuranceCompanyExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization MedicalInsuranceCompanyExample</b></p><a name=\"MedicalInsuranceCompanyExample\"> </a><a name=\"hcMedicalInsuranceCompanyExample\"> </a><a name=\"hcMedicalInsuranceCompanyExample-en-US\"> </a><p><b>identifier</b>: Medical insurance company identifier/medical-insurance-company-1</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 64290-0}\">Health insurance card</span></p><p><b>name</b>: Medical Insurance Company 1</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "XX" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical insurance company identifier" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/identifier/medical-insurance-company"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "medical-insurance-company-1" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a loinc:64290-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64290-0" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Medical Insurance Company 1"] . # 
+
+# -------------------------------------------------------------------------------------
+

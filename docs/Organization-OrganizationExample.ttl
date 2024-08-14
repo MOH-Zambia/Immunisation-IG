@@ -1,0 +1,43 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "OrganizationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizationExample</b></p><a name=\"OrganizationExample\"> </a><a name=\"hcOrganizationExample\"> </a><a name=\"hcOrganizationExample-en-US\"> </a><p><b>identifier</b>: Healthcare service provider identifier/facility-1</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 78022-1}\">Care setting Facility [NHCS]</span></p><p><b>name</b>: Facility one</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "XX" ]
+       ] ) ;
+       fhir:text [ fhir:v "Healthcare service provider identifier" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/identifier/healthcare-service-provider"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "facility-1" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a loinc:78022-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "78022-1" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Facility one"] . # 
+
+# -------------------------------------------------------------------------------------
+

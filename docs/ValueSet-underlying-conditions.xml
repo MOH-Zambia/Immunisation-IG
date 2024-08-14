@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="underlying-conditions"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet underlying-conditions</b></p><a name="underlying-conditions"> </a><a name="hcunderlying-conditions"> </a><a name="hcunderlying-conditions-en-US"> </a><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/840539006">840539006</a></td><td>Human immunodeficiency virus infection</td></tr><tr><td><a href="http://snomed.info/id/56265001">56265001</a></td><td>Heart disease</td></tr><tr><td><a href="http://snomed.info/id/13645005">13645005</a></td><td>Chronic lung disease</td></tr><tr><td><a href="http://snomed.info/id/73211009">73211009</a></td><td>Diabetes Mellitus</td></tr><tr><td><a href="http://snomed.info/id/38341003">38341003</a></td><td>Hypertension</td></tr><tr><td><a href="http://snomed.info/id/363346000">363346000</a></td><td>Cancer</td></tr><tr><td><a href="http://snomed.info/id/74400008">74400008</a></td><td>Gastrointestinal disease</td></tr><tr><td><a href="http://snomed.info/id/87628006">87628006</a></td><td>Immunology condition</td></tr><tr><td><a href="http://snomed.info/id/55342001">55342001</a></td><td>Endocrine disorder</td></tr><tr><td><a href="http://snomed.info/id/128599005">128599005</a></td><td>Musculoskeletal disorder</td></tr><tr><td><a href="http://snomed.info/id/281867008">281867008</a></td><td>Neuromuscular disorder</td></tr><tr><td><a href="http://snomed.info/id/9532001">9532001</a></td><td>Skin disease</td></tr><tr><td><a href="http://snomed.info/id/79654002">79654002</a></td><td>Vascular disorder</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/ValueSet/underlying-conditions"/>
+  <version value="1.0.0"/>
+  <name value="UnderlyingConditions"/>
+  <title value="Underlying Conditions"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A ValueSet containing Underlying conditions"/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="840539006"/>
+        <display value="Human immunodeficiency virus infection"/>
+      </concept>
+      <concept>
+        <code value="56265001"/>
+        <display value="Heart disease"/>
+      </concept>
+      <concept>
+        <code value="13645005"/>
+        <display value="Chronic lung disease"/>
+      </concept>
+      <concept>
+        <code value="73211009"/>
+        <display value="Diabetes Mellitus"/>
+      </concept>
+      <concept>
+        <code value="38341003"/>
+        <display value="Hypertension"/>
+      </concept>
+      <concept>
+        <code value="363346000"/>
+        <display value="Cancer"/>
+      </concept>
+      <concept>
+        <code value="74400008"/>
+        <display value="Gastrointestinal disease"/>
+      </concept>
+      <concept>
+        <code value="87628006"/>
+        <display value="Immunology condition"/>
+      </concept>
+      <concept>
+        <code value="55342001"/>
+        <display value="Endocrine disorder"/>
+      </concept>
+      <concept>
+        <code value="128599005"/>
+        <display value="Musculoskeletal disorder"/>
+      </concept>
+      <concept>
+        <code value="281867008"/>
+        <display value="Neuromuscular disorder"/>
+      </concept>
+      <concept>
+        <code value="9532001"/>
+        <display value="Skin disease"/>
+      </concept>
+      <concept>
+        <code value="79654002"/>
+        <display value="Vascular disorder"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

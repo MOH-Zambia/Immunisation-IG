@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-proprietary-education-level-attained",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-proprietary-education-level-attained</b></p><a name=\"vs-proprietary-education-level-attained\"> </a><a name=\"hcvs-proprietary-education-level-attained\"> </a><a name=\"hcvs-proprietary-education-level-attained-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-proprietary-education-level-attained.html\"><code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained",
+  "version" : "1.0.0",
+  "name" : "VSProprietaryEducationLevelAttained",
+  "title" : "Patient's highest education level attained (Proprietary)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of proprietary education levels.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"
+    }]
+  }
+}

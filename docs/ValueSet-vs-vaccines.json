@@ -1,0 +1,227 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-vaccines",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-vaccines</b></p><a name=\"vs-vaccines\"> </a><a name=\"hcvs-vaccines\"> </a><a name=\"hcvs-vaccines-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XM8866</td><td>BBIBP-CorV</td></tr><tr><td>J07AE</td><td>Cholera vaccines</td></tr><tr><td>XM8NQ0</td><td>Comirnaty®</td></tr><tr><td>XM1AG7</td><td>Convidecia</td></tr><tr><td>XM7HT3</td><td>CoronaVac®</td></tr><tr><td>XM1G90</td><td>Covaxin</td></tr><tr><td>XM85P5</td><td>Covi-Vac</td></tr><tr><td>XM68M6</td><td>COVID-19 vaccine</td></tr><tr><td>XM4YL8</td><td>COVID-19 Vaccine AstraZeneca</td></tr><tr><td>XM6QV1</td><td>COVID-19 Vaccine Janssen</td></tr><tr><td>XM3DT5</td><td>COVID-19 Vaccine Moderna</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM0GQ8</td><td>COVID-19 vaccine, RNA based</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM2YG8</td><td>COVIran Barakat</td></tr><tr><td>XM97T2</td><td>Covishield®</td></tr><tr><td>J07AF01</td><td>diphtheria toxoid</td></tr><tr><td>07AF01</td><td>diphtheria toxoid</td></tr><tr><td>J07CA11</td><td>diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B</td></tr><tr><td>XM6SZ8</td><td>EpiVacCorona</td></tr><tr><td>XM5ZJ4</td><td>Gam-Covid-Vac</td></tr><tr><td>XM9FQ7</td><td>Hayat-Vax</td></tr><tr><td>XM3U61</td><td>Inactivated SARS-CoV-2 vaccine</td></tr><tr><td>XM9TQ1</td><td>KCONVAC</td></tr><tr><td>J07BD53</td><td>measles, combinations with rubella, live attenuated</td></tr><tr><td>XM4EC8</td><td>MVC-COV1901</td></tr><tr><td>J07BM01</td><td>papillomavirus (human types 6, 11, 16, 18)</td></tr><tr><td>J07AL02</td><td>pneumococcus, purified polysaccharides antigen conjugated</td></tr><tr><td>J07BF02</td><td>poliomyelitis oral, trivalent, live attenuated</td></tr><tr><td>J07BF03</td><td>poliomyelitis, trivalent, inactivated, whole virus</td></tr><tr><td>XM97N6</td><td>QazVac</td></tr><tr><td>XM3CT4</td><td>Recombinant SARS-CoV-2 vaccine</td></tr><tr><td>J07BH01</td><td>rota virus, live attenuated</td></tr><tr><td>XM3PG0</td><td>Soberana-02</td></tr><tr><td>XM5QM6</td><td>Sputnik-Light</td></tr><tr><td>J07AM51</td><td>tetanus toxoid, combinations with diphtheria toxoid</td></tr><tr><td>J07AN01</td><td>tuberculosis, live attenuated</td></tr><tr><td>XM52P3</td><td>ZyCov-D</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LP31687-4/\">LP31687-4</a></td><td>Vitamin A</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines",
+  "version" : "1.0.0",
+  "name" : "VSVaccines",
+  "title" : "Vaccine Codes",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A List of Vaccine Codes Use In Zambia",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://id.who.int/icd11/mms",
+      "concept" : [{
+        "code" : "XM8866",
+        "display" : "BBIBP-CorV"
+      },
+      {
+        "code" : "J07AE",
+        "display" : "Cholera vaccines"
+      },
+      {
+        "code" : "XM8NQ0",
+        "display" : "Comirnaty®"
+      },
+      {
+        "code" : "XM1AG7",
+        "display" : "Convidecia"
+      },
+      {
+        "code" : "XM7HT3",
+        "display" : "CoronaVac®"
+      },
+      {
+        "code" : "XM1G90",
+        "display" : "Covaxin"
+      },
+      {
+        "code" : "XM85P5",
+        "display" : "Covi-Vac"
+      },
+      {
+        "code" : "XM68M6",
+        "display" : "COVID-19 vaccine"
+      },
+      {
+        "code" : "XM4YL8",
+        "display" : "COVID-19 Vaccine AstraZeneca"
+      },
+      {
+        "code" : "XM6QV1",
+        "display" : "COVID-19 Vaccine Janssen"
+      },
+      {
+        "code" : "XM3DT5",
+        "display" : "COVID-19 Vaccine Moderna"
+      },
+      {
+        "code" : "XM6AT1",
+        "display" : "COVID-19 vaccine, DNA based"
+      },
+      {
+        "code" : "XM1NL1",
+        "display" : "COVID-19 vaccine, inactivated virus"
+      },
+      {
+        "code" : "XM5DF6",
+        "display" : "COVID-19 vaccine, live attenuated virus"
+      },
+      {
+        "code" : "XM9QW8",
+        "display" : "COVID-19 vaccine, non-replicating viral vector"
+      },
+      {
+        "code" : "XM0CX4",
+        "display" : "COVID-19 vaccine, replicating viral vector"
+      },
+      {
+        "code" : "XM0GQ8",
+        "display" : "COVID-19 vaccine, RNA based"
+      },
+      {
+        "code" : "XM1J92",
+        "display" : "COVID-19 vaccine, virus like particle (VLP)"
+      },
+      {
+        "code" : "XM5JC5",
+        "display" : "COVID-19 vaccine, virus protein subunit"
+      },
+      {
+        "code" : "XM2YG8",
+        "display" : "COVIran Barakat"
+      },
+      {
+        "code" : "XM97T2",
+        "display" : "Covishield®"
+      },
+      {
+        "code" : "J07AF01",
+        "display" : "diphtheria toxoid"
+      },
+      {
+        "code" : "07AF01",
+        "display" : "diphtheria toxoid"
+      },
+      {
+        "code" : "J07CA11",
+        "display" : "diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B"
+      },
+      {
+        "code" : "XM6SZ8",
+        "display" : "EpiVacCorona"
+      },
+      {
+        "code" : "XM5ZJ4",
+        "display" : "Gam-Covid-Vac"
+      },
+      {
+        "code" : "XM9FQ7",
+        "display" : "Hayat-Vax"
+      },
+      {
+        "code" : "XM3U61",
+        "display" : "Inactivated SARS-CoV-2 vaccine"
+      },
+      {
+        "code" : "XM9TQ1",
+        "display" : "KCONVAC"
+      },
+      {
+        "code" : "J07BD53",
+        "display" : "measles, combinations with rubella, live attenuated"
+      },
+      {
+        "code" : "XM4EC8",
+        "display" : "MVC-COV1901"
+      },
+      {
+        "code" : "J07BM01",
+        "display" : "papillomavirus (human types 6, 11, 16, 18)"
+      },
+      {
+        "code" : "J07AL02",
+        "display" : "pneumococcus, purified polysaccharides antigen conjugated"
+      },
+      {
+        "code" : "J07BF02",
+        "display" : "poliomyelitis oral, trivalent, live attenuated"
+      },
+      {
+        "code" : "J07BF03",
+        "display" : "poliomyelitis, trivalent, inactivated, whole virus"
+      },
+      {
+        "code" : "XM97N6",
+        "display" : "QazVac"
+      },
+      {
+        "code" : "XM3CT4",
+        "display" : "Recombinant SARS-CoV-2 vaccine"
+      },
+      {
+        "code" : "J07BH01",
+        "display" : "rota virus, live attenuated"
+      },
+      {
+        "code" : "XM3PG0",
+        "display" : "Soberana-02"
+      },
+      {
+        "code" : "XM5QM6",
+        "display" : "Sputnik-Light"
+      },
+      {
+        "code" : "J07AM51",
+        "display" : "tetanus toxoid, combinations with diphtheria toxoid"
+      },
+      {
+        "code" : "J07AN01",
+        "display" : "tuberculosis, live attenuated"
+      },
+      {
+        "code" : "XM52P3",
+        "display" : "ZyCov-D"
+      }]
+    },
+    {
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "LP31687-4",
+        "display" : "Vitamin A"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="openhie.fhir.zambia-immunizations"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide openhie.fhir.zambia-immunizations</b></p><a name="openhie.fhir.zambia-immunizations"> </a><a name="hcopenhie.fhir.zambia-immunizations"> </a><a name="hcopenhie.fhir.zambia-immunizations-en-US"> </a><h2>ZambiaImmunizationsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations</pre><div><p>Zambia Immunizations FHIR Implementation Guide.</p>
+</div></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations"/>
+  <version value="1.0.0"/>
+  <name value="ZambiaImmunizationsIG"/>
+  <title value="Zambia Immunizations FHIR Implementation Guide"/>
+  <status value="active"/>
+  <date value="2024-01-30"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Zambia Immunizations FHIR Implementation Guide."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="openhie.fhir.zambia-immunizations"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="5.0.0"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r5"/>
+    <version value="6.0.2"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r5"/>
+    <version value="5.1.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools#0.1.0"/>
+    </extension>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/administrative-sex"/>
+      </reference>
+      <name value="Administrative Sex"/>
+      <description value="This is an extension to capture that patient's administrative sex."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-administrative-sex"/>
+      </reference>
+      <name value="Administrative Sex"/>
+      <description value="A List of Administrative Sex codes."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/chief-at-birth-relation-to-patient"/>
+      </reference>
+      <name value="Chief at Birth"/>
+      <description value="Patient's chief at birth."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/ChiefAtBirthRelatedPersonExample"/>
+      </reference>
+      <name value="Chief at Birth"/>
+      <description value="Patient's chief at birth."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/covax-immunization-patient"/>
+      </reference>
+      <name value="COVAX Immunization Patient"/>
+      <description value="Patient profile for Covax use case"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/covax-observation"/>
+      </reference>
+      <name value="COVAX Observation"/>
+      <description value="Profile for capturing observations during vaccination"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/covax-observations"/>
+      </reference>
+      <name value="COVAX Observations"/>
+      <description value="A ValueSet containing COVID19 vaccination observation"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/covid19-vaccine-medication"/>
+      </reference>
+      <name value="COVID-19 Vaccine Medication"/>
+      <description value="A profile for COVID-19 vaccine medications"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/father-relation-to-patient"/>
+      </reference>
+      <name value="Father Relation to Patient"/>
+      <description value="The patient's father."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/PatientFatherRelatedPersonExample"/>
+      </reference>
+      <name value="Father Relation to Patient"/>
+      <description value="The patient's father."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ImmunizationPatientExample"/>
+      </reference>
+      <name value="Generic Immunization Patient"/>
+      <description value="Is used to document demographics and other administrative information about an individual receiving care or other health-related services."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/immunization-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/generic-social-history-observation-profile"/>
+      </reference>
+      <name value="Generic Observation Profile"/>
+      <description value="This profile acts as a base profile from which more observation profiles can be derived."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/immunization-patient"/>
+      </reference>
+      <name value="Generic Patient Profile for Immunizations"/>
+      <description value="Is used to document demographics and other administrative information about an individual receiving care or other health-related services."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RelationToPatientExample"/>
+      </reference>
+      <name value="Generic Relation to Patient"/>
+      <description value="This profile acts as a base profile from which more specific RelatedPerson profiles can be derived."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/GenericObservationExample"/>
+      </reference>
+      <name value="Generic Social History Observation Profile"/>
+      <description value="This profile acts as a base profile from which more specific social history observation profiles can be derived."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/generic-social-history-observation-profile"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/vaccine-administration"/>
+      </reference>
+      <name value="Generic Vaccine Administration Profile"/>
+      <description value="Records the vaccine administered to the patient."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/guardian-occupation"/>
+      </reference>
+      <name value="Guardian Occupation"/>
+      <description value="Records the current occupation for the guardian"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/GuardianOccupationObservationExample"/>
+      </reference>
+      <name value="Guardian Occupation"/>
+      <description value="Records the current occupation for the guardian"/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/HPVGuardianRelatedPersonExample"/>
+      </reference>
+      <name value="Guardian Relation to Patient in HPV"/>
+      <description value="A guardian to the patient."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SmartcareGuardianRelatedPersonExample"/>
+      </reference>
+      <name value="Guardian Relation to Patient in Smartcare"/>
+      <description value="A guardian to the patient."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/guardian-relation-to-patient"/>
+      </reference>
+      <name value="Guardian Relation to Patient Profile"/>
+      <description value="A guardian to the patient."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/OrganizationExample"/>
+      </reference>
+      <name value="Healthcare Service Provider"/>
+      <description value="An organization that provides healthcare services."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/healthcare-service-provider"/>
+      </reference>
+      <name value="Healthcare Service Provider Profile"/>
+      <description value="An organization that provides healthcare services."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-educational-level"/>
+      </reference>
+      <name value="Highest education level attained"/>
+      <description value="A patient's highest education level attained"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PatientEducationalLevelObservationExample"/>
+      </reference>
+      <name value="Highest education level attained"/>
+      <description value="A patient's highest education level attained"/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/HPVFullBundleExample"/>
+      </reference>
+      <name value="HPV Bundle"/>
+      <description value="A bundle containing all HPV FHIR resources."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-full-bundle"/>
+      </reference>
+      <name value="HPV Full Bundle"/>
+      <description value="This bundle contains all of the HPV resources."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-immunization"/>
+      </reference>
+      <name value="HPV Immunization"/>
+      <description value="Records the vaccine administered to the patient."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/HPVImmunizationExample"/>
+      </reference>
+      <name value="HPV Immunization Example"/>
+      <description value="Records the vaccine administered to the patient."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-immunocomprommised"/>
+      </reference>
+      <name value="HPV Immunocomprommised"/>
+      <description value="This is to document whether the patient is immunocompromised."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/HPVImmunocomprommisedExample"/>
+      </reference>
+      <name value="HPV Immunocomprommised"/>
+      <description value="This is to document whether the HPV patient has been observed to be immunocomprommised."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-vaccination-patient-registration-date"/>
+      </reference>
+      <name value="HPV Patient Registration Date"/>
+      <description value="A date representing when the patient was registered for HPV vaccination."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-vaccine-details"/>
+      </reference>
+      <name value="HPV Vaccine Details"/>
+      <description value="Records the batch number for the vaccine."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Medication"/>
+      </extension>
+      <reference>
+        <reference value="Medication/HPVVaccineExample"/>
+      </reference>
+      <name value="HPV Vaccine Details"/>
+      <description value="Records the batch number for the vaccine."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/HPVImmunizationPatientExample"/>
+      </reference>
+      <name value="Immunization Patient in HPV"/>
+      <description value="Is used to document demographics and other administrative information about an individual receiving care or other health-related services."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/SmartcareImmunizationPatientExample"/>
+      </reference>
+      <name value="Immunization Patient in Smartcare"/>
+      <description value="Is used to document demographics and other administrative information about an individual receiving care or other health-related services."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medical-insurance"/>
+      </reference>
+      <name value="Insurance or Medical Plan"/>
+      <description value="Insurance or medical plan details"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Coverage"/>
+      </extension>
+      <reference>
+        <reference value="Coverage/MedicalInsuranceExample"/>
+      </reference>
+      <name value="Insurance or Medical Plan"/>
+      <description value="Insurance or medical plan details"/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/medical-insurance-company"/>
+      </reference>
+      <name value="Medical Insurance Company"/>
+      <description value="A company that provides insurance to its subscribers that may include healthcare related policies."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/MedicalInsuranceCompanyExample"/>
+      </reference>
+      <name value="Medical Insurance Company"/>
+      <description value="A company that provides insurance to its subscribers that may include healthcare related policies."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/mother-relation-to-patient"/>
+      </reference>
+      <name value="Mother Relation to Patient"/>
+      <description value="The patient's mother."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/PatientMotherRelatedPersonExample"/>
+      </reference>
+      <name value="Mother Relation to Patient"/>
+      <description value="The patient's mother."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/born-in-zambia"/>
+      </reference>
+      <name value="Patient born in Zambia?"/>
+      <description value="This is an extension to capture whether the patient was born in Zambia."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-immunization-patient"/>
+      </reference>
+      <name value="Patient Profile for HPV Immunizations"/>
+      <description value="Is used to document demographics and other administrative information about an individual receiving care or other health-related services."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/smartcare-immunization-patient"/>
+      </reference>
+      <name value="Patient Profile for Smartcare Immunizations"/>
+      <description value="Is used to document demographics and other administrative information about an individual receiving care or other health-related services."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/is-estimated-date-of-birth"/>
+      </reference>
+      <name value="Patient's Date of Birth Is Estimated?"/>
+      <description value="This is an extension to capture whether the patient's date of birth was estimated."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/date-patient-first-married"/>
+      </reference>
+      <name value="Patient's Date of First Marriage"/>
+      <description value="Records the date when the patient was first married"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/DatePatientFirstMarriedObservationExample"/>
+      </reference>
+      <name value="Patient's Date of First Marriage"/>
+      <description value="Records the date when the patient was first married"/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-loinc-education-level-attained"/>
+      </reference>
+      <name value="Patient's highest education level attained (LOINC)"/>
+      <description value="A list of LOINC education levels."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-proprietary-education-level-attained"/>
+      </reference>
+      <name value="Patient's highest education level attained (Proprietary)"/>
+      <description value="A list of proprietary education levels."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-proprietary-education-level-attained"/>
+      </reference>
+      <name value="Patient's highest education level attained (Proprietary)"/>
+      <description value="A list of proprietary education levels."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/patient-home-language"/>
+      </reference>
+      <name value="Patient's Home Language"/>
+      <description value="Records the home language for the patient"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-home-language"/>
+      </reference>
+      <name value="Patient's Home Language"/>
+      <description value="A list of languages."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-home-language"/>
+      </reference>
+      <name value="Patient's Home Language"/>
+      <description value="A list of languages."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/PatientHomeLanguageObservationExample"/>
+      </reference>
+      <name value="Patient's Home Language"/>
+      <description value="Records the home language for the patient"/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ConceptMap"/>
+      </extension>
+      <reference>
+        <reference value="ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel"/>
+      </reference>
+      <name value="Proprietary Education Level to LOINC Education Level"/>
+      <description value="Mapping to and from Proprietary Education Level to LOINC Education Level."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relation-to-patient"/>
+      </reference>
+      <name value="Relation to Patient Profile"/>
+      <description value="This profile acts as a base profile from which more specific RelatedPerson profiles can be derived."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/relative-relation-to-patient"/>
+      </reference>
+      <name value="Relative Relation to Patient"/>
+      <description value="The patient's relative."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/RelativeRelatedPersonExample"/>
+      </reference>
+      <name value="Relative Relation to Patient"/>
+      <description value="The patient's relative."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Bundle"/>
+      </extension>
+      <reference>
+        <reference value="Bundle/Smartcare"/>
+      </reference>
+      <name value="Smartcare Bundle"/>
+      <description value="A bundle containing all Smartcare FHIR resources."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/smartcare-full-bundle"/>
+      </reference>
+      <name value="Smartcare Full Bundle"/>
+      <description value="This bundle contains all of the Smartcare resources."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/spouse-occupation"/>
+      </reference>
+      <name value="Spouse Occupation"/>
+      <description value="Records the current occupation for the spouse"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/SpouseOccupationObservationExample"/>
+      </reference>
+      <name value="Spouse Occupation"/>
+      <description value="Records the current occupation for the spouse"/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="RelatedPerson"/>
+      </extension>
+      <reference>
+        <reference value="RelatedPerson/SpouseRelatedPersonExample"/>
+      </reference>
+      <name value="Spouse Related to Patient"/>
+      <description value="The husband or wife, considered in relation to the patient."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/spouse-relation-to-patient"/>
+      </reference>
+      <name value="Spouse Relation to Patient"/>
+      <description value="The husband or wife, considered in relation to the patient."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/target-facility-encounter"/>
+      </reference>
+      <name value="Target Facility Encounter"/>
+      <description value="Represents the current facility at which the patient is receiving health services."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/HPVTargetFacilityEncounterExample"/>
+      </reference>
+      <name value="Target Facility Encounter in HPV"/>
+      <description value="Represents the current facility at which the patient is receiving health services."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/SmartcareTargetFacilityEncounterExample"/>
+      </reference>
+      <name value="Target Facility Encounter in Smartcare"/>
+      <description value="Represents the current facility at which the patient is receiving health services."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/underlying-condition"/>
+      </reference>
+      <name value="Underlying Condition"/>
+      <description value="Condition profile for capturing specific underlying conditions"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/underlying-conditions"/>
+      </reference>
+      <name value="Underlying Conditions"/>
+      <description value="A ValueSet containing Underlying conditions"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/SmartcareVaccinationSiteTypeExample"/>
+      </reference>
+      <name value="Vaccination site type"/>
+      <description value="Indicates whether the vaccination was administered at the facility or at an outreach post."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/hpv-vaccination-site-type"/>
+      </reference>
+      <name value="Vaccination site type in HPV"/>
+      <description value="Indicates whether the vaccination was administered at the facility or at an outreach post."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/HPVVaccinationSiteTypeExample"/>
+      </reference>
+      <name value="Vaccination site type in HPV"/>
+      <description value="Indicates whether the vaccination was administered at the facility or at an outreach post."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/smartcare-vaccination-site-type"/>
+      </reference>
+      <name value="Vaccination site type in Smartcare"/>
+      <description value="Indicates whether the vaccination was administered at the facility or at an outreach post."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-proprietary-hpv-vaccination-site"/>
+      </reference>
+      <name value="Vaccination site types in HPV (Proprietary)"/>
+      <description value="A list of vaccination sites (posts) where the vaccination was administered."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-proprietary-hpv-vaccination-site"/>
+      </reference>
+      <name value="Vaccination site types in HPV (Proprietary)"/>
+      <description value="A list of vaccination sites (posts) where the vaccination was administered."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-proprietary-smartcare-vaccination-site"/>
+      </reference>
+      <name value="Vaccination site types in Smartcare (Proprietary)"/>
+      <description value="A list of vaccination sites (posts) where the vaccination was administered."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/cs-proprietary-smartcare-vaccination-site"/>
+      </reference>
+      <name value="Vaccination site types in Smartcare (Proprietary)"/>
+      <description value="A list of vaccination sites (posts) where the vaccination was administered."/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Immunization"/>
+      </extension>
+      <reference>
+        <reference value="Immunization/VaccinesExample"/>
+      </reference>
+      <name value="Vaccine Administration"/>
+      <description value="Records the vaccine administered to the patient."/>
+      <isExample value="true"/>
+      <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-vaccines"/>
+      </reference>
+      <name value="Vaccine Codes"/>
+      <description value="A List of Vaccine Codes Use In Zambia"/>
+      <isExample value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureMap"/>
+      </extension>
+      <reference>
+        <reference value="StructureMap/PropietaryEducationLevelToLOINCEducationLevel"/>
+      </reference>
+      <name value="Propietary Educational Level To LOINC Educational Level"/>
+      <description value="Maps the Propietary Educational Level codes To LOINC Educational Level codes."/>
+    </resource>
+    <page>
+      <sourceUrl value="toc.html"/>
+      <name value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <sourceUrl value="index.html"/>
+        <name value="index.html"/>
+        <title value="Home"/>
+        <generation value="html"/>
+      </page>
+      <page>
+        <sourceUrl value="changes.html"/>
+        <name value="changes.html"/>
+        <title value="Changes"/>
+        <generation value="html"/>
+      </page>
+    </page>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="copyrightyear"/>
+      </code>
+      <value value="2021+"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="releaselabel"/>
+      </code>
+      <value value="STU1"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="autoload-resources"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-resource"/>
+      </code>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-pages"/>
+      </code>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="template/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-liquid"/>
+      </code>
+      <value value="input/liquid"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-qa"/>
+      </code>
+      <value value="temp/qa"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-temp"/>
+      </code>
+      <value value="temp/pages"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-output"/>
+      </code>
+      <value value="output"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/guide-parameter-code"/>
+        <code value="path-tx-cache"/>
+      </code>
+      <value value="input-cache/txcache"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-suppressed-warnings"/>
+      </code>
+      <value value="input/ignoreWarnings.txt"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="path-history"/>
+      </code>
+      <value value="http://openhie.org/fhir/zambia-immunizations/history.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-html"/>
+      </code>
+      <value value="template-page.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="template-md"/>
+      </code>
+      <value value="template-page-md.html"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-contact"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-context"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-copyright"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-jurisdiction"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-license"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-publisher"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-version"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="apply-wg"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="active-tables"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="fmm-definition"/>
+      </code>
+      <value value="http://hl7.org/fhir/versions.html#maturity"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="propagate-status"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="excludelogbinaryformat"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+    <parameter>
+      <code>
+        <system value="http://hl7.org/fhir/tools/CodeSystem/ig-parameters"/>
+        <code value="tabbed-snapshots"/>
+      </code>
+      <value value="true"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

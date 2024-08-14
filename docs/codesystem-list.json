@@ -1,0 +1,36 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSHomeLanguage",
+      "title" : "Patient's Home Language",
+      "description" : "A list of languages."
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSProprietaryEducationLevelAttained",
+      "title" : "Patient's highest education level attained (Proprietary)",
+      "description" : "A list of proprietary education levels."
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSProprietaryHPVVaccinationSite",
+      "title" : "Vaccination site types in HPV (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered."
+    },
+    {
+      "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "CSProprietarySmartcareVaccinationSite",
+      "title" : "Vaccination site types in Smartcare (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered."
+    }
+  ]
+}

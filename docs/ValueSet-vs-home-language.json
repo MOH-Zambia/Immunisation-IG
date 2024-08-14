@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-home-language",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-home-language</b></p><a name=\"vs-home-language\"> </a><a name=\"hcvs-home-language\"> </a><a name=\"hcvs-home-language-en-US\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-cs-home-language.html\"><code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language</code></a></li></ul></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-home-language",
+  "version" : "1.0.0",
+  "name" : "VSHomeLanguage",
+  "title" : "Patient's Home Language",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of languages.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "system" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language"
+    }]
+  }
+}

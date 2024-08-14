@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-proprietary-education-level-attained"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-proprietary-education-level-attained</b></p><a name="vs-proprietary-education-level-attained"> </a><a name="hcvs-proprietary-education-level-attained"> </a><a name="hcvs-proprietary-education-level-attained-en-US"> </a><ul><li>Include all codes defined in <a href="CodeSystem-cs-proprietary-education-level-attained.html"><code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained</code></a></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained"/>
+  <version value="1.0.0"/>
+  <name value="VSProprietaryEducationLevelAttained"/>
+  <title value="Patient's highest education level attained (Proprietary)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of proprietary education levels."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"/>
+    </include>
+  </compose>
+</ValueSet>

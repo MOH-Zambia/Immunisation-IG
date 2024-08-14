@@ -1,0 +1,5 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Used
+http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language,1.0.0,active,,CSHomeLanguage,Patient's Home Language,"A list of languages.",
+http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained,1.0.0,active,,CSProprietaryEducationLevelAttained,Patient's highest education level attained (Proprietary),"A list of proprietary education levels.",
+http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site,1.0.0,active,,CSProprietaryHPVVaccinationSite,Vaccination site types in HPV (Proprietary),"A list of vaccination sites (posts) where the vaccination was administered.",
+http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site,1.0.0,active,,CSProprietarySmartcareVaccinationSite,Vaccination site types in Smartcare (Proprietary),"A list of vaccination sites (posts) where the vaccination was administered.",

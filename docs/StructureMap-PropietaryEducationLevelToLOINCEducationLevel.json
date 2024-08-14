@@ -1,0 +1,111 @@
+{
+  "resourceType" : "StructureMap",
+  "id" : "PropietaryEducationLevelToLOINCEducationLevel",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureMap PropietaryEducationLevelToLOINCEducationLevel</b></p><a name=\"PropietaryEducationLevelToLOINCEducationLevel\"> </a><a name=\"hcPropietaryEducationLevelToLOINCEducationLevel\"> </a><a name=\"hcPropietaryEducationLevelToLOINCEducationLevel-en-US\"> </a><pre class=\"fml\">\r\n<span style=\"color: #cc00cc\">/// <b>url</b> = </span><span style=\"color: blue\">'http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel'</span>\r\n<span style=\"color: #cc00cc\">/// <b>name</b> = </span><span style=\"color: blue\">'PropietaryEducationLevelToLOINCEducationLevel'</span>\r\n<span style=\"color: #cc00cc\">/// <b>title</b> = </span><span style=\"color: blue\">'Propietary Educational Level To LOINC Educational Level'</span>\r\n<span style=\"color: #cc00cc\">/// <b>status</b> = </span><span style=\"color: blue\">'active'</span>\r\n\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R5/observation.html\" title=\"Observation\">http://hl7.org/fhir/StructureDefinition/Observation</a><span style=\"color: navy\">&quot; </span><b>alias </b>srcObservation <b>as </b><b>source</b>\r\n<b>uses</b><span style=\"color: navy\"> &quot;</span><a href=\"http://hl7.org/fhir/R5/observation.html\" title=\"Observation\">http://hl7.org/fhir/StructureDefinition/Observation</a><span style=\"color: navy\">&quot; </span><b>alias </b>tgtObservation <b>as </b><b>target</b>\r\n\r\n<b>group </b>SetPatientEducationalLevel<span style=\"color: navy\">(</span><b>source</b> <span style=\"color: maroon\">obs</span><span style=\"color: navy\"> : </span>srcObservation, <b>target</b> <span style=\"color: maroon\">observation</span><span style=\"color: navy\"> : </span>tgtObservation<span style=\"color: navy\">)</span><b> &lt;&lt;type+&gt;&gt;</b><span style=\"color: navy\"> {\r\n</span>  obs.value<span style=\"color: navy\"> : </span>CodeableConcept<b> as </b><span style=\"color: maroon\">vs</span><span style=\"color: navy\"><b> -&gt; </b></span>observation.value = <b>create</b><span style=\"color: navy\">(</span><span style=\"color: blue\">'CodeableConcept'</span><span style=\"color: navy\">)</span><b> as </b><span style=\"color: maroon\">vt</span><b> then</b><span style=\"color: navy\"> {\r\n</span>    vs.coding<b> as </b><span style=\"color: maroon\">coding</span><b> then</b><span style=\"color: navy\"> {\r\n</span>      coding<span style=\"color: navy\"><b> -&gt; </b></span>vt = <b>translate</b><span style=\"color: navy\">(</span><span style=\"color: maroon\">coding</span><span style=\"color: navy\">, </span><span style=\"color: blue\">'http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel'</span><span style=\"color: navy\">, </span><span style=\"color: blue\">'code'</span><span style=\"color: navy\">)</span> <i>&quot;SetPatientEducationCode&quot;</i><span style=\"color: navy\">;</span>\r\n    <span style=\"color: navy\">}</span> <i>&quot;SetPatientEducationCoding&quot;</i><span style=\"color: navy\">;</span>\r\n  <span style=\"color: navy\">}</span> <i>&quot;SetEducationLevel&quot;</i><span style=\"color: navy\">;</span>\r\n<span style=\"color: navy\">}\r\n\r\n</span></pre></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel",
+  "version" : "1.0.0",
+  "name" : "PropietaryEducationLevelToLOINCEducationLevel",
+  "title" : "Propietary Educational Level To LOINC Educational Level",
+  "status" : "active",
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Maps the Propietary Educational Level codes To LOINC Educational Level codes.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "structure" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "mode" : "source",
+    "alias" : "srcObservation"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/Observation",
+    "mode" : "target",
+    "alias" : "tgtObservation"
+  }],
+  "group" : [{
+    "name" : "SetPatientEducationalLevel",
+    "typeMode" : "type-and-types",
+    "input" : [{
+      "name" : "obs",
+      "type" : "srcObservation",
+      "mode" : "source"
+    },
+    {
+      "name" : "observation",
+      "type" : "tgtObservation",
+      "mode" : "target"
+    }],
+    "rule" : [{
+      "name" : "SetEducationLevel",
+      "source" : [{
+        "context" : "obs",
+        "type" : "CodeableConcept",
+        "element" : "value",
+        "variable" : "vs"
+      }],
+      "target" : [{
+        "context" : "observation",
+        "element" : "value",
+        "variable" : "vt",
+        "transform" : "create",
+        "parameter" : [{
+          "valueString" : "CodeableConcept"
+        }]
+      }],
+      "rule" : [{
+        "name" : "SetPatientEducationCoding",
+        "source" : [{
+          "context" : "vs",
+          "element" : "coding",
+          "variable" : "coding"
+        }],
+        "rule" : [{
+          "name" : "SetPatientEducationCode",
+          "source" : [{
+            "context" : "coding"
+          }],
+          "target" : [{
+            "context" : "vt",
+            "transform" : "translate",
+            "parameter" : [{
+              "valueId" : "coding"
+            },
+            {
+              "valueString" : "http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel"
+            },
+            {
+              "valueString" : "code"
+            }]
+          }]
+        }]
+      }]
+    }]
+  }]
+}

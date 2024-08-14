@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="MedicalInsuranceCompanyExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization MedicalInsuranceCompanyExample</b></p><a name="MedicalInsuranceCompanyExample"> </a><a name="hcMedicalInsuranceCompanyExample"> </a><a name="hcMedicalInsuranceCompanyExample-en-US"> </a><p><b>identifier</b>: Medical insurance company identifier/medical-insurance-company-1</p><p><b>type</b>: <span title="Codes:{http://loinc.org 64290-0}">Health insurance card</span></p><p><b>name</b>: Medical Insurance Company 1</p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="XX"/>
+      </coding>
+      <text value="Medical insurance company identifier"/>
+    </type>
+    <system value="http://openhie.org/fhir/zambia-immunizations/identifier/medical-insurance-company"/>
+    <value value="medical-insurance-company-1"/>
+  </identifier>
+  <type>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="64290-0"/>
+    </coding>
+  </type>
+  <name value="Medical Insurance Company 1"/>
+</Organization>

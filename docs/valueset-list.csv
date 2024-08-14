@@ -1,0 +1,10 @@
+URL,Version,Status,OIDs,Name,Title,Descriptino,Uses,Used,Sources
+http://openhie.org/fhir/zambia-immunizations/ValueSet/covax-observations,1.0.0,active,,CovaxObservations,COVAX Observations,"A ValueSet containing COVID19 vaccination observation",,"SCT"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/underlying-conditions,1.0.0,active,,UnderlyingConditions,Underlying Conditions,"A ValueSet containing Underlying conditions",,"SCT"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-administrative-sex,1.0.0,active,,AdministrativeSex,Administrative Sex,"A List of Administrative Sex codes.",,"THO (V2)"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-home-language,1.0.0,active,,VSHomeLanguage,Patient's Home Language,"A list of languages.",,"Internal"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-loinc-education-level-attained,1.0.0,active,,VSLOINCEducationLevelAttained,Patient's highest education level attained (LOINC),"A list of LOINC education levels.",,"LOINC"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-education-level-attained,1.0.0,active,,VSProprietaryEducationLevelAttained,Patient's highest education level attained (Proprietary),"A list of proprietary education levels.",,"Internal"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-hpv-vaccination-site,1.0.0,active,,VSProprietaryHPVVaccinationSite,Vaccination site types in HPV (Proprietary),"A list of vaccination sites (posts) where the vaccination was administered.",,"Internal"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-proprietary-smartcare-vaccination-site,1.0.0,active,,VSProprietarySmartcareVaccinationSite,Vaccination site types in Smartcare (Proprietary),"A list of vaccination sites (posts) where the vaccination was administered.",,"Internal"
+http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines,1.0.0,active,,VSVaccines,Vaccine Codes,"A List of Vaccine Codes Use In Zambia",,"LOINC,Other"

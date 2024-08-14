@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Observation/HPVImmunocomprommisedExample> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HPVImmunocomprommisedExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Observation HPVImmunocomprommisedExample</b></p><a name=\"HPVImmunocomprommisedExample\"> </a><a name=\"hcHPVImmunocomprommisedExample\"> </a><a name=\"hcHPVImmunocomprommisedExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes:{http://id.who.int/icd11/mms 4A0Z}\">Primary immunodeficiencies, unspecified</span></p><p><b>subject</b>: <a href=\"Patient-HPVImmunizationPatientExample.html\">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>encounter</b>: <a href=\"Encounter-HPVTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2024-01-31</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: true</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://id.who.int/icd11/mms"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "4A0Z" ]
+     ] ) ;
+     fhir:text [ fhir:v "Primary immunodeficiencies, unspecified" ]
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/HPVImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/HPVImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/HPVTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/HPVTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2024-01-31"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "true"^^xsd:boolean] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,54 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-proprietary-smartcare-vaccination-site",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-proprietary-smartcare-vaccination-site</b></p><a name=\"cs-proprietary-smartcare-vaccination-site\"> </a><a name=\"hccs-proprietary-smartcare-vaccination-site\"> </a><a name=\"hccs-proprietary-smartcare-vaccination-site-en-US\"> </a><p>This case-sensitive code system <code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">Static<a name=\"cs-proprietary-smartcare-vaccination-site-Static\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Outreach<a name=\"cs-proprietary-smartcare-vaccination-site-Outreach\"> </a></td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site",
+  "version" : "1.0.0",
+  "name" : "CSProprietarySmartcareVaccinationSite",
+  "title" : "Vaccination site types in Smartcare (Proprietary)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "Static",
+    "display" : "Static"
+  },
+  {
+    "code" : "Outreach",
+    "display" : "Outreach"
+  }]
+}

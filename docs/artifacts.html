@@ -1,0 +1,1040 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts Summary - Zambia Immunizations FHIR Implementation Guide v1.0.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/openhie.css" rel="stylesheet"/>
+<link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+        <!-- Placeholder for child template header declarations -->
+
+<!-- Left logo - typically the publisher's logo - project or affiliate -->
+        <div id="project-nav">
+          <a id="project-logo" no-external="true" href="https://ohie.org/">
+            <img height="71" alt="Project home" src="assets/images/home.png"/>
+          </a>
+        </div>
+
+<!-- Right logo - for example the FHIR logo -->
+<!-- Make sure you have authorization to use the FHIR logo -->
+        <div id="family-nav">
+          <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="70" alt="FHIR website" src="assets/images/fire.png"/> </a>
+        </div>
+
+<!-- search icon - if you want -->
+<!--
+        <div id="hl7-search">
+          <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir/search.cfm"><img alt="Search FHIR" src="assets/images/search.png"/></a>
+        </div>
+-->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">Zambia Immunizations FHIR Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">1.0.0 - STU1
+
+
+
+  <img alt="International flag" src="assets/images/001.svg" height="16" title="International"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <ul
+	xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+	<li>
+		<a href="index.html">IG Home</a>
+	</li>
+	<li>
+		<a href="toc.html">Table of Contents</a>
+	</li>
+<!--
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Background<b class="caret"></b>
+		</a>
+
+	</li>
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Functional Description<b class="caret"></b>
+		</a>
+
+	</li>
+-->
+	<li class="dropdown">
+		<a data-toggle="dropdown" href="#" class="dropdown-toggle">Specifications<b class="caret"></b>
+		</a>
+		<ul class="dropdown-menu">
+			<li>
+				<a href="artifacts.html">Artifact Index</a>
+			</li>
+		</ul>
+	</li>
+</ul>      
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts Summary</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">Zambia Immunizations FHIR Implementation Guide - Local Development build (v1.0.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href="http://openhie.org/fhir/zambia-immunizations/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts Summary</h2>
+  
+  
+  
+  <!--DO NOT EDIT THIS FILE - It is generated by https://github.com/HL7/ig-template-base/blob/master/scripts/createArtifactSummary.xslt and any changes made will be overwritten--><div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir"
+     class="markdown-toc">
+   <p>Contents:</p>
+   <ul>
+      <li>
+         <a href="#1">Structures: Resource Profiles</a>
+      </li>
+      <li>
+         <a href="#2">Structures: Extension Definitions</a>
+      </li>
+      <li>
+         <a href="#3">Terminology: Value Sets</a>
+      </li>
+      <li>
+         <a href="#4">Terminology: Code Systems</a>
+      </li>
+      <li>
+         <a href="#5">Terminology: Structure Maps</a>
+      </li>
+      <li>
+         <a href="#6">Terminology: Concept Maps</a>
+      </li>
+      <li>
+         <a href="#7">Example: Example Instances</a>
+      </li>
+   </ul>
+</div>
+<div xmlns:html="http://www.w3.org/1999/xhtml"
+     xmlns="http://www.w3.org/1999/xhtml"
+     xmlns:f="http://hl7.org/fhir">
+   <p>This page provides a list of the FHIR artifacts defined as part of this implementation guide.</p>
+   <a name="1"> </a>
+   <h3>Structures: Resource Profiles </h3>
+    <p>These define constraints on FHIR resources for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-covax-immunization-patient.html"
+                  title="StructureDefinition/covax-immunization-patient">COVAX Immunization Patient</a>
+            </td>
+            <td>
+<p>Patient profile for Covax use case</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-covax-observation.html"
+                  title="StructureDefinition/covax-observation">COVAX Observation</a>
+            </td>
+            <td>
+<p>Profile for capturing observations during vaccination</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-covid19-vaccine-medication.html"
+                  title="StructureDefinition/covid19-vaccine-medication">COVID-19 Vaccine Medication</a>
+            </td>
+            <td>
+<p>A profile for COVID-19 vaccine medications</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-chief-at-birth-relation-to-patient.html"
+                  title="StructureDefinition/chief-at-birth-relation-to-patient">Chief at Birth</a>
+            </td>
+            <td>
+<p>Patient's chief at birth.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-father-relation-to-patient.html"
+                  title="StructureDefinition/father-relation-to-patient">Father Relation to Patient</a>
+            </td>
+            <td>
+<p>The patient's father.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-generic-social-history-observation-profile.html"
+                  title="StructureDefinition/generic-social-history-observation-profile">Generic Observation Profile</a>
+            </td>
+            <td>
+<p>This profile acts as a base profile from which more observation profiles can be derived.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-immunization-patient.html"
+                  title="StructureDefinition/immunization-patient">Generic Patient Profile for Immunizations</a>
+            </td>
+            <td>
+<p>Is used to document demographics and other administrative information about an individual receiving care or other health-related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-vaccine-administration.html"
+                  title="StructureDefinition/vaccine-administration">Generic Vaccine Administration Profile</a>
+            </td>
+            <td>
+<p>Records the vaccine administered to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-guardian-occupation.html"
+                  title="StructureDefinition/guardian-occupation">Guardian Occupation</a>
+            </td>
+            <td>
+<p>Records the current occupation for the guardian</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-guardian-relation-to-patient.html"
+                  title="StructureDefinition/guardian-relation-to-patient">Guardian Relation to Patient Profile</a>
+            </td>
+            <td>
+<p>A guardian to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-full-bundle.html"
+                  title="StructureDefinition/hpv-full-bundle">HPV Full Bundle</a>
+            </td>
+            <td>
+<p>This bundle contains all of the HPV resources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-immunization.html"
+                  title="StructureDefinition/hpv-immunization">HPV Immunization</a>
+            </td>
+            <td>
+<p>Records the vaccine administered to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-immunocomprommised.html"
+                  title="StructureDefinition/hpv-immunocomprommised">HPV Immunocomprommised</a>
+            </td>
+            <td>
+<p>This is to document whether the patient is immunocompromised.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-vaccine-details.html"
+                  title="StructureDefinition/hpv-vaccine-details">HPV Vaccine Details</a>
+            </td>
+            <td>
+<p>Records the batch number for the vaccine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-healthcare-service-provider.html"
+                  title="StructureDefinition/healthcare-service-provider">Healthcare Service Provider Profile</a>
+            </td>
+            <td>
+<p>An organization that provides healthcare services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-educational-level.html"
+                  title="StructureDefinition/patient-educational-level">Highest education level attained</a>
+            </td>
+            <td>
+<p>A patient's highest education level attained</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medical-insurance.html"
+                  title="StructureDefinition/medical-insurance">Insurance or Medical Plan</a>
+            </td>
+            <td>
+<p>Insurance or medical plan details</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-medical-insurance-company.html"
+                  title="StructureDefinition/medical-insurance-company">Medical Insurance Company</a>
+            </td>
+            <td>
+<p>A company that provides insurance to its subscribers that may include healthcare related policies.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-mother-relation-to-patient.html"
+                  title="StructureDefinition/mother-relation-to-patient">Mother Relation to Patient</a>
+            </td>
+            <td>
+<p>The patient's mother.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-immunization-patient.html"
+                  title="StructureDefinition/hpv-immunization-patient">Patient Profile for HPV Immunizations</a>
+            </td>
+            <td>
+<p>Is used to document demographics and other administrative information about an individual receiving care or other health-related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-smartcare-immunization-patient.html"
+                  title="StructureDefinition/smartcare-immunization-patient">Patient Profile for Smartcare Immunizations</a>
+            </td>
+            <td>
+<p>Is used to document demographics and other administrative information about an individual receiving care or other health-related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-date-patient-first-married.html"
+                  title="StructureDefinition/date-patient-first-married">Patient's Date of First Marriage</a>
+            </td>
+            <td>
+<p>Records the date when the patient was first married</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-patient-home-language.html"
+                  title="StructureDefinition/patient-home-language">Patient's Home Language</a>
+            </td>
+            <td>
+<p>Records the home language for the patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-relation-to-patient.html"
+                  title="StructureDefinition/relation-to-patient">Relation to Patient Profile</a>
+            </td>
+            <td>
+<p>This profile acts as a base profile from which more specific RelatedPerson profiles can be derived.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-relative-relation-to-patient.html"
+                  title="StructureDefinition/relative-relation-to-patient">Relative Relation to Patient</a>
+            </td>
+            <td>
+<p>The patient's relative.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-smartcare-full-bundle.html"
+                  title="StructureDefinition/smartcare-full-bundle">Smartcare Full Bundle</a>
+            </td>
+            <td>
+<p>This bundle contains all of the Smartcare resources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-spouse-occupation.html"
+                  title="StructureDefinition/spouse-occupation">Spouse Occupation</a>
+            </td>
+            <td>
+<p>Records the current occupation for the spouse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-spouse-relation-to-patient.html"
+                  title="StructureDefinition/spouse-relation-to-patient">Spouse Relation to Patient</a>
+            </td>
+            <td>
+<p>The husband or wife, considered in relation to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-target-facility-encounter.html"
+                  title="StructureDefinition/target-facility-encounter">Target Facility Encounter</a>
+            </td>
+            <td>
+<p>Represents the current facility at which the patient is receiving health services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-underlying-condition.html"
+                  title="StructureDefinition/underlying-condition">Underlying Condition</a>
+            </td>
+            <td>
+<p>Condition profile for capturing specific underlying conditions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-vaccination-site-type.html"
+                  title="StructureDefinition/hpv-vaccination-site-type">Vaccination site type in HPV</a>
+            </td>
+            <td>
+<p>Indicates whether the vaccination was administered at the facility or at an outreach post.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-smartcare-vaccination-site-type.html"
+                  title="StructureDefinition/smartcare-vaccination-site-type">Vaccination site type in Smartcare</a>
+            </td>
+            <td>
+<p>Indicates whether the vaccination was administered at the facility or at an outreach post.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="2"> </a>
+   <h3>Structures: Extension Definitions </h3>
+    <p>These define constraints on FHIR data types for systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-administrative-sex.html"
+                  title="StructureDefinition/administrative-sex">Administrative Sex</a>
+            </td>
+            <td>
+<p>This is an extension to capture that patient's administrative sex.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-hpv-vaccination-patient-registration-date.html"
+                  title="StructureDefinition/hpv-vaccination-patient-registration-date">HPV Patient Registration Date</a>
+            </td>
+            <td>
+<p>A date representing when the patient was registered for HPV vaccination.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-born-in-zambia.html"
+                  title="StructureDefinition/born-in-zambia">Patient born in Zambia?</a>
+            </td>
+            <td>
+<p>This is an extension to capture whether the patient was born in Zambia.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-is-estimated-date-of-birth.html"
+                  title="StructureDefinition/is-estimated-date-of-birth">Patient's Date of Birth Is Estimated?</a>
+            </td>
+            <td>
+<p>This is an extension to capture whether the patient's date of birth was estimated.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="3"> </a>
+   <h3>Terminology: Value Sets </h3>
+    <p>These define sets of codes used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-administrative-sex.html"
+                  title="ValueSet/vs-administrative-sex">Administrative Sex</a>
+            </td>
+            <td>
+<p>A List of Administrative Sex codes.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-covax-observations.html"
+                  title="ValueSet/covax-observations">COVAX Observations</a>
+            </td>
+            <td>
+<p>A ValueSet containing COVID19 vaccination observation</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-home-language.html" title="ValueSet/vs-home-language">Patient's Home Language</a>
+            </td>
+            <td>
+<p>A list of languages.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-loinc-education-level-attained.html"
+                  title="ValueSet/vs-loinc-education-level-attained">Patient's highest education level attained (LOINC)</a>
+            </td>
+            <td>
+<p>A list of LOINC education levels.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-proprietary-education-level-attained.html"
+                  title="ValueSet/vs-proprietary-education-level-attained">Patient's highest education level attained (Proprietary)</a>
+            </td>
+            <td>
+<p>A list of proprietary education levels.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-underlying-conditions.html"
+                  title="ValueSet/underlying-conditions">Underlying Conditions</a>
+            </td>
+            <td>
+<p>A ValueSet containing Underlying conditions</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-proprietary-hpv-vaccination-site.html"
+                  title="ValueSet/vs-proprietary-hpv-vaccination-site">Vaccination site types in HPV (Proprietary)</a>
+            </td>
+            <td>
+<p>A list of vaccination sites (posts) where the vaccination was administered.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-proprietary-smartcare-vaccination-site.html"
+                  title="ValueSet/vs-proprietary-smartcare-vaccination-site">Vaccination site types in Smartcare (Proprietary)</a>
+            </td>
+            <td>
+<p>A list of vaccination sites (posts) where the vaccination was administered.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-vs-vaccines.html" title="ValueSet/vs-vaccines">Vaccine Codes</a>
+            </td>
+            <td>
+<p>A List of Vaccine Codes Use In Zambia</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="4"> </a>
+   <h3>Terminology: Code Systems </h3>
+    <p>These define new code systems used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-home-language.html"
+                  title="CodeSystem/cs-home-language">Patient's Home Language</a>
+            </td>
+            <td>
+<p>A list of languages.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-proprietary-education-level-attained.html"
+                  title="CodeSystem/cs-proprietary-education-level-attained">Patient's highest education level attained (Proprietary)</a>
+            </td>
+            <td>
+<p>A list of proprietary education levels.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-proprietary-hpv-vaccination-site.html"
+                  title="CodeSystem/cs-proprietary-hpv-vaccination-site">Vaccination site types in HPV (Proprietary)</a>
+            </td>
+            <td>
+<p>A list of vaccination sites (posts) where the vaccination was administered.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="CodeSystem-cs-proprietary-smartcare-vaccination-site.html"
+                  title="CodeSystem/cs-proprietary-smartcare-vaccination-site">Vaccination site types in Smartcare (Proprietary)</a>
+            </td>
+            <td>
+<p>A list of vaccination sites (posts) where the vaccination was administered.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="5"> </a>
+   <h3>Terminology: Structure Maps </h3>
+    <p>These define transformations to convert between data structures used by systems conforming to this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureMap-PropietaryEducationLevelToLOINCEducationLevel.html"
+                  title="StructureMap/PropietaryEducationLevelToLOINCEducationLevel">Propietary Educational Level To LOINC Educational Level</a>
+            </td>
+            <td>
+<p>Maps the Propietary Educational Level codes To LOINC Educational Level codes.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="6"> </a>
+   <h3>Terminology: Concept Maps </h3>
+    <p>These define transformations to convert between codes by systems conforming with this implementation guide.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.html"
+                  title="ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel">Proprietary Education Level to LOINC Education Level</a>
+            </td>
+            <td>
+<p>Mapping to and from Proprietary Education Level to LOINC Education Level.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+   <a name="7"> </a>
+   <h3>Example: Example Instances </h3>
+    <p>These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.</p>
+<table class="grid">
+      <col style="width:20%"/>
+      <tbody>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-ChiefAtBirthRelatedPersonExample.html"
+                  title="RelatedPerson/ChiefAtBirthRelatedPersonExample">Chief at Birth</a>
+            </td>
+            <td>
+<p>Patient's chief at birth.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-PatientFatherRelatedPersonExample.html"
+                  title="RelatedPerson/PatientFatherRelatedPersonExample">Father Relation to Patient</a>
+            </td>
+            <td>
+<p>The patient's father.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-ImmunizationPatientExample.html"
+                  title="Patient/ImmunizationPatientExample">Generic Immunization Patient</a>
+            </td>
+            <td>
+<p>Is used to document demographics and other administrative information about an individual receiving care or other health-related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-RelationToPatientExample.html"
+                  title="RelatedPerson/RelationToPatientExample">Generic Relation to Patient</a>
+            </td>
+            <td>
+<p>This profile acts as a base profile from which more specific RelatedPerson profiles can be derived.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-GenericObservationExample.html"
+                  title="Observation/GenericObservationExample">Generic Social History Observation Profile</a>
+            </td>
+            <td>
+<p>This profile acts as a base profile from which more specific social history observation profiles can be derived.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-GuardianOccupationObservationExample.html"
+                  title="Observation/GuardianOccupationObservationExample">Guardian Occupation</a>
+            </td>
+            <td>
+<p>Records the current occupation for the guardian</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-HPVGuardianRelatedPersonExample.html"
+                  title="RelatedPerson/HPVGuardianRelatedPersonExample">Guardian Relation to Patient in HPV</a>
+            </td>
+            <td>
+<p>A guardian to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-SmartcareGuardianRelatedPersonExample.html"
+                  title="RelatedPerson/SmartcareGuardianRelatedPersonExample">Guardian Relation to Patient in Smartcare</a>
+            </td>
+            <td>
+<p>A guardian to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-HPVFullBundleExample.html"
+                  title="Bundle/HPVFullBundleExample">HPV Bundle</a>
+            </td>
+            <td>
+<p>A bundle containing all HPV FHIR resources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-HPVImmunizationExample.html"
+                  title="Immunization/HPVImmunizationExample">HPV Immunization Example</a>
+            </td>
+            <td>
+<p>Records the vaccine administered to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-HPVImmunocomprommisedExample.html"
+                  title="Observation/HPVImmunocomprommisedExample">HPV Immunocomprommised</a>
+            </td>
+            <td>
+<p>This is to document whether the HPV patient has been observed to be immunocomprommised.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Medication-HPVVaccineExample.html"
+                  title="Medication/HPVVaccineExample">HPV Vaccine Details</a>
+            </td>
+            <td>
+<p>Records the batch number for the vaccine.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-OrganizationExample.html"
+                  title="Organization/OrganizationExample">Healthcare Service Provider</a>
+            </td>
+            <td>
+<p>An organization that provides healthcare services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PatientEducationalLevelObservationExample.html"
+                  title="Observation/PatientEducationalLevelObservationExample">Highest education level attained</a>
+            </td>
+            <td>
+<p>A patient's highest education level attained</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-HPVImmunizationPatientExample.html"
+                  title="Patient/HPVImmunizationPatientExample">Immunization Patient in HPV</a>
+            </td>
+            <td>
+<p>Is used to document demographics and other administrative information about an individual receiving care or other health-related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Patient-SmartcareImmunizationPatientExample.html"
+                  title="Patient/SmartcareImmunizationPatientExample">Immunization Patient in Smartcare</a>
+            </td>
+            <td>
+<p>Is used to document demographics and other administrative information about an individual receiving care or other health-related services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Coverage-MedicalInsuranceExample.html"
+                  title="Coverage/MedicalInsuranceExample">Insurance or Medical Plan</a>
+            </td>
+            <td>
+<p>Insurance or medical plan details</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-MedicalInsuranceCompanyExample.html"
+                  title="Organization/MedicalInsuranceCompanyExample">Medical Insurance Company</a>
+            </td>
+            <td>
+<p>A company that provides insurance to its subscribers that may include healthcare related policies.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-PatientMotherRelatedPersonExample.html"
+                  title="RelatedPerson/PatientMotherRelatedPersonExample">Mother Relation to Patient</a>
+            </td>
+            <td>
+<p>The patient's mother.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-DatePatientFirstMarriedObservationExample.html"
+                  title="Observation/DatePatientFirstMarriedObservationExample">Patient's Date of First Marriage</a>
+            </td>
+            <td>
+<p>Records the date when the patient was first married</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-PatientHomeLanguageObservationExample.html"
+                  title="Observation/PatientHomeLanguageObservationExample">Patient's Home Language</a>
+            </td>
+            <td>
+<p>Records the home language for the patient</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-RelativeRelatedPersonExample.html"
+                  title="RelatedPerson/RelativeRelatedPersonExample">Relative Relation to Patient</a>
+            </td>
+            <td>
+<p>The patient's relative.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Bundle-Smartcare.html" title="Bundle/Smartcare">Smartcare Bundle</a>
+            </td>
+            <td>
+<p>A bundle containing all Smartcare FHIR resources.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Observation-SpouseOccupationObservationExample.html"
+                  title="Observation/SpouseOccupationObservationExample">Spouse Occupation</a>
+            </td>
+            <td>
+<p>Records the current occupation for the spouse</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="RelatedPerson-SpouseRelatedPersonExample.html"
+                  title="RelatedPerson/SpouseRelatedPersonExample">Spouse Related to Patient</a>
+            </td>
+            <td>
+<p>The husband or wife, considered in relation to the patient.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-HPVTargetFacilityEncounterExample.html"
+                  title="Encounter/HPVTargetFacilityEncounterExample">Target Facility Encounter in HPV</a>
+            </td>
+            <td>
+<p>Represents the current facility at which the patient is receiving health services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Encounter-SmartcareTargetFacilityEncounterExample.html"
+                  title="Encounter/SmartcareTargetFacilityEncounterExample">Target Facility Encounter in Smartcare</a>
+            </td>
+            <td>
+<p>Represents the current facility at which the patient is receiving health services.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-SmartcareVaccinationSiteTypeExample.html"
+                  title="Organization/SmartcareVaccinationSiteTypeExample">Vaccination site type</a>
+            </td>
+            <td>
+<p>Indicates whether the vaccination was administered at the facility or at an outreach post.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Organization-HPVVaccinationSiteTypeExample.html"
+                  title="Organization/HPVVaccinationSiteTypeExample">Vaccination site type in HPV</a>
+            </td>
+            <td>
+<p>Indicates whether the vaccination was administered at the facility or at an outreach post.</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="Immunization-VaccinesExample.html"
+                  title="Immunization/VaccinesExample">Vaccine Administration</a>
+            </td>
+            <td>
+<p>Records the vaccine administered to the patient.</p>
+</td>
+         </tr>
+      </tbody>
+   </table>
+</div>
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+           
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.moh.gov.zm">Ministry of Health</a>.  Package openhie.fhir.zambia-immunizations#1.0.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Aug 14, 2024 13:41+0200">2024-08-14</span>
+          <br/>
+          <span style="color: #FFFF77">
+                      Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
+                 <a style="color: #81BEF7" href="qa.html">QA Report</a> |
+                 
+                 <a style="color: #81BEF7" target="_blank" href="http://openhie.org/fhir/zambia-immunizations/history.html">Version History</a> |
+                 <a style="color: #81BEF7" rel="license" href="http://hl7.org/fhir/R5/license.html"><img style="border-style: none;" alt="CC-BY" src="assets/images/cc-by.png" height="17"/></a> |
+                 <!--<a style="color: #81BEF7" href="todo.html">Search</a> | --> 
+
+
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+  
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <!-- <script>anchors.options.visible = 'hover' -->
+
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

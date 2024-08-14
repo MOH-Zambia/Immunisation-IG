@@ -1,0 +1,1370 @@
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "openhie.fhir.zambia-immunizations",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide openhie.fhir.zambia-immunizations</b></p><a name=\"openhie.fhir.zambia-immunizations\"> </a><a name=\"hcopenhie.fhir.zambia-immunizations\"> </a><a name=\"hcopenhie.fhir.zambia-immunizations-en-US\"> </a><h2>ZambiaImmunizationsIG</h2><p>The official URL for this implementation guide is: </p><pre>http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations</pre><div><p>Zambia Immunizations FHIR Implementation Guide.</p>\n</div></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/ImplementationGuide/openhie.fhir.zambia-immunizations",
+  "version" : "1.0.0",
+  "name" : "ZambiaImmunizationsIG",
+  "title" : "Zambia Immunizations FHIR Implementation Guide",
+  "status" : "active",
+  "date" : "2024-01-30",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "Zambia Immunizations FHIR Implementation Guide.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "packageId" : "openhie.fhir.zambia-immunizations",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "6.0.2"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.1.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#0.1.0"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/administrative-sex"
+      },
+      "name" : "Administrative Sex",
+      "description" : "This is an extension to capture that patient's administrative sex.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-administrative-sex"
+      },
+      "name" : "Administrative Sex",
+      "description" : "A List of Administrative Sex codes.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/chief-at-birth-relation-to-patient"
+      },
+      "name" : "Chief at Birth",
+      "description" : "Patient's chief at birth.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/ChiefAtBirthRelatedPersonExample"
+      },
+      "name" : "Chief at Birth",
+      "description" : "Patient's chief at birth.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/covax-immunization-patient"
+      },
+      "name" : "COVAX Immunization Patient",
+      "description" : "Patient profile for Covax use case",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/covax-observation"
+      },
+      "name" : "COVAX Observation",
+      "description" : "Profile for capturing observations during vaccination",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/covax-observations"
+      },
+      "name" : "COVAX Observations",
+      "description" : "A ValueSet containing COVID19 vaccination observation",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/covid19-vaccine-medication"
+      },
+      "name" : "COVID-19 Vaccine Medication",
+      "description" : "A profile for COVID-19 vaccine medications",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/father-relation-to-patient"
+      },
+      "name" : "Father Relation to Patient",
+      "description" : "The patient's father.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/PatientFatherRelatedPersonExample"
+      },
+      "name" : "Father Relation to Patient",
+      "description" : "The patient's father.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ImmunizationPatientExample"
+      },
+      "name" : "Generic Immunization Patient",
+      "description" : "Is used to document demographics and other administrative information about an individual receiving care or other health-related services.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/immunization-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/generic-social-history-observation-profile"
+      },
+      "name" : "Generic Observation Profile",
+      "description" : "This profile acts as a base profile from which more observation profiles can be derived.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/immunization-patient"
+      },
+      "name" : "Generic Patient Profile for Immunizations",
+      "description" : "Is used to document demographics and other administrative information about an individual receiving care or other health-related services.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelationToPatientExample"
+      },
+      "name" : "Generic Relation to Patient",
+      "description" : "This profile acts as a base profile from which more specific RelatedPerson profiles can be derived.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/GenericObservationExample"
+      },
+      "name" : "Generic Social History Observation Profile",
+      "description" : "This profile acts as a base profile from which more specific social history observation profiles can be derived.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/generic-social-history-observation-profile"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/vaccine-administration"
+      },
+      "name" : "Generic Vaccine Administration Profile",
+      "description" : "Records the vaccine administered to the patient.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/guardian-occupation"
+      },
+      "name" : "Guardian Occupation",
+      "description" : "Records the current occupation for the guardian",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/GuardianOccupationObservationExample"
+      },
+      "name" : "Guardian Occupation",
+      "description" : "Records the current occupation for the guardian",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/HPVGuardianRelatedPersonExample"
+      },
+      "name" : "Guardian Relation to Patient in HPV",
+      "description" : "A guardian to the patient.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SmartcareGuardianRelatedPersonExample"
+      },
+      "name" : "Guardian Relation to Patient in Smartcare",
+      "description" : "A guardian to the patient.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/guardian-relation-to-patient"
+      },
+      "name" : "Guardian Relation to Patient Profile",
+      "description" : "A guardian to the patient.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/OrganizationExample"
+      },
+      "name" : "Healthcare Service Provider",
+      "description" : "An organization that provides healthcare services.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/healthcare-service-provider"
+      },
+      "name" : "Healthcare Service Provider Profile",
+      "description" : "An organization that provides healthcare services.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-educational-level"
+      },
+      "name" : "Highest education level attained",
+      "description" : "A patient's highest education level attained",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PatientEducationalLevelObservationExample"
+      },
+      "name" : "Highest education level attained",
+      "description" : "A patient's highest education level attained",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/HPVFullBundleExample"
+      },
+      "name" : "HPV Bundle",
+      "description" : "A bundle containing all HPV FHIR resources.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-full-bundle"
+      },
+      "name" : "HPV Full Bundle",
+      "description" : "This bundle contains all of the HPV resources.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-immunization"
+      },
+      "name" : "HPV Immunization",
+      "description" : "Records the vaccine administered to the patient.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/HPVImmunizationExample"
+      },
+      "name" : "HPV Immunization Example",
+      "description" : "Records the vaccine administered to the patient.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-immunocomprommised"
+      },
+      "name" : "HPV Immunocomprommised",
+      "description" : "This is to document whether the patient is immunocompromised.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/HPVImmunocomprommisedExample"
+      },
+      "name" : "HPV Immunocomprommised",
+      "description" : "This is to document whether the HPV patient has been observed to be immunocomprommised.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-vaccination-patient-registration-date"
+      },
+      "name" : "HPV Patient Registration Date",
+      "description" : "A date representing when the patient was registered for HPV vaccination.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-vaccine-details"
+      },
+      "name" : "HPV Vaccine Details",
+      "description" : "Records the batch number for the vaccine.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Medication"
+      }],
+      "reference" : {
+        "reference" : "Medication/HPVVaccineExample"
+      },
+      "name" : "HPV Vaccine Details",
+      "description" : "Records the batch number for the vaccine.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/HPVImmunizationPatientExample"
+      },
+      "name" : "Immunization Patient in HPV",
+      "description" : "Is used to document demographics and other administrative information about an individual receiving care or other health-related services.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/SmartcareImmunizationPatientExample"
+      },
+      "name" : "Immunization Patient in Smartcare",
+      "description" : "Is used to document demographics and other administrative information about an individual receiving care or other health-related services.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medical-insurance"
+      },
+      "name" : "Insurance or Medical Plan",
+      "description" : "Insurance or medical plan details",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Coverage"
+      }],
+      "reference" : {
+        "reference" : "Coverage/MedicalInsuranceExample"
+      },
+      "name" : "Insurance or Medical Plan",
+      "description" : "Insurance or medical plan details",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/medical-insurance-company"
+      },
+      "name" : "Medical Insurance Company",
+      "description" : "A company that provides insurance to its subscribers that may include healthcare related policies.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/MedicalInsuranceCompanyExample"
+      },
+      "name" : "Medical Insurance Company",
+      "description" : "A company that provides insurance to its subscribers that may include healthcare related policies.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/mother-relation-to-patient"
+      },
+      "name" : "Mother Relation to Patient",
+      "description" : "The patient's mother.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/PatientMotherRelatedPersonExample"
+      },
+      "name" : "Mother Relation to Patient",
+      "description" : "The patient's mother.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/born-in-zambia"
+      },
+      "name" : "Patient born in Zambia?",
+      "description" : "This is an extension to capture whether the patient was born in Zambia.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-immunization-patient"
+      },
+      "name" : "Patient Profile for HPV Immunizations",
+      "description" : "Is used to document demographics and other administrative information about an individual receiving care or other health-related services.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/smartcare-immunization-patient"
+      },
+      "name" : "Patient Profile for Smartcare Immunizations",
+      "description" : "Is used to document demographics and other administrative information about an individual receiving care or other health-related services.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/is-estimated-date-of-birth"
+      },
+      "name" : "Patient's Date of Birth Is Estimated?",
+      "description" : "This is an extension to capture whether the patient's date of birth was estimated.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/date-patient-first-married"
+      },
+      "name" : "Patient's Date of First Marriage",
+      "description" : "Records the date when the patient was first married",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/DatePatientFirstMarriedObservationExample"
+      },
+      "name" : "Patient's Date of First Marriage",
+      "description" : "Records the date when the patient was first married",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-loinc-education-level-attained"
+      },
+      "name" : "Patient's highest education level attained (LOINC)",
+      "description" : "A list of LOINC education levels.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-proprietary-education-level-attained"
+      },
+      "name" : "Patient's highest education level attained (Proprietary)",
+      "description" : "A list of proprietary education levels.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-proprietary-education-level-attained"
+      },
+      "name" : "Patient's highest education level attained (Proprietary)",
+      "description" : "A list of proprietary education levels.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/patient-home-language"
+      },
+      "name" : "Patient's Home Language",
+      "description" : "Records the home language for the patient",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-home-language"
+      },
+      "name" : "Patient's Home Language",
+      "description" : "A list of languages.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-home-language"
+      },
+      "name" : "Patient's Home Language",
+      "description" : "A list of languages.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/PatientHomeLanguageObservationExample"
+      },
+      "name" : "Patient's Home Language",
+      "description" : "Records the home language for the patient",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel"
+      },
+      "name" : "Proprietary Education Level to LOINC Education Level",
+      "description" : "Mapping to and from Proprietary Education Level to LOINC Education Level.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/relation-to-patient"
+      },
+      "name" : "Relation to Patient Profile",
+      "description" : "This profile acts as a base profile from which more specific RelatedPerson profiles can be derived.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/relative-relation-to-patient"
+      },
+      "name" : "Relative Relation to Patient",
+      "description" : "The patient's relative.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/RelativeRelatedPersonExample"
+      },
+      "name" : "Relative Relation to Patient",
+      "description" : "The patient's relative.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/Smartcare"
+      },
+      "name" : "Smartcare Bundle",
+      "description" : "A bundle containing all Smartcare FHIR resources.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/smartcare-full-bundle"
+      },
+      "name" : "Smartcare Full Bundle",
+      "description" : "This bundle contains all of the Smartcare resources.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/spouse-occupation"
+      },
+      "name" : "Spouse Occupation",
+      "description" : "Records the current occupation for the spouse",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/SpouseOccupationObservationExample"
+      },
+      "name" : "Spouse Occupation",
+      "description" : "Records the current occupation for the spouse",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "RelatedPerson"
+      }],
+      "reference" : {
+        "reference" : "RelatedPerson/SpouseRelatedPersonExample"
+      },
+      "name" : "Spouse Related to Patient",
+      "description" : "The husband or wife, considered in relation to the patient.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/spouse-relation-to-patient"
+      },
+      "name" : "Spouse Relation to Patient",
+      "description" : "The husband or wife, considered in relation to the patient.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/target-facility-encounter"
+      },
+      "name" : "Target Facility Encounter",
+      "description" : "Represents the current facility at which the patient is receiving health services.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/HPVTargetFacilityEncounterExample"
+      },
+      "name" : "Target Facility Encounter in HPV",
+      "description" : "Represents the current facility at which the patient is receiving health services.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Encounter"
+      }],
+      "reference" : {
+        "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+      },
+      "name" : "Target Facility Encounter in Smartcare",
+      "description" : "Represents the current facility at which the patient is receiving health services.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/underlying-condition"
+      },
+      "name" : "Underlying Condition",
+      "description" : "Condition profile for capturing specific underlying conditions",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/underlying-conditions"
+      },
+      "name" : "Underlying Conditions",
+      "description" : "A ValueSet containing Underlying conditions",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/SmartcareVaccinationSiteTypeExample"
+      },
+      "name" : "Vaccination site type",
+      "description" : "Indicates whether the vaccination was administered at the facility or at an outreach post.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/hpv-vaccination-site-type"
+      },
+      "name" : "Vaccination site type in HPV",
+      "description" : "Indicates whether the vaccination was administered at the facility or at an outreach post.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/HPVVaccinationSiteTypeExample"
+      },
+      "name" : "Vaccination site type in HPV",
+      "description" : "Indicates whether the vaccination was administered at the facility or at an outreach post.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/smartcare-vaccination-site-type"
+      },
+      "name" : "Vaccination site type in Smartcare",
+      "description" : "Indicates whether the vaccination was administered at the facility or at an outreach post.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-proprietary-hpv-vaccination-site"
+      },
+      "name" : "Vaccination site types in HPV (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-proprietary-hpv-vaccination-site"
+      },
+      "name" : "Vaccination site types in HPV (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-proprietary-smartcare-vaccination-site"
+      },
+      "name" : "Vaccination site types in Smartcare (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-proprietary-smartcare-vaccination-site"
+      },
+      "name" : "Vaccination site types in Smartcare (Proprietary)",
+      "description" : "A list of vaccination sites (posts) where the vaccination was administered.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Immunization"
+      }],
+      "reference" : {
+        "reference" : "Immunization/VaccinesExample"
+      },
+      "name" : "Vaccine Administration",
+      "description" : "Records the vaccine administered to the patient.",
+      "isExample" : true,
+      "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-vaccines"
+      },
+      "name" : "Vaccine Codes",
+      "description" : "A List of Vaccine Codes Use In Zambia",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/PropietaryEducationLevelToLOINCEducationLevel"
+      },
+      "name" : "Propietary Educational Level To LOINC Educational Level",
+      "description" : "Maps the Propietary Educational Level codes To LOINC Educational Level codes."
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Home",
+        "generation" : "html"
+      },
+      {
+        "sourceUrl" : "changes.html",
+        "name" : "changes.html",
+        "title" : "Changes",
+        "generation" : "html"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2021+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "STU1"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://openhie.org/fhir/zambia-immunizations/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}

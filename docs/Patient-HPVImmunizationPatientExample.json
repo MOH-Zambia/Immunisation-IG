@@ -1,0 +1,65 @@
+{
+  "resourceType" : "Patient",
+  "id" : "HPVImmunizationPatientExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Patient HPVImmunizationPatientExample</b></p><a name=\"HPVImmunizationPatientExample\"> </a><a name=\"hcHPVImmunizationPatientExample\"> </a><a name=\"hcHPVImmunizationPatientExample-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Other Ids (see the one above)\">Other Ids:</td><td colspan=\"3\"><ul><li><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-passport</code>/PN15685241</li><li><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc</code>/999999/99/9</li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Ways to contact the Patient\">Contact Detail</td><td colspan=\"3\"><ul><li><a href=\"mailto:mail@mail.com\">mail@mail.com</a></li><li><a href=\"tel:+27821234567\">+27821234567</a></li><li>100 Zimi Road Ndola City Ndola Copperbelt Province Zambia </li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></li><li>Also see: <a href=\"RelatedPerson-HPVGuardianRelatedPersonExample.html\">RelatedPerson Mike Smith (official)</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture that patient's administrative sex.\"><a href=\"StructureDefinition-administrative-sex.html\">Administrative Sex</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0001",
+        "code" : "F"
+      }]
+    }
+  }],
+  "identifier" : [{
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number",
+    "value" : "CN0000000"
+  },
+  {
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-passport",
+    "value" : "PN15685241"
+  },
+  {
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc",
+    "value" : "999999/99/9"
+  }],
+  "name" : [{
+    "use" : "official",
+    "family" : "Jones",
+    "given" : ["Tom",
+    "Jack"]
+  }],
+  "telecom" : [{
+    "system" : "email",
+    "value" : "mail@mail.com"
+  },
+  {
+    "system" : "phone",
+    "value" : "+27821234567"
+  }],
+  "birthDate" : "2000-01-01",
+  "address" : [{
+    "line" : ["100",
+    "Zimi Road",
+    "Ndola City"],
+    "city" : "Ndola",
+    "district" : "Ndola District",
+    "state" : "Copperbelt Province",
+    "country" : "Zambia"
+  }],
+  "managingOrganization" : {
+    "reference" : "Organization/OrganizationExample"
+  },
+  "link" : [{
+    "other" : {
+      "reference" : "RelatedPerson/HPVGuardianRelatedPersonExample"
+    },
+    "type" : "seealso"
+  }]
+}

@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Organization/SmartcareVaccinationSiteTypeExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SmartcareVaccinationSiteTypeExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization SmartcareVaccinationSiteTypeExample</b></p><a name=\"SmartcareVaccinationSiteTypeExample\"> </a><a name=\"hcSmartcareVaccinationSiteTypeExample\"> </a><a name=\"hcSmartcareVaccinationSiteTypeExample-en-US\"> </a><p><b>type</b>: <span title=\"Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site Outreach}\">Outreach</span></p><p><b>name</b>: facility name</p></div>"
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-smartcare-vaccination-site"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Outreach" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "facility name"] . # 
+
+# -------------------------------------------------------------------------------------
+

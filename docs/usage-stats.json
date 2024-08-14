@@ -1,0 +1,161 @@
+{
+  "package": "openhie.fhir.zambia-immunizations",
+  "version": "1.0.0",
+  "fhirVersion": "5.0.0",
+  "jurisdiction": "001",
+  "extensions": [
+    {
+      "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex",
+      "title": "Administrative Sex",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia",
+      "title": "Patient born in Zambia?",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date",
+      "title": "HPV Patient Registration Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth",
+      "title": "Patient\u0027s Date of Birth Is Estimated?",
+      "types": [
+        "boolean"
+      ]
+    }
+  ],
+  "profiles": {
+    "RelatedPerson": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient",
+        "title": "Spouse Relation to Patient"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient",
+        "title": "Patient Profile for Smartcare Immunizations"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation",
+        "title": "Spouse Occupation"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details",
+        "title": "HPV Vaccine Details"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-vaccination-site-type",
+        "title": "Vaccination site type in Smartcare"
+      }
+    ],
+    "Bundle": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle",
+        "title": "Smartcare Full Bundle"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration",
+        "title": "Generic Vaccine Administration Profile"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance",
+        "title": "Insurance or Medical Plan"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter",
+        "title": "Target Facility Encounter"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/underlying-condition",
+        "title": "Underlying Condition"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthTime": [
+      "Bundle.entry.resource.birthDate",
+      "Patient.birthDate"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-religion": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics": [
+      "StructureDefinition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia": [
+      "Bundle.entry.resource",
+      "Patient"
+    ],
+    "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date": [
+      "Bundle.entry.resource",
+      "Immunization"
+    ],
+    "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth": [
+      "Bundle.entry.resource.birthDate",
+      "Patient.birthDate"
+    ]
+  }
+}

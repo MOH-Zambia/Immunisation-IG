@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-home-language"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-home-language</b></p><a name="cs-home-language"> </a><a name="hccs-home-language"> </a><a name="hccs-home-language-en-US"> </a><p>This case-sensitive code system <code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Ambo<a name="cs-home-language-Ambo"> </a></td></tr><tr><td style="white-space:nowrap">Aushi<a name="cs-home-language-Aushi"> </a></td></tr><tr><td style="white-space:nowrap">Bemba<a name="cs-home-language-Bemba"> </a></td></tr><tr><td style="white-space:nowrap">Bisa<a name="cs-home-language-Bisa"> </a></td></tr><tr><td style="white-space:nowrap">Chewa<a name="cs-home-language-Chewa"> </a></td></tr><tr><td style="white-space:nowrap">Chikunda<a name="cs-home-language-Chikunda"> </a></td></tr><tr><td style="white-space:nowrap">Chokwe<a name="cs-home-language-Chokwe"> </a></td></tr><tr><td style="white-space:nowrap">Cishinga<a name="cs-home-language-Cishinga"> </a></td></tr><tr><td style="white-space:nowrap">English<a name="cs-home-language-English"> </a></td></tr><tr><td style="white-space:nowrap">Gova<a name="cs-home-language-Gova"> </a></td></tr><tr><td style="white-space:nowrap">Ila<a name="cs-home-language-Ila"> </a></td></tr><tr><td style="white-space:nowrap">Iwa<a name="cs-home-language-Iwa"> </a></td></tr><tr><td style="white-space:nowrap">Kabende<a name="cs-home-language-Kabende"> </a></td></tr><tr><td style="white-space:nowrap">Kaonde<a name="cs-home-language-Kaonde"> </a></td></tr><tr><td style="white-space:nowrap">Lamba<a name="cs-home-language-Lamba"> </a></td></tr><tr><td style="white-space:nowrap">Lenje<a name="cs-home-language-Lenje"> </a></td></tr><tr><td style="white-space:nowrap">Lozi<a name="cs-home-language-Lozi"> </a></td></tr><tr><td style="white-space:nowrap">Luvale<a name="cs-home-language-Luvale"> </a></td></tr><tr><td style="white-space:nowrap">Namwanga<a name="cs-home-language-Namwanga"> </a></td></tr><tr><td style="white-space:nowrap">Ngoni<a name="cs-home-language-Ngoni"> </a></td></tr><tr><td style="white-space:nowrap">Soli<a name="cs-home-language-Soli"> </a></td></tr><tr><td style="white-space:nowrap">Tonga<a name="cs-home-language-Tonga"> </a></td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language"/>
+  <version value="1.0.0"/>
+  <name value="CSHomeLanguage"/>
+  <title value="Patient's Home Language"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of languages."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="22"/>
+  <concept>
+    <code value="Ambo"/>
+    <display value="Ambo"/>
+  </concept>
+  <concept>
+    <code value="Aushi"/>
+    <display value="Aushi"/>
+  </concept>
+  <concept>
+    <code value="Bemba"/>
+    <display value="Bemba"/>
+  </concept>
+  <concept>
+    <code value="Bisa"/>
+    <display value="Bisa"/>
+  </concept>
+  <concept>
+    <code value="Chewa"/>
+    <display value="Chewa"/>
+  </concept>
+  <concept>
+    <code value="Chikunda"/>
+    <display value="Chikunda"/>
+  </concept>
+  <concept>
+    <code value="Chokwe"/>
+    <display value="Chokwe"/>
+  </concept>
+  <concept>
+    <code value="Cishinga"/>
+    <display value="Cishinga"/>
+  </concept>
+  <concept>
+    <code value="English"/>
+    <display value="English"/>
+  </concept>
+  <concept>
+    <code value="Gova"/>
+    <display value="Gova"/>
+  </concept>
+  <concept>
+    <code value="Ila"/>
+    <display value="Ila"/>
+  </concept>
+  <concept>
+    <code value="Iwa"/>
+    <display value="Iwa"/>
+  </concept>
+  <concept>
+    <code value="Kabende"/>
+    <display value="Kabende"/>
+  </concept>
+  <concept>
+    <code value="Kaonde"/>
+    <display value="Kaonde"/>
+  </concept>
+  <concept>
+    <code value="Lamba"/>
+    <display value="Lamba"/>
+  </concept>
+  <concept>
+    <code value="Lenje"/>
+    <display value="Lenje"/>
+  </concept>
+  <concept>
+    <code value="Lozi"/>
+    <display value="Lozi"/>
+  </concept>
+  <concept>
+    <code value="Luvale"/>
+    <display value="Luvale"/>
+  </concept>
+  <concept>
+    <code value="Namwanga"/>
+    <display value="Namwanga"/>
+  </concept>
+  <concept>
+    <code value="Ngoni"/>
+    <display value="Ngoni"/>
+  </concept>
+  <concept>
+    <code value="Soli"/>
+    <display value="Soli"/>
+  </concept>
+  <concept>
+    <code value="Tonga"/>
+    <display value="Tonga"/>
+  </concept>
+</CodeSystem>

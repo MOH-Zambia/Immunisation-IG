@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="ChiefAtBirthRelatedPersonExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson ChiefAtBirthRelatedPersonExample</b></p><a name="ChiefAtBirthRelatedPersonExample"> </a><a name="hcChiefAtBirthRelatedPersonExample"> </a><a name="hcChiefAtBirthRelatedPersonExample-en-US"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://snomed.info/sct 303119007}">Person in the community environment (person)</span></p><p><b>name</b>: Jones (Official)</p></div>
+  </text>
+  <patient>
+    <reference value="Patient/ImmunizationPatientExample"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="303119007"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Jones"/>
+  </name>
+</RelatedPerson>

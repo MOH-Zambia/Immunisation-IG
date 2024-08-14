@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="SpouseRelatedPersonExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson SpouseRelatedPersonExample</b></p><a name="SpouseRelatedPersonExample"> </a><a name="hcSpouseRelatedPersonExample"> </a><a name="hcSpouseRelatedPersonExample-en-US"> </a><p><b>patient</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SPS}">spouse</span></p><p><b>name</b>: Mike Jones (Official)</p><p><b>telecom</b>: <a href="tel:+26095705784">+26095705784</a></p></div>
+  </text>
+  <patient>
+    <reference value="Patient/ImmunizationPatientExample"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="SPS"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Jones"/>
+    <given value="Mike"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+26095705784"/>
+  </telecom>
+</RelatedPerson>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="HPVVaccineExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Medication HPVVaccineExample</b></p><a name="HPVVaccineExample"> </a><a name="hcHPVVaccineExample"> </a><a name="hcHPVVaccineExample-en-US"> </a><p><b>code</b>: <span title="Codes:{http://id.who.int/icd11/mms J07BM01}">J07BM01</span></p><h3>Batches</h3><table class="grid"><tr><td style="display: none">-</td><td><b>LotNumber</b></td></tr><tr><td style="display: none">*</td><td>123</td></tr></table></div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://id.who.int/icd11/mms"/>
+      <code value="J07BM01"/>
+    </coding>
+  </code>
+  <batch>
+    <lotNumber value="123"/>
+  </batch>
+</Medication>

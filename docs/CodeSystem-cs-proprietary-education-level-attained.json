@@ -1,0 +1,82 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "cs-proprietary-education-level-attained",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem cs-proprietary-education-level-attained</b></p><a name=\"cs-proprietary-education-level-attained\"> </a><a name=\"hccs-proprietary-education-level-attained\"> </a><a name=\"hccs-proprietary-education-level-attained-en-US\"> </a><p>This case-sensitive code system <code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">CertificateGraduate<a name=\"cs-proprietary-education-level-attained-CertificateGraduate\"> </a></td><td>Certificate Graduate</td></tr><tr><td style=\"white-space:nowrap\">DegreeGraduate<a name=\"cs-proprietary-education-level-attained-DegreeGraduate\"> </a></td><td>Degree Graduate</td></tr><tr><td style=\"white-space:nowrap\">DiplomaGraduate<a name=\"cs-proprietary-education-level-attained-DiplomaGraduate\"> </a></td><td>Diploma Graduate</td></tr><tr><td style=\"white-space:nowrap\">JuniorSecondary<a name=\"cs-proprietary-education-level-attained-JuniorSecondary\"> </a></td><td>Junior Secondary</td></tr><tr><td style=\"white-space:nowrap\">MastersGraduate<a name=\"cs-proprietary-education-level-attained-MastersGraduate\"> </a></td><td>Masters Graduate</td></tr><tr><td style=\"white-space:nowrap\">NoFormalEducation<a name=\"cs-proprietary-education-level-attained-NoFormalEducation\"> </a></td><td>No Formal Education</td></tr><tr><td style=\"white-space:nowrap\">PhDGraduate<a name=\"cs-proprietary-education-level-attained-PhDGraduate\"> </a></td><td>PhD Graduate</td></tr><tr><td style=\"white-space:nowrap\">Primary<a name=\"cs-proprietary-education-level-attained-Primary\"> </a></td><td>Primary</td></tr><tr><td style=\"white-space:nowrap\">SeniorSecondary<a name=\"cs-proprietary-education-level-attained-SeniorSecondary\"> </a></td><td>Senior Secondary</td></tr></table></div>"
+  },
+  "url" : "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained",
+  "version" : "1.0.0",
+  "name" : "CSProprietaryEducationLevelAttained",
+  "title" : "Patient's highest education level attained (Proprietary)",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2024-08-14T13:41:16+02:00",
+  "publisher" : "Ministry of Health",
+  "contact" : [{
+    "name" : "Ministry of Health",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.moh.gov.zm"
+    },
+    {
+      "system" : "email",
+      "value" : "info@moh.gov.zm"
+    }]
+  },
+  {
+    "name" : "Chisanga Louis Siwale",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "chisanga.siwale@moh.gov.zm",
+      "use" : "work"
+    }]
+  }],
+  "description" : "A list of proprietary education levels.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "http://unstats.un.org/unsd/methods/m49/m49.htm",
+      "code" : "001",
+      "display" : "World"
+    }]
+  }],
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 9,
+  "concept" : [{
+    "code" : "CertificateGraduate",
+    "display" : "Certificate Graduate"
+  },
+  {
+    "code" : "DegreeGraduate",
+    "display" : "Degree Graduate"
+  },
+  {
+    "code" : "DiplomaGraduate",
+    "display" : "Diploma Graduate"
+  },
+  {
+    "code" : "JuniorSecondary",
+    "display" : "Junior Secondary"
+  },
+  {
+    "code" : "MastersGraduate",
+    "display" : "Masters Graduate"
+  },
+  {
+    "code" : "NoFormalEducation",
+    "display" : "No Formal Education"
+  },
+  {
+    "code" : "PhDGraduate",
+    "display" : "PhD Graduate"
+  },
+  {
+    "code" : "Primary",
+    "display" : "Primary"
+  },
+  {
+    "code" : "SeniorSecondary",
+    "display" : "Senior Secondary"
+  }]
+}

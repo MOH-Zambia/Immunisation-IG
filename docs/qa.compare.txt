@@ -1,0 +1,262 @@
+ZambiaImmunizationsIG : Validation Results
+=========================================
+
+err = 0, warn = 18, info = 71
+$--
+Generated $--. FHIR version $-- for openhie.fhir.zambia-immunizations#$-- (canonical = http://openhie.org/fhir/zambia-immunizations)
+ Build Errors : 0 / 1 / 0
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Bundle-HPVFullBundleExample : 0 / 6 / 31
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Bundle-Smartcare : 0 / 0 / 51
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\CodeSystem-cs-home-language : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\CodeSystem-cs-proprietary-education-level-attained : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\CodeSystem-cs-proprietary-hpv-vaccination-site : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\CodeSystem-cs-proprietary-smartcare-vaccination-site : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel : 0 / 0 / 4
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Coverage-MedicalInsuranceExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Encounter-HPVTargetFacilityEncounterExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Encounter-SmartcareTargetFacilityEncounterExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Immunization-HPVImmunizationExample : 0 / 2 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Immunization-VaccinesExample : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ImplementationGuide-openhie.fhir.zambia-immunizations : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Medication-HPVVaccineExample : 0 / 1 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-DatePatientFirstMarriedObservationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-GenericObservationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-GuardianOccupationObservationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-HPVImmunocomprommisedExample : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-PatientEducationalLevelObservationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-PatientHomeLanguageObservationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Observation-SpouseOccupationObservationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Organization-HPVVaccinationSiteTypeExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Organization-MedicalInsuranceCompanyExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Organization-OrganizationExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Organization-SmartcareVaccinationSiteTypeExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Patient-HPVImmunizationPatientExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Patient-ImmunizationPatientExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\Patient-SmartcareImmunizationPatientExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-ChiefAtBirthRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-HPVGuardianRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-PatientFatherRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-PatientMotherRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-RelationToPatientExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-RelativeRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-SmartcareGuardianRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\RelatedPerson-SpouseRelatedPersonExample : 0 / 0 / 1
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-administrative-sex : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-born-in-zambia : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-chief-at-birth-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-covax-immunization-patient : 0 / 3 / 3
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-covax-observation : 0 / 1 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-covid19-vaccine-medication : 0 / 1 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-date-patient-first-married : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-father-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-generic-social-history-observation-profile : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-guardian-occupation : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-guardian-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-healthcare-service-provider : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-full-bundle : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-immunization : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-immunization-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-immunocomprommised : 0 / 0 / 4
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-vaccination-patient-registration-date : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-vaccination-site-type : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-hpv-vaccine-details : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-immunization-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-is-estimated-date-of-birth : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-medical-insurance : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-medical-insurance-company : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-mother-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-patient-educational-level : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-patient-home-language : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-relative-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-smartcare-full-bundle : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-smartcare-immunization-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-smartcare-vaccination-site-type : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-spouse-occupation : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-spouse-relation-to-patient : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-target-facility-encounter : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-underlying-condition : 0 / 1 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\StructureDefinition-vaccine-administration : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-covax-observations : 0 / 1 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-underlying-conditions : 0 / 1 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-administrative-sex : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-home-language : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-loinc-education-level-attained : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-proprietary-education-level-attained : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-proprietary-hpv-vaccination-site : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-proprietary-smartcare-vaccination-site : 0 / 0 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\fsh-generated\resources\ValueSet-vs-vaccines : 0 / 2 / 2
+ C:\Users\chisanga\GitHub\Immunisation-IG\input\maps\PropietaryEducationLevelToLOINCEducationLevel : 0 / 0 / 2
+</table>
+== n/a ==
+WARNING: C:\Users\chisanga\GitHub\Immunisation-IG\output\index.html: The html source has duplicate anchor Ids: ip
+== fsh-generated\resources\Bundle-HPVFullBundleExample.json ==
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[2].resource.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: Bundle/HPVFullBundleExample: Bundle.entry[2].resource.vaccineCode.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+WARNING: Bundle/HPVFullBundleExample: Bundle.entry[2].resource.vaccineCode: Unable to check whether the code is in the value set 'http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines|1.0.0' because the code system http://id.who.int/icd11/mms was not found
+WARNING: Bundle/HPVFullBundleExample: Bundle.entry[2].resource.patient: Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[2].resource.patient: Details for Patient/HPVImmunizationPatientExample matching against profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[2].resource/*Immunization/HPVImmunizationExample*/.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[2].resource/*Immunization/HPVImmunizationExample*/.vaccineCode.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+WARNING: Bundle/HPVFullBundleExample: Bundle.entry[3].resource/*RelatedPerson/HPVGuardianRelatedPersonExample*/.patient: Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[3].resource/*RelatedPerson/HPVGuardianRelatedPersonExample*/.patient: Details for Patient/HPVImmunizationPatientExample matching against profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[4].resource.code.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+WARNING: Bundle/HPVFullBundleExample: Bundle.entry[4].resource.subject: Found multiple matching profiles for Patient/HPVImmunizationPatientExample among choices: http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient, http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[4].resource.subject: Details for Patient/HPVImmunizationPatientExample matching against profile http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient|1.0.0
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[4].resource/*Observation/HPVImmunocomprommisedExample*/.code.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+WARNING: Bundle/HPVFullBundleExample: Bundle.entry[5].resource.code.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+INFORMATION: Bundle/HPVFullBundleExample: Bundle.entry[5].resource/*Medication/HPVVaccineExample*/.code.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+== fsh-generated\resources\Bundle-Smartcare.json ==
+INFORMATION: Bundle/Smartcare: Bundle.entry[2].resource.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+INFORMATION: Bundle/Smartcare: Bundle.entry[2].resource/*Immunization/VaccinesExample*/.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+== fsh-generated\resources\CodeSystem-cs-home-language.json ==
+INFORMATION: CodeSystem/cs-home-language: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\CodeSystem-cs-proprietary-education-level-attained.json ==
+INFORMATION: CodeSystem/cs-proprietary-education-level-attained: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\CodeSystem-cs-proprietary-hpv-vaccination-site.json ==
+INFORMATION: CodeSystem/cs-proprietary-hpv-vaccination-site: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\CodeSystem-cs-proprietary-smartcare-vaccination-site.json ==
+INFORMATION: CodeSystem/cs-proprietary-smartcare-vaccination-site: CodeSystem.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ConceptMap-ProprietaryEducationLevelToLOINCEducationLevel.json ==
+INFORMATION: ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel: ConceptMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel: ConceptMap.group[0].target: Target Code System http://loinc.org is only supported on the terminology server, so the target codes are not validated for performance reasons
+INFORMATION: ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel: ConceptMap.group[1].source: Source Code System http://loinc.org is only supported on the terminology server, so the source codes are not validated for performance reasons
+== fsh-generated\resources\Coverage-MedicalInsuranceExample.json ==
+== fsh-generated\resources\Encounter-HPVTargetFacilityEncounterExample.json ==
+== fsh-generated\resources\Encounter-SmartcareTargetFacilityEncounterExample.json ==
+== fsh-generated\resources\Immunization-HPVImmunizationExample.json ==
+INFORMATION: Immunization/HPVImmunizationExample: Immunization.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+WARNING: Immunization/HPVImmunizationExample: Immunization.vaccineCode.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+WARNING: Immunization/HPVImmunizationExample: Immunization.vaccineCode: Unable to check whether the code is in the value set 'http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines|1.0.0' because the code system http://id.who.int/icd11/mms was not found
+== fsh-generated\resources\Immunization-VaccinesExample.json ==
+INFORMATION: Immunization/VaccinesExample: Immunization.status: Reference to experimental CodeSystem http://hl7.org/fhir/event-status|5.0.0
+== fsh-generated\resources\ImplementationGuide-openhie.fhir.zambia-immunizations.json ==
+INFORMATION: ImplementationGuide/openhie.fhir.zambia-immunizations: ImplementationGuide.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\Medication-HPVVaccineExample.json ==
+WARNING: Medication/HPVVaccineExample: Medication.code.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+== fsh-generated\resources\Observation-DatePatientFirstMarriedObservationExample.json ==
+== fsh-generated\resources\Observation-GenericObservationExample.json ==
+== fsh-generated\resources\Observation-GuardianOccupationObservationExample.json ==
+== fsh-generated\resources\Observation-HPVImmunocomprommisedExample.json ==
+INFORMATION: Observation/HPVImmunocomprommisedExample: Observation.code.coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+== fsh-generated\resources\Observation-PatientEducationalLevelObservationExample.json ==
+== fsh-generated\resources\Observation-PatientHomeLanguageObservationExample.json ==
+== fsh-generated\resources\Observation-SpouseOccupationObservationExample.json ==
+== fsh-generated\resources\Organization-HPVVaccinationSiteTypeExample.json ==
+== fsh-generated\resources\Organization-MedicalInsuranceCompanyExample.json ==
+== fsh-generated\resources\Organization-OrganizationExample.json ==
+== fsh-generated\resources\Organization-SmartcareVaccinationSiteTypeExample.json ==
+== fsh-generated\resources\Patient-HPVImmunizationPatientExample.json ==
+== fsh-generated\resources\Patient-ImmunizationPatientExample.json ==
+== fsh-generated\resources\Patient-SmartcareImmunizationPatientExample.json ==
+== fsh-generated\resources\RelatedPerson-ChiefAtBirthRelatedPersonExample.json ==
+== fsh-generated\resources\RelatedPerson-HPVGuardianRelatedPersonExample.json ==
+== fsh-generated\resources\RelatedPerson-PatientFatherRelatedPersonExample.json ==
+== fsh-generated\resources\RelatedPerson-PatientMotherRelatedPersonExample.json ==
+== fsh-generated\resources\RelatedPerson-RelationToPatientExample.json ==
+== fsh-generated\resources\RelatedPerson-RelativeRelatedPersonExample.json ==
+== fsh-generated\resources\RelatedPerson-SmartcareGuardianRelatedPersonExample.json ==
+== fsh-generated\resources\RelatedPerson-SpouseRelatedPersonExample.json ==
+== fsh-generated\resources\StructureDefinition-administrative-sex.json ==
+INFORMATION: StructureDefinition/administrative-sex: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-born-in-zambia.json ==
+INFORMATION: StructureDefinition/born-in-zambia: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-chief-at-birth-relation-to-patient.json ==
+INFORMATION: StructureDefinition/chief-at-birth-relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-covax-immunization-patient.json ==
+INFORMATION: StructureDefinition/covax-immunization-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition/covax-immunization-patient: StructureDefinition.snapshot.element[33]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/covax-immunization-patient: StructureDefinition.differential.element[4]: Constraint failed: eld-24: 'pattern[x] should be used rather than fixed[x]' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+WARNING: StructureDefinition/covax-immunization-patient: StructureDefinition.snapshot.element[33].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
+INFORMATION: StructureDefinition.where(url = 'http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-immunization-patient'): The Implementation Guide contains no explicitly linked examples for this profile
+== fsh-generated\resources\StructureDefinition-covax-observation.json ==
+INFORMATION: StructureDefinition/covax-observation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covax-observation'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-covid19-vaccine-medication.json ==
+INFORMATION: StructureDefinition/covid19-vaccine-medication: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/zambia-immunizations/StructureDefinition/covid19-vaccine-medication'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-date-patient-first-married.json ==
+INFORMATION: StructureDefinition/date-patient-first-married: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-father-relation-to-patient.json ==
+INFORMATION: StructureDefinition/father-relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-generic-social-history-observation-profile.json ==
+INFORMATION: StructureDefinition/generic-social-history-observation-profile: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-guardian-occupation.json ==
+INFORMATION: StructureDefinition/guardian-occupation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-guardian-relation-to-patient.json ==
+INFORMATION: StructureDefinition/guardian-relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-healthcare-service-provider.json ==
+INFORMATION: StructureDefinition/healthcare-service-provider: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-hpv-full-bundle.json ==
+INFORMATION: StructureDefinition/hpv-full-bundle: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-hpv-immunization.json ==
+INFORMATION: StructureDefinition/hpv-immunization: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-hpv-immunization-patient.json ==
+INFORMATION: StructureDefinition/hpv-immunization-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-hpv-immunocomprommised.json ==
+INFORMATION: StructureDefinition/hpv-immunocomprommised: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+INFORMATION: StructureDefinition/hpv-immunocomprommised: StructureDefinition.snapshot.element[33].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+INFORMATION: StructureDefinition/hpv-immunocomprommised: StructureDefinition.differential.element[3].pattern.ofType(CodeableConcept).coding[0]: A definition for CodeSystem 'http://id.who.int/icd11/mms' could not be found, so the code cannot be validated
+== fsh-generated\resources\StructureDefinition-hpv-vaccination-patient-registration-date.json ==
+INFORMATION: StructureDefinition/hpv-vaccination-patient-registration-date: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-hpv-vaccination-site-type.json ==
+INFORMATION: StructureDefinition/hpv-vaccination-site-type: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-hpv-vaccine-details.json ==
+INFORMATION: StructureDefinition/hpv-vaccine-details: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-immunization-patient.json ==
+INFORMATION: StructureDefinition/immunization-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-is-estimated-date-of-birth.json ==
+INFORMATION: StructureDefinition/is-estimated-date-of-birth: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-medical-insurance.json ==
+INFORMATION: StructureDefinition/medical-insurance: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-medical-insurance-company.json ==
+INFORMATION: StructureDefinition/medical-insurance-company: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-mother-relation-to-patient.json ==
+INFORMATION: StructureDefinition/mother-relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-patient-educational-level.json ==
+INFORMATION: StructureDefinition/patient-educational-level: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-patient-home-language.json ==
+INFORMATION: StructureDefinition/patient-home-language: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-relation-to-patient.json ==
+INFORMATION: StructureDefinition/relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-relative-relation-to-patient.json ==
+INFORMATION: StructureDefinition/relative-relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-smartcare-full-bundle.json ==
+INFORMATION: StructureDefinition/smartcare-full-bundle: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-smartcare-immunization-patient.json ==
+INFORMATION: StructureDefinition/smartcare-immunization-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-smartcare-vaccination-site-type.json ==
+INFORMATION: StructureDefinition/smartcare-vaccination-site-type: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-spouse-occupation.json ==
+INFORMATION: StructureDefinition/spouse-occupation: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-spouse-relation-to-patient.json ==
+INFORMATION: StructureDefinition/spouse-relation-to-patient: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-target-facility-encounter.json ==
+INFORMATION: StructureDefinition/target-facility-encounter: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\StructureDefinition-underlying-condition.json ==
+INFORMATION: StructureDefinition/underlying-condition: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: StructureDefinition.where(url = 'http://openhie.org/fhir/zambia-immunizations/StructureDefinition/underlying-condition'): The Implementation Guide contains no examples for this profile
+== fsh-generated\resources\StructureDefinition-vaccine-administration.json ==
+INFORMATION: StructureDefinition/vaccine-administration: StructureDefinition.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-covax-observations.json ==
+INFORMATION: ValueSet/covax-observations: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ValueSet/covax-observations: ValueSet.compose.include[0].concept[1]: The code '169907004' is not valid in the system http://snomed.info/sct (Unknown code '169907004' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201')
+== fsh-generated\resources\ValueSet-underlying-conditions.json ==
+INFORMATION: ValueSet/underlying-conditions: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+WARNING: ValueSet/underlying-conditions: ValueSet.compose.include[0].concept[11]: The code '9532001' is not valid in the system http://snomed.info/sct (Unknown code '9532001' in the CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20240201')
+== fsh-generated\resources\ValueSet-vs-administrative-sex.json ==
+INFORMATION: ValueSet/vs-administrative-sex: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-vs-home-language.json ==
+INFORMATION: ValueSet/vs-home-language: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-vs-loinc-education-level-attained.json ==
+INFORMATION: ValueSet/vs-loinc-education-level-attained: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-vs-proprietary-education-level-attained.json ==
+INFORMATION: ValueSet/vs-proprietary-education-level-attained: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-vs-proprietary-hpv-vaccination-site.json ==
+INFORMATION: ValueSet/vs-proprietary-hpv-vaccination-site: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-vs-proprietary-smartcare-vaccination-site.json ==
+INFORMATION: ValueSet/vs-proprietary-smartcare-vaccination-site: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== fsh-generated\resources\ValueSet-vs-vaccines.json ==
+INFORMATION: ValueSet/vs-vaccines: ValueSet.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+== input\maps\PropietaryEducationLevelToLOINCEducationLevel.fml ==
+INFORMATION: StructureMap/PropietaryEducationLevelToLOINCEducationLevel: StructureMap.jurisdiction[0]: Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0

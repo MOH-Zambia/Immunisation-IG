@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-loinc-education-level-attained"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet vs-loinc-education-level-attained</b></p><a name="vs-loinc-education-level-attained"> </a><a name="hcvs-loinc-education-level-attained"> </a><a name="hcvs-loinc-education-level-attained-en-US"> </a><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/LA35-1/">LA35-1</a></td><td>No schooling</td></tr><tr><td><a href="https://loinc.org/LA30193-9/">LA30193-9</a></td><td>More than high school</td></tr><tr><td><a href="https://loinc.org/LA32469-1/">LA32469-1</a></td><td>University undergraduate degree</td></tr><tr><td><a href="https://loinc.org/LA32466-7/">LA32466-7</a></td><td>Primary school education</td></tr><tr><td><a href="https://loinc.org/LA36-9/">LA36-9</a></td><td>8th grade/less</td></tr><tr><td><a href="https://loinc.org/LA37-7/">LA37-7</a></td><td>9-11 grades</td></tr><tr><td><a href="https://loinc.org/LA12461-2/">LA12461-2</a></td><td>Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA)</td></tr><tr><td><a href="https://loinc.org/LA30185-5/">LA30185-5</a></td><td>Doctoral degree (e.g., PhD, EdD)</td></tr><tr><td><a href="https://loinc.org/LA12459-6/">LA12459-6</a></td><td>Associate degree (e.g., AA, AS)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-loinc-education-level-attained"/>
+  <version value="1.0.0"/>
+  <name value="VSLOINCEducationLevelAttained"/>
+  <title value="Patient's highest education level attained (LOINC)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of LOINC education levels."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="LA35-1"/>
+        <display value="No schooling"/>
+      </concept>
+      <concept>
+        <code value="LA30193-9"/>
+        <display value="More than high school"/>
+      </concept>
+      <concept>
+        <code value="LA32469-1"/>
+        <display value="University undergraduate degree"/>
+      </concept>
+      <concept>
+        <code value="LA32466-7"/>
+        <display value="Primary school education"/>
+      </concept>
+      <concept>
+        <code value="LA36-9"/>
+        <display value="8th grade/less"/>
+      </concept>
+      <concept>
+        <code value="LA37-7"/>
+        <display value="9-11 grades"/>
+      </concept>
+      <concept>
+        <code value="LA12461-2"/>
+        <display value="Master's degree (e.g., MA, MS, MEng, MEd, MSW, MBA)"/>
+      </concept>
+      <concept>
+        <code value="LA30185-5"/>
+        <display value="Doctoral degree (e.g., PhD, EdD)"/>
+      </concept>
+      <concept>
+        <code value="LA12459-6"/>
+        <display value="Associate degree (e.g., AA, AS)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

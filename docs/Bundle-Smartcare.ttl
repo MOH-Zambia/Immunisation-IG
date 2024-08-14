@@ -1,0 +1,736 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Bundle/Smartcare> a fhir:Bundle ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Smartcare"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-full-bundle>
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "transaction"] ; # 
+  fhir:timestamp [ fhir:v "2024-02-18T09:30:00+02:00"^^xsd:dateTime] ; # 
+  fhir:entry ( [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Patient/SmartcareImmunizationPatientExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Patient/SmartcareImmunizationPatientExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Patient/SmartcareImmunizationPatientExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Encounter/SmartcareTargetFacilityEncounterExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Encounter/SmartcareTargetFacilityEncounterExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Immunization/VaccinesExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Immunization/VaccinesExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Immunization/VaccinesExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/RelatedPerson/SpouseRelatedPersonExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/RelatedPerson/SpouseRelatedPersonExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "RelatedPerson/SpouseRelatedPersonExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/RelatedPerson/ChiefAtBirthRelatedPersonExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/RelatedPerson/ChiefAtBirthRelatedPersonExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "RelatedPerson/ChiefAtBirthRelatedPersonExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/RelatedPerson/SmartcareGuardianRelatedPersonExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/RelatedPerson/SmartcareGuardianRelatedPersonExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "RelatedPerson/SmartcareGuardianRelatedPersonExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/RelatedPerson/PatientMotherRelatedPersonExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/RelatedPerson/PatientMotherRelatedPersonExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "RelatedPerson/PatientMotherRelatedPersonExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/RelatedPerson/RelativeRelatedPersonExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/RelatedPerson/RelativeRelatedPersonExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "RelatedPerson/RelativeRelatedPersonExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/RelatedPerson/PatientFatherRelatedPersonExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/RelatedPerson/PatientFatherRelatedPersonExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "RelatedPerson/PatientFatherRelatedPersonExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Observation/PatientEducationalLevelObservationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Observation/PatientEducationalLevelObservationExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/PatientEducationalLevelObservationExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Observation/DatePatientFirstMarriedObservationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Observation/DatePatientFirstMarriedObservationExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/DatePatientFirstMarriedObservationExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Observation/GuardianOccupationObservationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Observation/GuardianOccupationObservationExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/GuardianOccupationObservationExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Observation/SpouseOccupationObservationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Observation/SpouseOccupationObservationExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/SpouseOccupationObservationExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Observation/PatientHomeLanguageObservationExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Observation/PatientHomeLanguageObservationExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Observation/PatientHomeLanguageObservationExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Organization/MedicalInsuranceCompanyExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Organization/MedicalInsuranceCompanyExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Organization/MedicalInsuranceCompanyExample"^^xsd:anyURI ]
+     ]
+  ] [
+     fhir:fullUrl [ fhir:v "http://hapi-fhir:8080/Coverage/MedicalInsuranceExample"^^xsd:anyURI ] ;
+     fhir:resource ( <http://hapi-fhir:8080/Coverage/MedicalInsuranceExample> ) ;
+     fhir:request [
+       fhir:method [ fhir:v "PUT" ] ;
+       fhir:url [ fhir:v "Coverage/MedicalInsuranceExample"^^xsd:anyURI ]
+     ]
+  ] ) . # 
+
+<http://hapi-fhir:8080/Patient/SmartcareImmunizationPatientExample> a fhir:Patient ;
+  fhir:id [ fhir:v "SmartcareImmunizationPatientExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/smartcare-immunization-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Patient_SmartcareImmunizationPatientExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Patient SmartcareImmunizationPatientExample</b></p><a name=\"SmartcareImmunizationPatientExample\"> </a><a name=\"hcSmartcareImmunizationPatientExample\"> </a><a name=\"hcSmartcareImmunizationPatientExample-en-US\"> </a><p style=\"border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin#1001-XXGB0-12345-5)</p><hr/><table class=\"grid\"><tr><td style=\"background-color: #f3f5da\" title=\"Known Marital status of Patient\">Marital Status:</td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-MaritalStatus M}\">Married</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Other Id (see the one above)\">Other Id:</td><td colspan=\"3\"><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc</code>/999999/99/9</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Alternate names (see the one above)\">Alt. Name:</td><td colspan=\"3\">Smitty(Nickname)</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"Patient Links\">Links:</td><td colspan=\"3\"><ul><li>Managing Organization: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></li><li>Also see: <a href=\"RelatedPerson-SpouseRelatedPersonExample.html\">RelatedPerson Mike Jones (official)</a></li></ul></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture that patient's administrative sex.\"><a href=\"StructureDefinition-administrative-sex.html\">Administrative Sex</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0001 F}\">Female</span></td></tr><tr><td style=\"background-color: #f3f5da\" title=\"This is an extension to capture whether the patient was born in Zambia.\"><a href=\"StructureDefinition-born-in-zambia.html\">Patient born in Zambia?</a></td><td colspan=\"3\">true</td></tr><tr><td style=\"background-color: #f3f5da\" title=\"The patient's professed religious affiliations.\"><a href=\"http://hl7.org/fhir/extensions/5.1.0/StructureDefinition-patient-religion.html\">Patient Religion</a></td><td colspan=\"3\"><span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation 1013}\">Christian (non-Catholic, non-specific)</span></td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0001"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "F" ]
+       ] )
+     ]
+  ] [
+     fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/born-in-zambia"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-religion"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "1013" ]
+       ] ) ;
+       fhir:text [ fhir:v "Christian (non-Catholic, non-specific)" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nupin"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1001-XXGB0-12345-5" ]
+  ] [
+     fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "999999/99/9" ]
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Jane" ] [ fhir:v "Maria" ] )
+  ] [
+     fhir:use [ fhir:v "nickname" ] ;
+     fhir:text [ fhir:v "Smitty" ]
+  ] ) ; # 
+  fhir:birthDate [
+     fhir:v "1990-12-12"^^xsd:date ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/patient-birthTime"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1983-05-22T16:40:17+02:00"^^xsd:dateTime ]
+     ] [
+       fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/is-estimated-date-of-birth"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] )
+  ] ; # 
+  fhir:maritalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "M" ]
+     ] )
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ; # 
+  fhir:link ( [
+     fhir:other [
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/RelatedPerson/SpouseRelatedPersonExample> ;
+       fhir:reference [ fhir:v "RelatedPerson/SpouseRelatedPersonExample" ]
+     ] ;
+     fhir:type [ fhir:v "seealso" ]
+  ] ) . # 
+
+<http://hapi-fhir:8080/Encounter/SmartcareTargetFacilityEncounterExample> a fhir:Encounter ;
+  fhir:id [ fhir:v "SmartcareTargetFacilityEncounterExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Encounter_SmartcareTargetFacilityEncounterExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Encounter SmartcareTargetFacilityEncounterExample</b></p><a name=\"SmartcareTargetFacilityEncounterExample\"> </a><a name=\"hcSmartcareTargetFacilityEncounterExample\"> </a><a name=\"hcSmartcareTargetFacilityEncounterExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>class</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}\">ambulatory</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>actualPeriod</b>: 2022-12-01 --&gt; 2023-01-20</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:class ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "AMB" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:actualPeriod [
+     fhir:start [ fhir:v "2022-12-01"^^xsd:date ] ;
+     fhir:end [ fhir:v "2023-01-20"^^xsd:date ]
+  ] . # 
+
+<http://hapi-fhir:8080/Immunization/VaccinesExample> a fhir:Immunization ;
+  fhir:id [ fhir:v "VaccinesExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Immunization_VaccinesExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Immunization VaccinesExample</b></p><a name=\"VaccinesExample\"> </a><a name=\"hcVaccinesExample\"> </a><a name=\"hcVaccinesExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 82622003}\">Vitamin A</span></p><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2022-11-30</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-SmartcareVaccinationSiteTypeExample.html\">Organization facility name</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>0</td></tr></table></div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       a sct:82622003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "82622003" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2022-11-30"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/SmartcareVaccinationSiteTypeExample> ;
+       fhir:reference [ fhir:v "Organization/SmartcareVaccinationSiteTypeExample" ]
+     ]
+  ] ) ; # 
+  fhir:protocolApplied ( [
+     fhir:doseNumber [ fhir:v "0" ]
+  ] ) . # 
+
+<http://hapi-fhir:8080/RelatedPerson/SpouseRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "SpouseRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_SpouseRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson SpouseRelatedPersonExample</b></p><a name=\"SpouseRelatedPersonExample\"> </a><a name=\"hcSpouseRelatedPersonExample\"> </a><a name=\"hcSpouseRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode SPS}\">spouse</span></p><p><b>name</b>: Mike Jones (Official)</p><p><b>telecom</b>: <a href=\"tel:+26095705784\">+26095705784</a></p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "SPS" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Jones" ] ;
+     fhir:given ( [ fhir:v "Mike" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+26095705784" ]
+  ] ) . # 
+
+<http://hapi-fhir:8080/RelatedPerson/ChiefAtBirthRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "ChiefAtBirthRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/chief-at-birth-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_ChiefAtBirthRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson ChiefAtBirthRelatedPersonExample</b></p><a name=\"ChiefAtBirthRelatedPersonExample\"> </a><a name=\"hcChiefAtBirthRelatedPersonExample\"> </a><a name=\"hcChiefAtBirthRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://snomed.info/sct 303119007}\">Person in the community environment (person)</span></p><p><b>name</b>: Jones (Official)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       a sct:303119007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "303119007" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Jones" ]
+  ] ) . # 
+
+<http://hapi-fhir:8080/RelatedPerson/SmartcareGuardianRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "SmartcareGuardianRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_SmartcareGuardianRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson SmartcareGuardianRelatedPersonExample</b></p><a name=\"SmartcareGuardianRelatedPersonExample\"> </a><a name=\"hcSmartcareGuardianRelatedPersonExample\"> </a><a name=\"hcSmartcareGuardianRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode GUARD}\">guardian</span></p><p><b>name</b>: Mike Smith (Official)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "GUARD" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Mike" ] )
+  ] ) . # 
+
+<http://hapi-fhir:8080/RelatedPerson/PatientMotherRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "PatientMotherRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/mother-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_PatientMotherRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson PatientMotherRelatedPersonExample</b></p><a name=\"PatientMotherRelatedPersonExample\"> </a><a name=\"hcPatientMotherRelatedPersonExample\"> </a><a name=\"hcPatientMotherRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode MTH}\">mother</span></p><p><b>name</b>: Olivia Smith (Official)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "MTH" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Olivia" ] )
+  ] ) . # 
+
+<http://hapi-fhir:8080/RelatedPerson/RelativeRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "RelativeRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relative-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_RelativeRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelativeRelatedPersonExample</b></p><a name=\"RelativeRelatedPersonExample\"> </a><a name=\"hcRelativeRelatedPersonExample\"> </a><a name=\"hcRelativeRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FAMMEMB}\">family member</span></p><p><b>name</b>: Olivia Smith (Official)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FAMMEMB" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "Olivia" ] )
+  ] ) . # 
+
+<http://hapi-fhir:8080/RelatedPerson/PatientFatherRelatedPersonExample> a fhir:RelatedPerson ;
+  fhir:id [ fhir:v "PatientFatherRelatedPersonExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/father-relation-to-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"RelatedPerson_PatientFatherRelatedPersonExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson PatientFatherRelatedPersonExample</b></p><a name=\"PatientFatherRelatedPersonExample\"> </a><a name=\"hcPatientFatherRelatedPersonExample\"> </a><a name=\"hcPatientFatherRelatedPersonExample-en-US\"> </a><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>relationship</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode FTH}\">father</span></p><p><b>name</b>: Mike (Official)</p></div>"
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:relationship ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "FTH" ]
+     ] )
+  ] ) ; # 
+  fhir:name ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:given ( [ fhir:v "Mike" ] )
+  ] ) . # 
+
+<http://hapi-fhir:8080/Observation/PatientEducationalLevelObservationExample> a fhir:Observation ;
+  fhir:id [ fhir:v "PatientEducationalLevelObservationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-educational-level>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PatientEducationalLevelObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PatientEducationalLevelObservationExample</b></p><a name=\"PatientEducationalLevelObservationExample\"> </a><a name=\"hcPatientEducationalLevelObservationExample\"> </a><a name=\"hcPatientEducationalLevelObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org LL5338-0}\">Highest Education Level</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: <span title=\"Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained DegreeGraduate}\">University undergraduate degree</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:LL5338-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "LL5338-0" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-11-30"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DegreeGraduate" ]
+     ] ) ;
+     fhir:text [ fhir:v "University undergraduate degree" ]
+  ] . # 
+
+<http://hapi-fhir:8080/Observation/DatePatientFirstMarriedObservationExample> a fhir:Observation ;
+  fhir:id [ fhir:v "DatePatientFirstMarriedObservationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/date-patient-first-married>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_DatePatientFirstMarriedObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation DatePatientFirstMarriedObservationExample</b></p><a name=\"DatePatientFirstMarriedObservationExample\"> </a><a name=\"hcDatePatientFirstMarriedObservationExample\"> </a><a name=\"hcDatePatientFirstMarriedObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 365581002}\">Finding of marital or partnership status (finding)</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: 1983-05-22 16:40:17+0200</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:365581002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "365581002" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-11-30"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "1983-05-22T16:40:17+02:00"^^xsd:dateTime] . # 
+
+<http://hapi-fhir:8080/Observation/GuardianOccupationObservationExample> a fhir:Observation ;
+  fhir:id [ fhir:v "GuardianOccupationObservationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-occupation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_GuardianOccupationObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation GuardianOccupationObservationExample</b></p><a name=\"GuardianOccupationObservationExample\"> </a><a name=\"hcGuardianOccupationObservationExample\"> </a><a name=\"hcGuardianOccupationObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://loinc.org 11341-5}\">History of Occupation</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2017-03-01 --&gt; (ongoing)</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: Accounts Manager</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:11341-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11341-5" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2017-03-01"^^xsd:date ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ) ; # 
+  fhir:value [ fhir:v "Accounts Manager"] . # 
+
+<http://hapi-fhir:8080/Observation/SpouseOccupationObservationExample> a fhir:Observation ;
+  fhir:id [ fhir:v "SpouseOccupationObservationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/spouse-occupation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_SpouseOccupationObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation SpouseOccupationObservationExample</b></p><a name=\"SpouseOccupationObservationExample\"> </a><a name=\"hcSpouseOccupationObservationExample\"> </a><a name=\"hcSpouseOccupationObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 447057006}\">Occupation of spouse (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2017-03-01 --&gt; (ongoing)</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: .NET Programmer</p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:447057006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "447057006" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2017-03-01"^^xsd:date ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ) ; # 
+  fhir:value [ fhir:v ".NET Programmer"] . # 
+
+<http://hapi-fhir:8080/Observation/PatientHomeLanguageObservationExample> a fhir:Observation ;
+  fhir:id [ fhir:v "PatientHomeLanguageObservationExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/patient-home-language>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Observation_PatientHomeLanguageObservationExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Observation PatientHomeLanguageObservationExample</b></p><a name=\"PatientHomeLanguageObservationExample\"> </a><a name=\"hcPatientHomeLanguageObservationExample\"> </a><a name=\"hcPatientHomeLanguageObservationExample-en-US\"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/observation-category social-history}\">Social History</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 224076006}\">First language</span></p><p><b>subject</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2022-11-30</p><p><b>performer</b>: <a href=\"Organization-OrganizationExample.html\">Organization Facility one</a></p><p><b>value</b>: <span title=\"Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language Chokwe}\">Chokwe</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "social-history" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:224076006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "224076006" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Encounter/SmartcareTargetFacilityEncounterExample> ;
+     fhir:reference [ fhir:v "Encounter/SmartcareTargetFacilityEncounterExample" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-11-30"^^xsd:date] ; # 
+  fhir:performer ( [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/OrganizationExample> ;
+     fhir:reference [ fhir:v "Organization/OrganizationExample" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-home-language"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Chokwe" ]
+     ] ) ;
+     fhir:text [ fhir:v "Chokwe" ]
+  ] . # 
+
+<http://hapi-fhir:8080/Organization/MedicalInsuranceCompanyExample> a fhir:Organization ;
+  fhir:id [ fhir:v "MedicalInsuranceCompanyExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance-company>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_MedicalInsuranceCompanyExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization MedicalInsuranceCompanyExample</b></p><a name=\"MedicalInsuranceCompanyExample\"> </a><a name=\"hcMedicalInsuranceCompanyExample\"> </a><a name=\"hcMedicalInsuranceCompanyExample-en-US\"> </a><p><b>identifier</b>: Medical insurance company identifier/medical-insurance-company-1</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 64290-0}\">Health insurance card</span></p><p><b>name</b>: Medical Insurance Company 1</p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "XX" ]
+       ] ) ;
+       fhir:text [ fhir:v "Medical insurance company identifier" ]
+     ] ;
+     fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/identifier/medical-insurance-company"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "medical-insurance-company-1" ]
+  ] ) ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a loinc:64290-0 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "64290-0" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "Medical Insurance Company 1"] . # 
+
+<http://hapi-fhir:8080/Coverage/MedicalInsuranceExample> a fhir:Coverage ;
+  fhir:id [ fhir:v "MedicalInsuranceExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Coverage_MedicalInsuranceExample\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Coverage MedicalInsuranceExample</b></p><a name=\"MedicalInsuranceExample\"> </a><a name=\"hcMedicalInsuranceExample\"> </a><a name=\"hcMedicalInsuranceExample-en-US\"> </a><p><b>status</b>: Active</p><p><b>kind</b>: Insurance</p><p><b>policyHolder</b>: <a href=\"Organization-MedicalInsuranceCompanyExample.html\">Organization Medical Insurance Company 1</a></p><p><b>subscriberId</b>: <code>http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id</code>/504342245</p><p><b>beneficiary</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "insurance"] ; # 
+  fhir:policyHolder [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Organization/MedicalInsuranceCompanyExample> ;
+     fhir:reference [ fhir:v "Organization/MedicalInsuranceCompanyExample" ]
+  ] ; # 
+  fhir:subscriberId ( [
+     fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "504342245" ]
+  ] ) ; # 
+  fhir:beneficiary [
+     fhir:link <http://openhie.org/fhir/zambia-immunizations/Patient/ImmunizationPatientExample> ;
+     fhir:reference [ fhir:v "Patient/ImmunizationPatientExample" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

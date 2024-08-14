@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="HPVVaccinationSiteTypeExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization HPVVaccinationSiteTypeExample</b></p><a name="HPVVaccinationSiteTypeExample"> </a><a name="hcHPVVaccinationSiteTypeExample"> </a><a name="hcHPVVaccinationSiteTypeExample-en-US"> </a><p><b>type</b>: <span title="Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site Community}">Community</span></p><p><b>name</b>: facility name</p></div>
+  </text>
+  <type>
+    <coding>
+      <system value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site"/>
+      <code value="Community"/>
+    </coding>
+  </type>
+  <name value="facility name"/>
+</Organization>

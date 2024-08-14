@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HPVImmunocomprommisedExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Observation HPVImmunocomprommisedExample</b></p><a name="HPVImmunocomprommisedExample"> </a><a name="hcHPVImmunocomprommisedExample"> </a><a name="hcHPVImmunocomprommisedExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://id.who.int/icd11/mms 4A0Z}">Primary immunodeficiencies, unspecified</span></p><p><b>subject</b>: <a href="Patient-HPVImmunizationPatientExample.html">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>encounter</b>: <a href="Encounter-HPVTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2024-01-31</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: true</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://id.who.int/icd11/mms"/>
+      <code value="4A0Z"/>
+    </coding>
+    <text value="Primary immunodeficiencies, unspecified"/>
+  </code>
+  <subject>
+    <reference value="Patient/HPVImmunizationPatientExample"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/HPVTargetFacilityEncounterExample"/>
+  </encounter>
+  <effectiveDateTime value="2024-01-31"/>
+  <performer>
+    <reference value="Organization/OrganizationExample"/>
+  </performer>
+  <valueBoolean value="true"/>
+</Observation>

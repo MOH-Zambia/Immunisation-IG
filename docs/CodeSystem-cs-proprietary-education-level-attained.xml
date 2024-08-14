@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-proprietary-education-level-attained"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-proprietary-education-level-attained</b></p><a name="cs-proprietary-education-level-attained"> </a><a name="hccs-proprietary-education-level-attained"> </a><a name="hccs-proprietary-education-level-attained-en-US"> </a><p>This case-sensitive code system <code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">CertificateGraduate<a name="cs-proprietary-education-level-attained-CertificateGraduate"> </a></td><td>Certificate Graduate</td></tr><tr><td style="white-space:nowrap">DegreeGraduate<a name="cs-proprietary-education-level-attained-DegreeGraduate"> </a></td><td>Degree Graduate</td></tr><tr><td style="white-space:nowrap">DiplomaGraduate<a name="cs-proprietary-education-level-attained-DiplomaGraduate"> </a></td><td>Diploma Graduate</td></tr><tr><td style="white-space:nowrap">JuniorSecondary<a name="cs-proprietary-education-level-attained-JuniorSecondary"> </a></td><td>Junior Secondary</td></tr><tr><td style="white-space:nowrap">MastersGraduate<a name="cs-proprietary-education-level-attained-MastersGraduate"> </a></td><td>Masters Graduate</td></tr><tr><td style="white-space:nowrap">NoFormalEducation<a name="cs-proprietary-education-level-attained-NoFormalEducation"> </a></td><td>No Formal Education</td></tr><tr><td style="white-space:nowrap">PhDGraduate<a name="cs-proprietary-education-level-attained-PhDGraduate"> </a></td><td>PhD Graduate</td></tr><tr><td style="white-space:nowrap">Primary<a name="cs-proprietary-education-level-attained-Primary"> </a></td><td>Primary</td></tr><tr><td style="white-space:nowrap">SeniorSecondary<a name="cs-proprietary-education-level-attained-SeniorSecondary"> </a></td><td>Senior Secondary</td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-education-level-attained"/>
+  <version value="1.0.0"/>
+  <name value="CSProprietaryEducationLevelAttained"/>
+  <title value="Patient's highest education level attained (Proprietary)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of proprietary education levels."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="9"/>
+  <concept>
+    <code value="CertificateGraduate"/>
+    <display value="Certificate Graduate"/>
+  </concept>
+  <concept>
+    <code value="DegreeGraduate"/>
+    <display value="Degree Graduate"/>
+  </concept>
+  <concept>
+    <code value="DiplomaGraduate"/>
+    <display value="Diploma Graduate"/>
+  </concept>
+  <concept>
+    <code value="JuniorSecondary"/>
+    <display value="Junior Secondary"/>
+  </concept>
+  <concept>
+    <code value="MastersGraduate"/>
+    <display value="Masters Graduate"/>
+  </concept>
+  <concept>
+    <code value="NoFormalEducation"/>
+    <display value="No Formal Education"/>
+  </concept>
+  <concept>
+    <code value="PhDGraduate"/>
+    <display value="PhD Graduate"/>
+  </concept>
+  <concept>
+    <code value="Primary"/>
+    <display value="Primary"/>
+  </concept>
+  <concept>
+    <code value="SeniorSecondary"/>
+    <display value="Senior Secondary"/>
+  </concept>
+</CodeSystem>

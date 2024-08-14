@@ -1,0 +1,29 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/healthcare-service-provider"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization OrganizationExample</b></p><a name=\"OrganizationExample\"> </a><a name=\"hcOrganizationExample\"> </a><a name=\"hcOrganizationExample-en-US\"> </a><p><b>identifier</b>: Healthcare service provider identifier/facility-1</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 78022-1}\">Care setting Facility [NHCS]</span></p><p><b>name</b>: Facility one</p></div>"
+  },
+  "identifier" : [{
+    "type" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+        "code" : "XX"
+      }],
+      "text" : "Healthcare service provider identifier"
+    },
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/healthcare-service-provider",
+    "value" : "facility-1"
+  }],
+  "type" : [{
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "78022-1"
+    }]
+  }],
+  "name" : "Facility one"
+}

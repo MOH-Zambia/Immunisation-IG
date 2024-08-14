@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="cs-proprietary-hpv-vaccination-site"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem cs-proprietary-hpv-vaccination-site</b></p><a name="cs-proprietary-hpv-vaccination-site"> </a><a name="hccs-proprietary-hpv-vaccination-site"> </a><a name="hccs-proprietary-hpv-vaccination-site-en-US"> </a><p>This case-sensitive code system <code>http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">Community<a name="cs-proprietary-hpv-vaccination-site-Community"> </a></td></tr><tr><td style="white-space:nowrap">Facility<a name="cs-proprietary-hpv-vaccination-site-Facility"> </a></td></tr><tr><td style="white-space:nowrap">School<a name="cs-proprietary-hpv-vaccination-site-School"> </a></td></tr></table></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site"/>
+  <version value="1.0.0"/>
+  <name value="CSProprietaryHPVVaccinationSite"/>
+  <title value="Vaccination site types in HPV (Proprietary)"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="A list of vaccination sites (posts) where the vaccination was administered."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="Community"/>
+    <display value="Community"/>
+  </concept>
+  <concept>
+    <code value="Facility"/>
+    <display value="Facility"/>
+  </concept>
+  <concept>
+    <code value="School"/>
+    <display value="School"/>
+  </concept>
+</CodeSystem>

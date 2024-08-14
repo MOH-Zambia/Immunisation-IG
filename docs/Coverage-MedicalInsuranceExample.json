@@ -1,0 +1,23 @@
+{
+  "resourceType" : "Coverage",
+  "id" : "MedicalInsuranceExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/medical-insurance"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Coverage MedicalInsuranceExample</b></p><a name=\"MedicalInsuranceExample\"> </a><a name=\"hcMedicalInsuranceExample\"> </a><a name=\"hcMedicalInsuranceExample-en-US\"> </a><p><b>status</b>: Active</p><p><b>kind</b>: Insurance</p><p><b>policyHolder</b>: <a href=\"Organization-MedicalInsuranceCompanyExample.html\">Organization Medical Insurance Company 1</a></p><p><b>subscriberId</b>: <code>http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id</code>/504342245</p><p><b>beneficiary</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p></div>"
+  },
+  "status" : "active",
+  "kind" : "insurance",
+  "policyHolder" : {
+    "reference" : "Organization/MedicalInsuranceCompanyExample"
+  },
+  "subscriberId" : [{
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/beneficiary-insurance-id",
+    "value" : "504342245"
+  }],
+  "beneficiary" : {
+    "reference" : "Patient/ImmunizationPatientExample"
+  }
+}

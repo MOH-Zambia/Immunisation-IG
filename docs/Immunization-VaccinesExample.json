@@ -1,0 +1,33 @@
+{
+  "resourceType" : "Immunization",
+  "id" : "VaccinesExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/vaccine-administration"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Immunization VaccinesExample</b></p><a name=\"VaccinesExample\"> </a><a name=\"hcVaccinesExample\"> </a><a name=\"hcVaccinesExample-en-US\"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title=\"Codes:{http://snomed.info/sct 82622003}\">Vitamin A</span></p><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>encounter</b>: <a href=\"Encounter-SmartcareTargetFacilityEncounterExample.html\">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2022-11-30</p><h3>Performers</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Actor</b></td></tr><tr><td style=\"display: none\">*</td><td><a href=\"Organization-SmartcareVaccinationSiteTypeExample.html\">Organization facility name</a></td></tr></table><h3>ProtocolApplieds</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>DoseNumber</b></td></tr><tr><td style=\"display: none\">*</td><td>0</td></tr></table></div>"
+  },
+  "status" : "completed",
+  "vaccineCode" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "82622003"
+    }]
+  },
+  "patient" : {
+    "reference" : "Patient/ImmunizationPatientExample"
+  },
+  "encounter" : {
+    "reference" : "Encounter/SmartcareTargetFacilityEncounterExample"
+  },
+  "occurrenceDateTime" : "2022-11-30",
+  "performer" : [{
+    "actor" : {
+      "reference" : "Organization/SmartcareVaccinationSiteTypeExample"
+    }
+  }],
+  "protocolApplied" : [{
+    "doseNumber" : "0"
+  }]
+}

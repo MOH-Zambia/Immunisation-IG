@@ -1,0 +1,23 @@
+{
+  "resourceType" : "RelatedPerson",
+  "id" : "RelationToPatientExample",
+  "meta" : {
+    "profile" : ["http://openhie.org/fhir/zambia-immunizations/StructureDefinition/relation-to-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: RelatedPerson RelationToPatientExample</b></p><a name=\"RelationToPatientExample\"> </a><a name=\"hcRelationToPatientExample\"> </a><a name=\"hcRelationToPatientExample-en-US\"> </a><p><b>identifier</b>: <code>http://openhie.org/fhir/zambia-immunizations/identifier/relative-nrc</code>/999999/99/9</p><p><b>patient</b>: <a href=\"Patient-ImmunizationPatientExample.html\">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>name</b>: Olivia Smith (Official)</p></div>"
+  },
+  "identifier" : [{
+    "system" : "http://openhie.org/fhir/zambia-immunizations/identifier/relative-nrc",
+    "value" : "999999/99/9"
+  }],
+  "patient" : {
+    "reference" : "Patient/ImmunizationPatientExample"
+  },
+  "name" : [{
+    "use" : "official",
+    "family" : "Smith",
+    "given" : ["Olivia"]
+  }]
+}

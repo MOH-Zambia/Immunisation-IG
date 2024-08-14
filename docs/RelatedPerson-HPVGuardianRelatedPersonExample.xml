@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelatedPerson xmlns="http://hl7.org/fhir">
+  <id value="HPVGuardianRelatedPersonExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: RelatedPerson HPVGuardianRelatedPersonExample</b></p><a name="HPVGuardianRelatedPersonExample"> </a><a name="hcHPVGuardianRelatedPersonExample"> </a><a name="hcHPVGuardianRelatedPersonExample-en-US"> </a><p><b>patient</b>: <a href="Patient-HPVImmunizationPatientExample.html">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode GUARD}">guardian</span></p><p><b>name</b>: Mike Smith (Official)</p></div>
+  </text>
+  <patient>
+    <reference value="Patient/HPVImmunizationPatientExample"/>
+  </patient>
+  <relationship>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="GUARD"/>
+    </coding>
+  </relationship>
+  <name>
+    <use value="official"/>
+    <family value="Smith"/>
+    <given value="Mike"/>
+  </name>
+</RelatedPerson>

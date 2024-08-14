@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="HPVFullBundleExample"/>
+  <meta>
+    <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-full-bundle"/>
+  </meta>
+  <type value="transaction"/>
+  <timestamp value="2024-02-18T09:30:00+02:00"/>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/Patient/HPVImmunizationPatientExample"/>
+    <resource>
+      <Patient>
+        <id value="HPVImmunizationPatientExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Patient_HPVImmunizationPatientExample"> </a><p class="res-header-id"><b>Generated Narrative: Patient HPVImmunizationPatientExample</b></p><a name="HPVImmunizationPatientExample"> </a><a name="hcHPVImmunizationPatientExample"> </a><a name="hcHPVImmunizationPatientExample-en-US"> </a><p style="border: 1px #661aff solid; background-color: #e6e6ff; padding: 10px;">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</p><hr/><table class="grid"><tr><td style="background-color: #f3f5da" title="Other Ids (see the one above)">Other Ids:</td><td colspan="3"><ul><li><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-passport</code>/PN15685241</li><li><code>http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc</code>/999999/99/9</li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Ways to contact the Patient">Contact Detail</td><td colspan="3"><ul><li><a href="mailto:mail@mail.com">mail@mail.com</a></li><li><a href="tel:+27821234567">+27821234567</a></li><li>100 Zimi Road Ndola City Ndola Copperbelt Province Zambia </li></ul></td></tr><tr><td style="background-color: #f3f5da" title="Patient Links">Links:</td><td colspan="3"><ul><li>Managing Organization: <a href="Organization-OrganizationExample.html">Organization Facility one</a></li><li>Also see: <a href="RelatedPerson-HPVGuardianRelatedPersonExample.html">RelatedPerson Mike Smith (official)</a></li></ul></td></tr><tr><td style="background-color: #f3f5da" title="This is an extension to capture that patient's administrative sex."><a href="StructureDefinition-administrative-sex.html">Administrative Sex</a></td><td colspan="3"><span title="Codes:{http://terminology.hl7.org/CodeSystem/v2-0001 F}">Female</span></td></tr></table></div>
+        </text>
+        <extension url="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/administrative-sex">
+          <valueCodeableConcept>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0001"/>
+              <code value="F"/>
+            </coding>
+          </valueCodeableConcept>
+        </extension>
+        <identifier>
+          <system value="http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number"/>
+          <value value="CN0000000"/>
+        </identifier>
+        <identifier>
+          <system value="http://openhie.org/fhir/zambia-immunizations/identifier/patient-passport"/>
+          <value value="PN15685241"/>
+        </identifier>
+        <identifier>
+          <system value="http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc"/>
+          <value value="999999/99/9"/>
+        </identifier>
+        <name>
+          <use value="official"/>
+          <family value="Jones"/>
+          <given value="Tom"/>
+          <given value="Jack"/>
+        </name>
+        <telecom>
+          <system value="email"/>
+          <value value="mail@mail.com"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="+27821234567"/>
+        </telecom>
+        <birthDate value="2000-01-01"/>
+        <address>
+          <line value="100"/>
+          <line value="Zimi Road"/>
+          <line value="Ndola City"/>
+          <city value="Ndola"/>
+          <district value="Ndola District"/>
+          <state value="Copperbelt Province"/>
+          <country value="Zambia"/>
+        </address>
+        <managingOrganization>
+          <reference value="Organization/OrganizationExample"/>
+        </managingOrganization>
+        <link>
+          <other>
+            <reference value="RelatedPerson/HPVGuardianRelatedPersonExample"/>
+          </other>
+          <type value="seealso"/>
+        </link>
+      </Patient>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Patient/HPVImmunizationPatientExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/Encounter/HPVTargetFacilityEncounterExample"/>
+    <resource>
+      <Encounter>
+        <id value="HPVTargetFacilityEncounterExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/target-facility-encounter"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Encounter_HPVTargetFacilityEncounterExample"> </a><p class="res-header-id"><b>Generated Narrative: Encounter HPVTargetFacilityEncounterExample</b></p><a name="HPVTargetFacilityEncounterExample"> </a><a name="hcHPVTargetFacilityEncounterExample"> </a><a name="hcHPVTargetFacilityEncounterExample-en-US"> </a><p><b>status</b>: Completed</p><p><b>class</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-ActCode AMB}">ambulatory</span></p><p><b>subject</b>: <a href="Patient-ImmunizationPatientExample.html">Jane Maria Smith (official) (no stated gender), DoB: 1990-12-12 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-nrc#999999/99/9)</a></p><p><b>serviceProvider</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>actualPeriod</b>: 2022-12-01 --&gt; 2023-01-20</p></div>
+        </text>
+        <status value="completed"/>
+        <class>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+            <code value="AMB"/>
+          </coding>
+        </class>
+        <subject>
+          <reference value="Patient/ImmunizationPatientExample"/>
+        </subject>
+        <serviceProvider>
+          <reference value="Organization/OrganizationExample"/>
+        </serviceProvider>
+        <actualPeriod>
+          <start value="2022-12-01"/>
+          <end value="2023-01-20"/>
+        </actualPeriod>
+      </Encounter>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Encounter/HPVTargetFacilityEncounterExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/Immunization/HPVImmunizationExample"/>
+    <resource>
+      <Immunization>
+        <id value="HPVImmunizationExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunization"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Immunization_HPVImmunizationExample"> </a><p class="res-header-id"><b>Generated Narrative: Immunization HPVImmunizationExample</b></p><a name="HPVImmunizationExample"> </a><a name="hcHPVImmunizationExample"> </a><a name="hcHPVImmunizationExample-en-US"> </a><p><b>status</b>: Completed</p><p><b>vaccineCode</b>: <span title="Codes:{http://id.who.int/icd11/mms J07BM01}">J07BM01</span></p><h3>AdministeredProducts</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Reference</b></td></tr><tr><td style="display: none">*</td><td><a href="Medication-HPVVaccineExample.html">Medication J07BM01</a></td></tr></table><p><b>patient</b>: <a href="Patient-HPVImmunizationPatientExample.html">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>encounter</b>: <a href="Encounter-HPVTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>occurrence</b>: 2024-01-31</p><h3>Performers</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Actor</b></td></tr><tr><td style="display: none">*</td><td><a href="Organization-OrganizationExample.html">Organization Facility one</a></td></tr></table><h3>ProtocolApplieds</h3><table class="grid"><tr><td style="display: none">-</td><td><b>DoseNumber</b></td></tr><tr><td style="display: none">*</td><td>DN0000000</td></tr></table></div>
+        </text>
+        <extension url="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-patient-registration-date">
+          <valueDateTime value="2024-01-31"/>
+        </extension>
+        <status value="completed"/>
+        <vaccineCode>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="J07BM01"/>
+          </coding>
+        </vaccineCode>
+        <administeredProduct>
+          <reference>
+            <reference value="Medication/HPVVaccineExample"/>
+          </reference>
+        </administeredProduct>
+        <patient>
+          <reference value="Patient/HPVImmunizationPatientExample"/>
+        </patient>
+        <encounter>
+          <reference value="Encounter/HPVTargetFacilityEncounterExample"/>
+        </encounter>
+        <occurrenceDateTime value="2024-01-31"/>
+        <performer>
+          <actor>
+            <reference value="Organization/OrganizationExample"/>
+          </actor>
+        </performer>
+        <protocolApplied>
+          <doseNumber value="DN0000000"/>
+        </protocolApplied>
+      </Immunization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Immunization/HPVImmunizationExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/RelatedPerson/HPVGuardianRelatedPersonExample"/>
+    <resource>
+      <RelatedPerson>
+        <id value="HPVGuardianRelatedPersonExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/guardian-relation-to-patient"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="RelatedPerson_HPVGuardianRelatedPersonExample"> </a><p class="res-header-id"><b>Generated Narrative: RelatedPerson HPVGuardianRelatedPersonExample</b></p><a name="HPVGuardianRelatedPersonExample"> </a><a name="hcHPVGuardianRelatedPersonExample"> </a><a name="hcHPVGuardianRelatedPersonExample-en-US"> </a><p><b>patient</b>: <a href="Patient-HPVImmunizationPatientExample.html">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>relationship</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/v3-RoleCode GUARD}">guardian</span></p><p><b>name</b>: Mike Smith (Official)</p></div>
+        </text>
+        <patient>
+          <reference value="Patient/HPVImmunizationPatientExample"/>
+        </patient>
+        <relationship>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+            <code value="GUARD"/>
+          </coding>
+        </relationship>
+        <name>
+          <use value="official"/>
+          <family value="Smith"/>
+          <given value="Mike"/>
+        </name>
+      </RelatedPerson>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="RelatedPerson/HPVGuardianRelatedPersonExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/Observation/HPVImmunocomprommisedExample"/>
+    <resource>
+      <Observation>
+        <id value="HPVImmunocomprommisedExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-immunocomprommised"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Observation_HPVImmunocomprommisedExample"> </a><p class="res-header-id"><b>Generated Narrative: Observation HPVImmunocomprommisedExample</b></p><a name="HPVImmunocomprommisedExample"> </a><a name="hcHPVImmunocomprommisedExample"> </a><a name="hcHPVImmunocomprommisedExample-en-US"> </a><p><b>status</b>: Final</p><p><b>category</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes:{http://id.who.int/icd11/mms 4A0Z}">Primary immunodeficiencies, unspecified</span></p><p><b>subject</b>: <a href="Patient-HPVImmunizationPatientExample.html">Tom Jack Jones (official) (no stated gender), DoB: 2000-01-01 ( http://openhie.org/fhir/zambia-immunizations/identifier/patient-card-number#CN0000000)</a></p><p><b>encounter</b>: <a href="Encounter-HPVTargetFacilityEncounterExample.html">Encounter: status = completed; class = ambulatory; actualPeriod = 2022-12-01 --&gt; 2023-01-20</a></p><p><b>effective</b>: 2024-01-31</p><p><b>performer</b>: <a href="Organization-OrganizationExample.html">Organization Facility one</a></p><p><b>value</b>: true</p></div>
+        </text>
+        <status value="final"/>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+            <code value="laboratory"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="4A0Z"/>
+          </coding>
+          <text value="Primary immunodeficiencies, unspecified"/>
+        </code>
+        <subject>
+          <reference value="Patient/HPVImmunizationPatientExample"/>
+        </subject>
+        <encounter>
+          <reference value="Encounter/HPVTargetFacilityEncounterExample"/>
+        </encounter>
+        <effectiveDateTime value="2024-01-31"/>
+        <performer>
+          <reference value="Organization/OrganizationExample"/>
+        </performer>
+        <valueBoolean value="true"/>
+      </Observation>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Observation/HPVImmunocomprommisedExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/Medication/HPVVaccineExample"/>
+    <resource>
+      <Medication>
+        <id value="HPVVaccineExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccine-details"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Medication_HPVVaccineExample"> </a><p class="res-header-id"><b>Generated Narrative: Medication HPVVaccineExample</b></p><a name="HPVVaccineExample"> </a><a name="hcHPVVaccineExample"> </a><a name="hcHPVVaccineExample-en-US"> </a><p><b>code</b>: <span title="Codes:{http://id.who.int/icd11/mms J07BM01}">J07BM01</span></p><h3>Batches</h3><table class="grid"><tr><td style="display: none">-</td><td><b>LotNumber</b></td></tr><tr><td style="display: none">*</td><td>123</td></tr></table></div>
+        </text>
+        <code>
+          <coding>
+            <system value="http://id.who.int/icd11/mms"/>
+            <code value="J07BM01"/>
+          </coding>
+        </code>
+        <batch>
+          <lotNumber value="123"/>
+        </batch>
+      </Medication>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Medication/HPVVaccineExample"/>
+    </request>
+  </entry>
+  <entry>
+    <fullUrl value="http://hapi-fhir:8080/Organization/HPVVaccinationSiteTypeExample"/>
+    <resource>
+      <Organization>
+        <id value="HPVVaccinationSiteTypeExample"/>
+        <meta>
+          <profile value="http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><a name="Organization_HPVVaccinationSiteTypeExample"> </a><p class="res-header-id"><b>Generated Narrative: Organization HPVVaccinationSiteTypeExample</b></p><a name="HPVVaccinationSiteTypeExample"> </a><a name="hcHPVVaccinationSiteTypeExample"> </a><a name="hcHPVVaccinationSiteTypeExample-en-US"> </a><p><b>type</b>: <span title="Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site Community}">Community</span></p><p><b>name</b>: facility name</p></div>
+        </text>
+        <type>
+          <coding>
+            <system value="http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site"/>
+            <code value="Community"/>
+          </coding>
+        </type>
+        <name value="facility name"/>
+      </Organization>
+    </resource>
+    <request>
+      <method value="PUT"/>
+      <url value="Organization/HPVVaccinationSiteTypeExample"/>
+    </request>
+  </entry>
+</Bundle>

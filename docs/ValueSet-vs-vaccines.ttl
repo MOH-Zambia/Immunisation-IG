@@ -1,0 +1,191 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-vaccines"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet vs-vaccines</b></p><a name=\"vs-vaccines\"> </a><a name=\"hcvs-vaccines\"> </a><a name=\"hcvs-vaccines-en-US\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <code>http://id.who.int/icd11/mms</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>XM8866</td><td>BBIBP-CorV</td></tr><tr><td>J07AE</td><td>Cholera vaccines</td></tr><tr><td>XM8NQ0</td><td>Comirnaty®</td></tr><tr><td>XM1AG7</td><td>Convidecia</td></tr><tr><td>XM7HT3</td><td>CoronaVac®</td></tr><tr><td>XM1G90</td><td>Covaxin</td></tr><tr><td>XM85P5</td><td>Covi-Vac</td></tr><tr><td>XM68M6</td><td>COVID-19 vaccine</td></tr><tr><td>XM4YL8</td><td>COVID-19 Vaccine AstraZeneca</td></tr><tr><td>XM6QV1</td><td>COVID-19 Vaccine Janssen</td></tr><tr><td>XM3DT5</td><td>COVID-19 Vaccine Moderna</td></tr><tr><td>XM6AT1</td><td>COVID-19 vaccine, DNA based</td></tr><tr><td>XM1NL1</td><td>COVID-19 vaccine, inactivated virus</td></tr><tr><td>XM5DF6</td><td>COVID-19 vaccine, live attenuated virus</td></tr><tr><td>XM9QW8</td><td>COVID-19 vaccine, non-replicating viral vector</td></tr><tr><td>XM0CX4</td><td>COVID-19 vaccine, replicating viral vector</td></tr><tr><td>XM0GQ8</td><td>COVID-19 vaccine, RNA based</td></tr><tr><td>XM1J92</td><td>COVID-19 vaccine, virus like particle (VLP)</td></tr><tr><td>XM5JC5</td><td>COVID-19 vaccine, virus protein subunit</td></tr><tr><td>XM2YG8</td><td>COVIran Barakat</td></tr><tr><td>XM97T2</td><td>Covishield®</td></tr><tr><td>J07AF01</td><td>diphtheria toxoid</td></tr><tr><td>07AF01</td><td>diphtheria toxoid</td></tr><tr><td>J07CA11</td><td>diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B</td></tr><tr><td>XM6SZ8</td><td>EpiVacCorona</td></tr><tr><td>XM5ZJ4</td><td>Gam-Covid-Vac</td></tr><tr><td>XM9FQ7</td><td>Hayat-Vax</td></tr><tr><td>XM3U61</td><td>Inactivated SARS-CoV-2 vaccine</td></tr><tr><td>XM9TQ1</td><td>KCONVAC</td></tr><tr><td>J07BD53</td><td>measles, combinations with rubella, live attenuated</td></tr><tr><td>XM4EC8</td><td>MVC-COV1901</td></tr><tr><td>J07BM01</td><td>papillomavirus (human types 6, 11, 16, 18)</td></tr><tr><td>J07AL02</td><td>pneumococcus, purified polysaccharides antigen conjugated</td></tr><tr><td>J07BF02</td><td>poliomyelitis oral, trivalent, live attenuated</td></tr><tr><td>J07BF03</td><td>poliomyelitis, trivalent, inactivated, whole virus</td></tr><tr><td>XM97N6</td><td>QazVac</td></tr><tr><td>XM3CT4</td><td>Recombinant SARS-CoV-2 vaccine</td></tr><tr><td>J07BH01</td><td>rota virus, live attenuated</td></tr><tr><td>XM3PG0</td><td>Soberana-02</td></tr><tr><td>XM5QM6</td><td>Sputnik-Light</td></tr><tr><td>J07AM51</td><td>tetanus toxoid, combinations with diphtheria toxoid</td></tr><tr><td>J07AN01</td><td>tuberculosis, live attenuated</td></tr><tr><td>XM52P3</td><td>ZyCov-D</td></tr></table></li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/LP31687-4/\">LP31687-4</a></td><td>Vitamin A</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://openhie.org/fhir/zambia-immunizations/ValueSet/vs-vaccines"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "1.0.0"] ; # 
+  fhir:name [ fhir:v "VSVaccines"] ; # 
+  fhir:title [ fhir:v "Vaccine Codes"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2024-08-14T13:41:16+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Ministry of Health"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Ministry of Health" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.moh.gov.zm" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "info@moh.gov.zm" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Chisanga Louis Siwale" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "chisanga.siwale@moh.gov.zm" ] ;
+       fhir:use [ fhir:v "work" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A List of Vaccine Codes Use In Zambia"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://unstats.un.org/unsd/methods/m49/m49.htm"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "001" ] ;
+       fhir:display [ fhir:v "World" ]
+     ] )
+  ] ) ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://id.who.int/icd11/mms"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "XM8866" ] ;
+         fhir:display [ fhir:v "BBIBP-CorV" ]
+       ] [
+         fhir:code [ fhir:v "J07AE" ] ;
+         fhir:display [ fhir:v "Cholera vaccines" ]
+       ] [
+         fhir:code [ fhir:v "XM8NQ0" ] ;
+         fhir:display [ fhir:v "Comirnaty®" ]
+       ] [
+         fhir:code [ fhir:v "XM1AG7" ] ;
+         fhir:display [ fhir:v "Convidecia" ]
+       ] [
+         fhir:code [ fhir:v "XM7HT3" ] ;
+         fhir:display [ fhir:v "CoronaVac®" ]
+       ] [
+         fhir:code [ fhir:v "XM1G90" ] ;
+         fhir:display [ fhir:v "Covaxin" ]
+       ] [
+         fhir:code [ fhir:v "XM85P5" ] ;
+         fhir:display [ fhir:v "Covi-Vac" ]
+       ] [
+         fhir:code [ fhir:v "XM68M6" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine" ]
+       ] [
+         fhir:code [ fhir:v "XM4YL8" ] ;
+         fhir:display [ fhir:v "COVID-19 Vaccine AstraZeneca" ]
+       ] [
+         fhir:code [ fhir:v "XM6QV1" ] ;
+         fhir:display [ fhir:v "COVID-19 Vaccine Janssen" ]
+       ] [
+         fhir:code [ fhir:v "XM3DT5" ] ;
+         fhir:display [ fhir:v "COVID-19 Vaccine Moderna" ]
+       ] [
+         fhir:code [ fhir:v "XM6AT1" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, DNA based" ]
+       ] [
+         fhir:code [ fhir:v "XM1NL1" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, inactivated virus" ]
+       ] [
+         fhir:code [ fhir:v "XM5DF6" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, live attenuated virus" ]
+       ] [
+         fhir:code [ fhir:v "XM9QW8" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, non-replicating viral vector" ]
+       ] [
+         fhir:code [ fhir:v "XM0CX4" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, replicating viral vector" ]
+       ] [
+         fhir:code [ fhir:v "XM0GQ8" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, RNA based" ]
+       ] [
+         fhir:code [ fhir:v "XM1J92" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, virus like particle (VLP)" ]
+       ] [
+         fhir:code [ fhir:v "XM5JC5" ] ;
+         fhir:display [ fhir:v "COVID-19 vaccine, virus protein subunit" ]
+       ] [
+         fhir:code [ fhir:v "XM2YG8" ] ;
+         fhir:display [ fhir:v "COVIran Barakat" ]
+       ] [
+         fhir:code [ fhir:v "XM97T2" ] ;
+         fhir:display [ fhir:v "Covishield®" ]
+       ] [
+         fhir:code [ fhir:v "J07AF01" ] ;
+         fhir:display [ fhir:v "diphtheria toxoid" ]
+       ] [
+         fhir:code [ fhir:v "07AF01" ] ;
+         fhir:display [ fhir:v "diphtheria toxoid" ]
+       ] [
+         fhir:code [ fhir:v "J07CA11" ] ;
+         fhir:display [ fhir:v "diphtheria-haemophilus influenzae B-pertussis-tetanus-hepatitis B" ]
+       ] [
+         fhir:code [ fhir:v "XM6SZ8" ] ;
+         fhir:display [ fhir:v "EpiVacCorona" ]
+       ] [
+         fhir:code [ fhir:v "XM5ZJ4" ] ;
+         fhir:display [ fhir:v "Gam-Covid-Vac" ]
+       ] [
+         fhir:code [ fhir:v "XM9FQ7" ] ;
+         fhir:display [ fhir:v "Hayat-Vax" ]
+       ] [
+         fhir:code [ fhir:v "XM3U61" ] ;
+         fhir:display [ fhir:v "Inactivated SARS-CoV-2 vaccine" ]
+       ] [
+         fhir:code [ fhir:v "XM9TQ1" ] ;
+         fhir:display [ fhir:v "KCONVAC" ]
+       ] [
+         fhir:code [ fhir:v "J07BD53" ] ;
+         fhir:display [ fhir:v "measles, combinations with rubella, live attenuated" ]
+       ] [
+         fhir:code [ fhir:v "XM4EC8" ] ;
+         fhir:display [ fhir:v "MVC-COV1901" ]
+       ] [
+         fhir:code [ fhir:v "J07BM01" ] ;
+         fhir:display [ fhir:v "papillomavirus (human types 6, 11, 16, 18)" ]
+       ] [
+         fhir:code [ fhir:v "J07AL02" ] ;
+         fhir:display [ fhir:v "pneumococcus, purified polysaccharides antigen conjugated" ]
+       ] [
+         fhir:code [ fhir:v "J07BF02" ] ;
+         fhir:display [ fhir:v "poliomyelitis oral, trivalent, live attenuated" ]
+       ] [
+         fhir:code [ fhir:v "J07BF03" ] ;
+         fhir:display [ fhir:v "poliomyelitis, trivalent, inactivated, whole virus" ]
+       ] [
+         fhir:code [ fhir:v "XM97N6" ] ;
+         fhir:display [ fhir:v "QazVac" ]
+       ] [
+         fhir:code [ fhir:v "XM3CT4" ] ;
+         fhir:display [ fhir:v "Recombinant SARS-CoV-2 vaccine" ]
+       ] [
+         fhir:code [ fhir:v "J07BH01" ] ;
+         fhir:display [ fhir:v "rota virus, live attenuated" ]
+       ] [
+         fhir:code [ fhir:v "XM3PG0" ] ;
+         fhir:display [ fhir:v "Soberana-02" ]
+       ] [
+         fhir:code [ fhir:v "XM5QM6" ] ;
+         fhir:display [ fhir:v "Sputnik-Light" ]
+       ] [
+         fhir:code [ fhir:v "J07AM51" ] ;
+         fhir:display [ fhir:v "tetanus toxoid, combinations with diphtheria toxoid" ]
+       ] [
+         fhir:code [ fhir:v "J07AN01" ] ;
+         fhir:display [ fhir:v "tuberculosis, live attenuated" ]
+       ] [
+         fhir:code [ fhir:v "XM52P3" ] ;
+         fhir:display [ fhir:v "ZyCov-D" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "LP31687-4" ] ;
+         fhir:display [ fhir:v "Vitamin A" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

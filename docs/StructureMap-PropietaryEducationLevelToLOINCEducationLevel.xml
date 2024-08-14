@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureMap xmlns="http://hl7.org/fhir">
+  <id value="PropietaryEducationLevelToLOINCEducationLevel"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureMap PropietaryEducationLevelToLOINCEducationLevel</b></p><a name="PropietaryEducationLevelToLOINCEducationLevel"> </a><a name="hcPropietaryEducationLevelToLOINCEducationLevel"> </a><a name="hcPropietaryEducationLevelToLOINCEducationLevel-en-US"> </a><pre class="fml">
+<span style="color: #cc00cc">/// <b>url</b> = </span><span style="color: blue">'http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel'</span>
+<span style="color: #cc00cc">/// <b>name</b> = </span><span style="color: blue">'PropietaryEducationLevelToLOINCEducationLevel'</span>
+<span style="color: #cc00cc">/// <b>title</b> = </span><span style="color: blue">'Propietary Educational Level To LOINC Educational Level'</span>
+<span style="color: #cc00cc">/// <b>status</b> = </span><span style="color: blue">'active'</span>
+
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R5/observation.html" title="Observation">http://hl7.org/fhir/StructureDefinition/Observation</a><span style="color: navy">&quot; </span><b>alias </b>srcObservation <b>as </b><b>source</b>
+<b>uses</b><span style="color: navy"> &quot;</span><a href="http://hl7.org/fhir/R5/observation.html" title="Observation">http://hl7.org/fhir/StructureDefinition/Observation</a><span style="color: navy">&quot; </span><b>alias </b>tgtObservation <b>as </b><b>target</b>
+
+<b>group </b>SetPatientEducationalLevel<span style="color: navy">(</span><b>source</b> <span style="color: maroon">obs</span><span style="color: navy"> : </span>srcObservation, <b>target</b> <span style="color: maroon">observation</span><span style="color: navy"> : </span>tgtObservation<span style="color: navy">)</span><b> &lt;&lt;type+&gt;&gt;</b><span style="color: navy"> {
+</span>  obs.value<span style="color: navy"> : </span>CodeableConcept<b> as </b><span style="color: maroon">vs</span><span style="color: navy"><b> -&gt; </b></span>observation.value = <b>create</b><span style="color: navy">(</span><span style="color: blue">'CodeableConcept'</span><span style="color: navy">)</span><b> as </b><span style="color: maroon">vt</span><b> then</b><span style="color: navy"> {
+</span>    vs.coding<b> as </b><span style="color: maroon">coding</span><b> then</b><span style="color: navy"> {
+</span>      coding<span style="color: navy"><b> -&gt; </b></span>vt = <b>translate</b><span style="color: navy">(</span><span style="color: maroon">coding</span><span style="color: navy">, </span><span style="color: blue">'http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel'</span><span style="color: navy">, </span><span style="color: blue">'code'</span><span style="color: navy">)</span> <i>&quot;SetPatientEducationCode&quot;</i><span style="color: navy">;</span>
+    <span style="color: navy">}</span> <i>&quot;SetPatientEducationCoding&quot;</i><span style="color: navy">;</span>
+  <span style="color: navy">}</span> <i>&quot;SetEducationLevel&quot;</i><span style="color: navy">;</span>
+<span style="color: navy">}
+
+</span></pre></div>
+  </text>
+  <url value="http://openhie.org/fhir/zambia-immunizations/StructureMap/PropietaryEducationLevelToLOINCEducationLevel"/>
+  <version value="1.0.0"/>
+  <name value="PropietaryEducationLevelToLOINCEducationLevel"/>
+  <title value="Propietary Educational Level To LOINC Educational Level"/>
+  <status value="active"/>
+  <date value="2024-08-14T13:41:16+02:00"/>
+  <publisher value="Ministry of Health"/>
+  <contact>
+    <name value="Ministry of Health"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.moh.gov.zm"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="info@moh.gov.zm"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Chisanga Louis Siwale"/>
+    <telecom>
+      <system value="email"/>
+      <value value="chisanga.siwale@moh.gov.zm"/>
+      <use value="work"/>
+    </telecom>
+  </contact>
+  <description value="Maps the Propietary Educational Level codes To LOINC Educational Level codes."/>
+  <jurisdiction>
+    <coding>
+      <system value="http://unstats.un.org/unsd/methods/m49/m49.htm"/>
+      <code value="001"/>
+      <display value="World"/>
+    </coding>
+  </jurisdiction>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <mode value="source"/>
+    <alias value="srcObservation"/>
+  </structure>
+  <structure>
+    <url value="http://hl7.org/fhir/StructureDefinition/Observation"/>
+    <mode value="target"/>
+    <alias value="tgtObservation"/>
+  </structure>
+  <group>
+    <name value="SetPatientEducationalLevel"/>
+    <typeMode value="type-and-types"/>
+    <input>
+      <name value="obs"/>
+      <type value="srcObservation"/>
+      <mode value="source"/>
+    </input>
+    <input>
+      <name value="observation"/>
+      <type value="tgtObservation"/>
+      <mode value="target"/>
+    </input>
+    <rule>
+      <name value="SetEducationLevel"/>
+      <source>
+        <context value="obs"/>
+        <type value="CodeableConcept"/>
+        <element value="value"/>
+        <variable value="vs"/>
+      </source>
+      <target>
+        <context value="observation"/>
+        <element value="value"/>
+        <variable value="vt"/>
+        <transform value="create"/>
+        <parameter>
+          <valueString value="CodeableConcept"/>
+        </parameter>
+      </target>
+      <rule>
+        <name value="SetPatientEducationCoding"/>
+        <source>
+          <context value="vs"/>
+          <element value="coding"/>
+          <variable value="coding"/>
+        </source>
+        <rule>
+          <name value="SetPatientEducationCode"/>
+          <source>
+            <context value="coding"/>
+          </source>
+          <target>
+            <context value="vt"/>
+            <transform value="translate"/>
+            <parameter>
+              <valueId value="coding"/>
+            </parameter>
+            <parameter>
+              <valueString value="http://openhie.org/fhir/zambia-immunizations/ConceptMap/ProprietaryEducationLevelToLOINCEducationLevel"/>
+            </parameter>
+            <parameter>
+              <valueString value="code"/>
+            </parameter>
+          </target>
+        </rule>
+      </rule>
+    </rule>
+  </group>
+</StructureMap>

@@ -1,0 +1,30 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://openhie.org/fhir/zambia-immunizations/Organization/HPVVaccinationSiteTypeExample> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "HPVVaccinationSiteTypeExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type"^^xsd:anyURI ;
+       fhir:link <http://openhie.org/fhir/zambia-immunizations/StructureDefinition/hpv-vaccination-site-type>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization HPVVaccinationSiteTypeExample</b></p><a name=\"HPVVaccinationSiteTypeExample\"> </a><a name=\"hcHPVVaccinationSiteTypeExample\"> </a><a name=\"hcHPVVaccinationSiteTypeExample-en-US\"> </a><p><b>type</b>: <span title=\"Codes:{http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site Community}\">Community</span></p><p><b>name</b>: facility name</p></div>"
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://openhie.org/fhir/zambia-immunizations/CodeSystem/cs-proprietary-hpv-vaccination-site"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "Community" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "facility name"] . # 
+
+# -------------------------------------------------------------------------------------
+
